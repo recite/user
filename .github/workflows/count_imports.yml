@@ -55,7 +55,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           # Run the incremental process - find 10 repos if needed, process 5
-          python main.py \
+          python scripts/main.py \
             --repos-file data/repos.jsonl \
             --imports-file data/imports.jsonl \
             --processed-file data/processed_repos.txt \
