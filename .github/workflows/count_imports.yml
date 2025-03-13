@@ -54,20 +54,16 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          # First run find_repos.py to find repositories if needed
-          python find_repos.py \
-            --count 10 \
+          # Run the incremental process - find 10 repos if needed, process 5
+          python scripts/main.py \
+            --repos-file data/repos.jsonl \
+            --imports-file data/imports.jsonl \
+            --processed-file data/processed_repos.txt \
+            --repos-to-find 10 \
+            --repos-to-process 5 \
             --min-stars 10 \
             --language python \
-            --output data/repos.jsonl
-          
-          # Then run analyze_imports.py to process the repositories
-          python analyze_imports.py \
-            --repos data/repos.jsonl \
-            --output data/imports.jsonl \
-            --processed data/processed_repos.txt \
-            --max-files 10 \
-            --count 5
+            --max-files 10
       
       - name: Archive data
         uses: actions/upload-artifact@v4
