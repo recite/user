@@ -59,9 +59,9 @@ jobs:
             --repos-file data/repos.jsonl \
             --imports-file data/imports.jsonl \
             --processed-file data/processed_repos.txt \
-            --repos-to-find 10 \
-            --repos-to-process 5 \
-            --min-stars 10 \
+            --repos-to-find 50 \
+            --repos-to-process 50 \
+            --min-stars 0 \
             --language python \
             --max-files 10
       
