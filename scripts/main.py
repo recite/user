@@ -1,136 +1,155 @@
-# find_repos.py
+#!/usr/bin/env python3
+# scripts/main.py
 import os
+import argparse
 import logging
 import time
-import random
-import json
-import argparse
-from typing import List, Tuple, Optional
-from github_utils import make_github_request, RateLimitExceeded, GITHUB_API_URL
+from typing import Optional
 
-def get_random_repo(
-    min_stars: int = 5, 
-    language: str = "python",
-    min_size_kb: int = 100
-) -> Optional[Tuple[str, str, str]]:
+# Import functionality from other modules
+from github_utils import is_runtime_expired
+from find_repos import find_random_repos
+from analyze_imports import process_repo_from_file
+
+# Configure logging
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s'
+)
+
+def enough_unprocessed_repos(repos_file: str, processed_file: str, buffer: int = 5) -> bool:
     """
-    Find a random GitHub repository meeting the criteria.
+    Check if there are enough unprocessed repositories.
     
     Args:
-        min_stars: Minimum number of stars
-        language: Programming language filter
-        min_size_kb: Minimum repository size in KB
+        repos_file: File containing repository information
+        processed_file: File containing processed repository names
+        buffer: Minimum number of unprocessed repositories required
         
     Returns:
-        Tuple of (repo_name, repo_url, last_updated) or None if not found
+        True if there are enough unprocessed repositories, False otherwise
     """
-    try:
-        # Generate a random page number (GitHub search has a limit of 1000 results)
-        page = random.randint(1, 10)
-        
-        # Create a query with the specified criteria
-        query = f"language:{language} stars:>={min_stars} size:>={min_size_kb}"
-        
-        # Search for repositories
-        params = {
-            "q": query,
-            "sort": "updated",
-            "order": "desc",
-            "per_page": 100,
-            "page": page
-        }
-        
-        result = make_github_request(f"{GITHUB_API_URL}/search/repositories", params)
-        
-        if not result or "items" not in result or not result["items"]:
-            logging.warning(f"No repositories found matching criteria: {query}")
-            return None
-        
-        # Select a random repository from the results
-        repo = random.choice(result["items"])
-        repo_name = repo["full_name"]
-        repo_url = repo["html_url"]
-        last_updated = repo["updated_at"]
-        
-        logging.info(f"Selected random repository: {repo_name} (last updated: {last_updated})")
-        return (repo_name, repo_url, last_updated)
+    import json
     
-    except RateLimitExceeded as e:
-        logging.error(f"Rate limit exceeded while finding random repo: {e}")
-        raise
-    except Exception as e:
-        logging.error(f"Error finding random repository: {e}")
-        return None
+    # Create directories if they don't exist
+    os.makedirs(os.path.dirname(repos_file) if os.path.dirname(repos_file) else '.', exist_ok=True)
+    os.makedirs(os.path.dirname(processed_file) if os.path.dirname(processed_file) else '.', exist_ok=True)
+    
+    # Load processed repositories
+    processed_repos = set()
+    if os.path.exists(processed_file):
+        with open(processed_file, 'r') as f:
+            processed_repos = {line.strip() for line in f}
+    
+    # Count unprocessed repositories
+    unprocessed_count = 0
+    if os.path.exists(repos_file):
+        with open(repos_file, 'r') as f:
+            for line in f:
+                try:
+                    repo_data = json.loads(line.strip())
+                    repo_name = repo_data.get("repo_name")
+                    
+                    if repo_name and repo_name not in processed_repos:
+                        unprocessed_count += 1
+                        
+                        # Early exit if we have enough
+                        if unprocessed_count >= buffer:
+                            return True
+                except json.JSONDecodeError:
+                    continue
+    
+    return unprocessed_count >= buffer
 
-def find_random_repos(
-    count: int = 10,
+def run_incremental_process(
+    repos_file: str = "repos.jsonl",
+    imports_file: str = "imports.jsonl",
+    processed_file: str = "processed_repos.txt",
+    repos_to_find: int = 5,
+    repos_to_process: int = 1,
     min_stars: int = 5,
     language: str = "python",
-    min_size_kb: int = 100,
-    output_file: str = "repos.jsonl"
-) -> List[Tuple[str, str, str]]:
+    max_files: int = 10,
+    max_runtime: int = 21000  # ~6 hours minus buffer
+) -> None:
     """
-    Find multiple random repositories and save them to a file.
+    Run the incremental process:
+    1. Find repos if needed
+    2. Process a batch of repos
     
     Args:
-        count: Number of repositories to find
-        min_stars: Minimum number of stars
+        repos_file: File to store repository information
+        imports_file: File to store import information
+        processed_file: File to track processed repositories
+        repos_to_find: Number of new repositories to find if needed
+        repos_to_process: Number of repositories to process in this run
+        min_stars: Minimum stars for random repo search
         language: Programming language filter
-        min_size_kb: Minimum repository size in KB
-        output_file: File to save results to
-        
-    Returns:
-        List of found repositories as (repo_name, repo_url, last_updated)
+        max_files: Maximum number of Python files to analyze per repository
+        max_runtime: Maximum runtime in seconds
     """
     start_time = time.time()
-    found_repos = []
+    logging.info("Starting incremental process")
     
-    with open(output_file, 'a') as f:
-        for i in range(count):
-            try:
-                repo_info = get_random_repo(min_stars, language, min_size_kb)
-                
-                if repo_info:
-                    # Save immediately to preserve progress
-                    result_obj = {
-                        "repo_name": repo_info[0],
-                        "repo_url": repo_info[1],
-                        "last_updated": repo_info[2]
-                    }
-                    f.write(json.dumps(result_obj) + '\n')
-                    found_repos.append(repo_info)
-                    
-                    logging.info(f"Found {len(found_repos)}/{count} repositories")
-                
-                # Add a small delay to avoid hitting rate limits
-                time.sleep(1)
-                
-            except RateLimitExceeded:
-                logging.error("API rate limit reached. Stopping repository search.")
-                break
-            except Exception as e:
-                logging.error(f"Error during repository search: {e}")
+    # Create directories if they don't exist
+    os.makedirs(os.path.dirname(repos_file) if os.path.dirname(repos_file) else '.', exist_ok=True)
+    os.makedirs(os.path.dirname(imports_file) if os.path.dirname(imports_file) else '.', exist_ok=True)
+    os.makedirs(os.path.dirname(processed_file) if os.path.dirname(processed_file) else '.', exist_ok=True)
+    
+    # Step 1: Find repositories if needed
+    if not enough_unprocessed_repos(repos_file, processed_file):
+        logging.info(f"Finding {repos_to_find} new repositories")
+        find_random_repos(
+            count=repos_to_find,
+            min_stars=min_stars,
+            language=language,
+            output_file=repos_file
+        )
+    
+    # Step 2: Process repositories
+    processed_count = 0
+    for i in range(repos_to_process):
+        # Check if we're approaching runtime limits
+        elapsed_time = time.time() - start_time
+        if elapsed_time > max_runtime:
+            logging.warning("Approaching runtime limit, stopping early")
+            break
+        
+        logging.info(f"Processing repository {i+1}/{repos_to_process}")
+        if process_repo_from_file(
+            repo_file=repos_file,
+            output_file=imports_file,
+            processed_file=processed_file,
+            max_files=max_files
+        ):
+            processed_count += 1
+        
+        # Small delay between repositories
+        time.sleep(1)
     
     elapsed_time = time.time() - start_time
-    logging.info(f"Found {len(found_repos)} repositories in {elapsed_time:.2f} seconds")
-    return found_repos
+    logging.info(f"Processed {processed_count}/{repos_to_process} repositories in {elapsed_time:.2f} seconds")
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Find random GitHub repositories")
-    parser.add_argument("--count", type=int, default=10, help="Number of repositories to find")
-    parser.add_argument("--min-stars", type=int, default=5, help="Minimum number of stars")
+    parser = argparse.ArgumentParser(description="Incremental GitHub repository analysis")
+    parser.add_argument("--repos-file", type=str, required=True, help="Repository information file")
+    parser.add_argument("--imports-file", type=str, required=True, help="Output file for imports")
+    parser.add_argument("--processed-file", type=str, required=True, help="File to track processed repositories")
+    parser.add_argument("--repos-to-find", type=int, default=5, help="Number of new repositories to find if needed")
+    parser.add_argument("--repos-to-process", type=int, default=1, help="Number of repositories to process in this run")
+    parser.add_argument("--min-stars", type=int, default=5, help="Minimum stars for random repo search")
     parser.add_argument("--language", type=str, default="python", help="Programming language filter")
-    parser.add_argument("--min-size", type=int, default=100, help="Minimum repository size in KB")
-    parser.add_argument("--output", type=str, default="repos.jsonl", help="Output file")
+    parser.add_argument("--max-files", type=int, default=10, help="Maximum number of Python files to analyze per repository")
     
     args = parser.parse_args()
     
-    repos = find_random_repos(
-        count=args.count,
+    run_incremental_process(
+        repos_file=args.repos_file,
+        imports_file=args.imports_file,
+        processed_file=args.processed_file,
+        repos_to_find=args.repos_to_find,
+        repos_to_process=args.repos_to_process,
         min_stars=args.min_stars,
         language=args.language,
-        min_size_kb=args.min_size,
-        output_file=args.output
+        max_files=args.max_files
     )
-    
-    print(f"Found {len(repos)} repositories. Results saved to {args.output}")
