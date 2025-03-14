@@ -3,3 +3,8 @@ dev-hato/hato-bot
 managarm/bootstrap-managarm
 weirdapps/etorotrade
 QwenLM/Qwen2.5-Coder
+mr-tbot/meshtastic-ai
+devgaganin/Save-Restricted-Content-Bot-V2
+huangshihai/mimotion
+ESMValGroup/ESMValCore
+NVIDIA/nv-ingest
