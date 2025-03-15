@@ -8,3 +8,8 @@ devgaganin/Save-Restricted-Content-Bot-V2
 huangshihai/mimotion
 ESMValGroup/ESMValCore
 NVIDIA/nv-ingest
+quarrying/baidu-top-crawler
+TNTwise/REAL-Video-Enhancer
+monoidic/TLDR2
+google/langfun
+wikimedia/mediawiki-extensions
