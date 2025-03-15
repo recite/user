@@ -4,7 +4,7 @@ name: Analyze Python Repositories
 on:
   workflow_dispatch:  # Manual trigger
   schedule:
-    - cron: '0 0 * * *'  # Run daily at midnight UTC
+    - cron: '0 */6 * * *'  # Run daily at midnight UTC
 
 jobs:
   analyze:
@@ -59,11 +59,11 @@ jobs:
             --repos-file data/repos.jsonl \
             --imports-file data/imports.jsonl \
             --processed-file data/processed_repos.txt \
-            --repos-to-find 10 \
-            --repos-to-process 5 \
-            --min-stars 10 \
+            --repos-to-find 20 \
+            --repos-to-process 20 \
+            --min-stars 1 \
             --language python \
-            --max-files 10
+            --max-files 5
       
       - name: Archive data
         uses: actions/upload-artifact@v4
