@@ -13,3 +13,8 @@ TNTwise/REAL-Video-Enhancer
 monoidic/TLDR2
 google/langfun
 wikimedia/mediawiki-extensions
+osi1880vr/prompt_quill
+freedombox/FreedomBox
+Netflix-Skunkworks/service-capacity-modeling
+brunopostle/homemaker-addon
+CMBAgents/cmbagent
