@@ -12,10 +12,27 @@ import argparse
 from typing import List, Tuple, Set, Optional
 from github_utils import save_results, is_runtime_expired
 
+# Standard library modules to exclude
+STANDARD_LIBS = {
+    'abc', 'argparse', 'ast', 'asyncio', 'base64', 'collections', 'concurrent', 
+    'contextlib', 'copy', 'csv', 'datetime', 'decimal', 'enum', 'functools', 
+    'glob', 'gzip', 'hashlib', 'http', 'io', 'itertools', 'json', 'logging', 
+    'math', 'multiprocessing', 'os', 'pathlib', 'pickle', 'random', 're', 
+    'shutil', 'signal', 'socket', 'sqlite3', 'string', 'subprocess', 'sys', 
+    'tempfile', 'threading', 'time', 'timeit', 'traceback', 'typing', 'unittest', 
+    'urllib', 'uuid', 'xml', 'zipfile', 'heapq', 'bisect', 'codecs', 'configparser',
+    'dataclasses', 'distutils', 'email', 'fnmatch', 'fractions', 'ftplib', 'getpass',
+    'gettext', 'hmac', 'html', 'imp', 'importlib', 'inspect', 'numbers', 'operator',
+    'platform', 'pprint', 'pwd', 'queue', 'smtplib', 'statistics', 'struct', 'tarfile',
+    'textwrap', 'types', 'warnings', 'weakref', 'zlib', 'builtins', 'calendar',
+    'cmd', 'cmath', 'curses', 'dbm', 'locale', 'mmap', 'sched'
+}
+
 def extract_imports(content: str) -> Set[str]:
     """
     Extract imported libraries from Python content using AST parsing
     and regex as a fallback for edge cases.
+    Filters out standard library imports.
     """
     libraries = set()
     
@@ -25,17 +42,23 @@ def extract_imports(content: str) -> Set[str]:
         for node in ast.walk(tree):
             if isinstance(node, ast.Import):
                 for name in node.names:
-                    libraries.add(name.name.split('.')[0])
+                    lib_name = name.name.split('.')[0]
+                    if lib_name not in STANDARD_LIBS:
+                        libraries.add(lib_name)
             elif isinstance(node, ast.ImportFrom):
                 if node.module:
-                    libraries.add(node.module.split('.')[0])
+                    lib_name = node.module.split('.')[0]
+                    if lib_name not in STANDARD_LIBS:
+                        libraries.add(lib_name)
     except SyntaxError:
         # Fallback to regex for files with syntax errors
         import_pattern = r'^import\s+([\w\.]+)|^from\s+([\w\.]+)\s+import'
         for match in re.finditer(import_pattern, content, re.MULTILINE):
             lib = match.group(1) or match.group(2)
             if lib:
-                libraries.add(lib.split('.')[0])
+                lib_name = lib.split('.')[0]
+                if lib_name not in STANDARD_LIBS:
+                    libraries.add(lib_name)
                 
     return libraries
 
@@ -106,20 +129,27 @@ def analyze_repo(repo_info: Tuple[str, str, str], max_files: int = 10) -> List[T
                     with open(full_path, 'r', encoding='utf-8', errors='ignore') as f:
                         content = f.read()
                     
-                    # Extract imports
+                    # Extract non-standard library imports
                     imports = extract_imports(content)
                     
-                    for library in imports:
-                        repo_results.append((
-                            library, 
-                            repo_name, 
-                            file_path, 
-                            fetch_date, 
-                            last_updated
-                        ))
+                    # Only record non-empty results
+                    if imports:
+                        for library in imports:
+                            repo_results.append((
+                                library, 
+                                repo_name, 
+                                file_path, 
+                                fetch_date, 
+                                last_updated
+                            ))
                 except Exception as e:
                     logging.warning(f"Error processing file {file_path} in {repo_name}: {e}")
             
+            if repo_results:
+                logging.info(f"Found {len(repo_results)} non-standard library imports in {repo_name}")
+            else:
+                logging.info(f"No non-standard library imports found in {repo_name}")
+                
             return repo_results
         
         except subprocess.TimeoutExpired:
@@ -183,7 +213,7 @@ def process_repo_from_file(
         if results:
             # Save results
             save_results(results, output_file)
-            logging.info(f"Found {len(results)} imported libraries in {next_repo[0]}")
+            logging.info(f"Found {len(results)} non-standard imported libraries in {next_repo[0]}")
         
         # Mark as processed
         with open(processed_file, 'a') as f:
