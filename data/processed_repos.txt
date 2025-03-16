@@ -29,3 +29,14 @@ xudagege/XINGXING
 MCgrosso/Nexoiptv
 SengokuCola/MaiMBot
 bitsbb01/ustvgotom3u
+Fixyres/FHeta
+tasket/wyng-backup
+sinspired/cnNetTool
+sarvari1378/SingBOX
+peasoft/NoMoreWalls
+NotSooShariff/newsflow
+lhc/lhc-telegram-bot
+euroargodev/boundary_currents_pcm
+mauforonda/transitabilidad-bolivia
+Code-Science/Awesome-AI-Landscape
+sudesh0sudesh/surfshark-IPs
