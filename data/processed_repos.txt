@@ -40,3 +40,13 @@ euroargodev/boundary_currents_pcm
 mauforonda/transitabilidad-bolivia
 Code-Science/Awesome-AI-Landscape
 sudesh0sudesh/surfshark-IPs
+RealCyGuy/songs-backup
+tboy1337/hideip.me-proxy-tester
+avidal/make-trash
+collinzrj/adversarial_decoding
+vyrzdev/GlasgowBikingAPI
+claytonjhamilton/claytonjhamilton
+SonzaiEkkusu/V2RayDumper
+estraier/imagetoolbox
+dvd-dev/hilo
+OSUKED/Nuke-Watch
