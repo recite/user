@@ -18,3 +18,14 @@ freedombox/FreedomBox
 Netflix-Skunkworks/service-capacity-modeling
 brunopostle/homemaker-addon
 CMBAgents/cmbagent
+adzmatheus/curiosity-scraping
+OpenOrion/meshly
+Setiawan007/Gmail-Maker-BOTV2
+ipstreet312/freeiptv
+rossning92/MyScripts
+romerogroup/pyprocar
+u9n/spot
+xudagege/XINGXING
+MCgrosso/Nexoiptv
+SengokuCola/MaiMBot
+bitsbb01/ustvgotom3u
