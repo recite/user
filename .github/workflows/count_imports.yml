@@ -65,12 +65,16 @@ jobs:
             --language python \
             --max-files 5
       
+      - name: Generate library statistics
+        run: |
+          # Generate library usage statistics
+          python scripts/count_libs.py data/imports.jsonl -o data/library_counts.csv
+      
       - name: Archive data
         uses: actions/upload-artifact@v4
         with:
           name: data-archive
           path: data/
-          retention-days: 90
       
       - name: Commit and push results
         run: |
