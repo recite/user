@@ -47,4 +47,13 @@ def count_libraries(input_file, output_file):
     
     print(f"Processing complete: Found {len(library_counter)} unique libraries.")
     print(f"Results written to {output_file}")
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Count library imports from GitHub repository data")
+    parser.add_argument("input_file", help="Path to the input JSON Lines file")
+    parser.add_argument("-o", "--output", default="library_counts.csv", 
+                        help="Path to the output CSV file (default: library_counts.csv)")
     
+    args = parser.parse_args()
+    
+    count_libraries(args.input_file, args.output)
