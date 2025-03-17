@@ -70,3 +70,13 @@ charudatta10/ai-orb
 tschm/experiments
 eugenescodes/adblock2mikrotik
 awslabs/llmeter
+replicate/cog-comfyui-wan-with-lora
+Panda-press/Exponential-Integrators-for-PDEs
+lalifeier/IPTV
+Vyary/exile-profit
+elgohr/EPEX-DE-History
+ElJoker63/ESET-KeyGen
+con/tinuous
+ASSERT-KTH/repairbench-framework
+maartensiffels/verstoringen-ns
+Luffy03/Large-Scale-Medical
