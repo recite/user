@@ -60,3 +60,13 @@ tmby/sing-box-dns-filter
 FakerPK/NewGrassBot
 Citrinate/Steam-MarketableApps
 intel/ipex-llm
+palewire/noaa-hurricane-gis-scraper
+justineichelberger/justineichelberger
+OHMORIYUSUKE/KemonoFriend-LineBot
+giorgosg/box2d-py
+madhatter349/Reddit-RSS-Tracker
+Nardos-serkalem/aerial_survey_project
+charudatta10/ai-orb
+tschm/experiments
+eugenescodes/adblock2mikrotik
+awslabs/llmeter
