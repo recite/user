@@ -80,3 +80,12 @@ con/tinuous
 ASSERT-KTH/repairbench-framework
 maartensiffels/verstoringen-ns
 Luffy03/Large-Scale-Medical
+mathcovax/seaence
+python/typeshed
+aws-deadline/deadline-cloud-for-unreal-engine
+3bsalam-1/MountainCar
+openstack/mistral
+apache/infrastructure-asfyaml
+azizmokhtar/TrailForge
+Surfboardv2ray/TGParse
+Opentrons/opentrons
