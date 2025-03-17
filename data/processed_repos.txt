@@ -50,3 +50,13 @@ SonzaiEkkusu/V2RayDumper
 estraier/imagetoolbox
 dvd-dev/hilo
 OSUKED/Nuke-Watch
+TongjiFinLab/AIDebate
+FunctionError/PiratesTv
+xindoo/xindoo
+aws-deepracer-community/deepracer-race-data
+hyo-jae-jung/beakjoon
+cgohlke/lfdfiles
+tmby/sing-box-dns-filter
+FakerPK/NewGrassBot
+Citrinate/Steam-MarketableApps
+intel/ipex-llm
