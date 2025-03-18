@@ -119,3 +119,13 @@ Alexey-Stupishin/pyAMaFiL
 apache/incubator-kie-kogito-examples
 danielshamsudin/tng_nfc_scrape
 W1ndys/W1ndysBot
+Snior-S/Snapster-Trading-Bot
+WCRP-CORDEX/cordex-cmip6-cv
+CWorthy-ocean/roms-tools
+find-xposed-magisk/RSS-to-Telegram-Bot
+OSUKED/Crown-Estate-Watch
+ets-berkeley-edu/boac
+Nastas95/SteamClip
+eshat69/blockchain
+talaviram/currency_utils
+DanielMDouglas/GAMPixPy
