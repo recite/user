@@ -86,9 +86,9 @@ jobs:
           git config --global user.email "actions@github.com"
           
           # Only commit if there are changes
-          if git status -s | grep -q "data/"; then
-            git add data/
-            git commit -m "Update repository analysis data [skip ci]"
+          if git status -s | grep -q "data/" || git status -s | grep -q "README.md"; then
+            git add data/ README.md
+            git commit -m "Update repository analysis data and README [skip ci]"
             git push
           else
             echo "No changes to commit"
