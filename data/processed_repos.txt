@@ -109,3 +109,13 @@ Danny-Nunez/CoinMarketCap-Api
 Chaos-woo/riibit
 Jaks-Praeger/Megatronics
 xfxdesk/udpateScript
+wudongdefeng/free
+zzLeonn/Leontelebot
+AyeeMinerva/ChatDot
+SnailDev/github-hot-hub
+core4x/collectu-core
+wu3089/news_tracker
+Alexey-Stupishin/pyAMaFiL
+apache/incubator-kie-kogito-examples
+danielshamsudin/tng_nfc_scrape
+W1ndys/W1ndysBot
