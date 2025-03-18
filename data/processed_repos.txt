@@ -99,3 +99,13 @@ patricktrainer/entergy-outages
 kastalimohammed1965/CLIP-fine-tune-registers-gated
 medialtemporal/lhsc-wait-times
 Asher-Ul-Haque/github-stats
+mrlooi/latex2json
+Dev-SalamSheikh/Git-Stats
+devopspark/GitNews
+Charcoal-SE/SmokeDetector
+cxumol/LongRiver
+mitespsoc/TpotTIFeed
+Danny-Nunez/CoinMarketCap-Api
+Chaos-woo/riibit
+Jaks-Praeger/Megatronics
+xfxdesk/udpateScript
