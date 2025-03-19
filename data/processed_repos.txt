@@ -138,3 +138,13 @@ rcy1314/Rss-Translation
 liblaf/awesome-list-generator
 franciscobmacedo/debtors-scraper
 jimgate07/grtv
+modelscope/DiffSynth-Studio
+esti08-hu/leetcode
+GeoscienceAustralia/ga-earthquake-hazard
+elliott-diy/PentagonPizza
+wgsxm/MPM-PyTorch
+empenoso/moex-bond-search-and-analysis
+YungTatyu/transcendence
+bethanyjoy/scout.wine
+zaivi/ci-tracking-retails-price
+Huibq/useless
