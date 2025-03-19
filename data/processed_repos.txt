@@ -148,3 +148,12 @@ YungTatyu/transcendence
 bethanyjoy/scout.wine
 zaivi/ci-tracking-retails-price
 Huibq/useless
+tgoelles/cookiecutter_science
+sudesh0sudesh/TorGuardIPs
+michaelajaluvkova/trendsetter
+macromeer/napari-tmidas
+ioverho/misinfo-general
+figsoda/figsoda
+EmertonData/robotics
+FreeSSTP/server-list
+bro-Nik/Portfolios

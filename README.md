@@ -11,17 +11,18 @@ We use GitHub Actions to incrementally sample and analyze a small set of reposit
 
 | Rank | Library | Count |
 |------|---------|-------|
-| 1 | requests | 110 |
-| 2 | numpy | 55 |
+| 1 | requests | 112 |
+| 2 | numpy | 62 |
 | 3 | os | 40 |
-| 4 | pytest | 36 |
-| 5 | pandas | 35 |
+| 4 | pytest | 39 |
+| 5 | pandas | 37 |
 | 6 | sys | 32 |
 | 7 | bs4 | 27 |
-| 8 | __future__ | 24 |
-| 9 | tqdm | 20 |
-| 10 | typing | 19 |
+| 8 | __future__ | 26 |
+| 9 | torch | 23 |
+| 10 | tqdm | 20 |
 
+*Last updated: 1742388548.6824377*
 *Last updated: 1742366037.0414956*
 *Last updated: 1742349333.4923599*
 *Last updated: 1742096527.9620972*
