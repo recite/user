@@ -157,3 +157,12 @@ figsoda/figsoda
 EmertonData/robotics
 FreeSSTP/server-list
 bro-Nik/Portfolios
+erlep/ppBB
+google/grain
+duanesb/Tech-Fest
+rclement/datasette-dashboards
+gonlad-x/validator_queue_monitoring
+Bogdan26Bogdan/Ferry_data
+wrmsr/omlish
+isyuricunha/pokemon-greeting
+zolodev/bumbisaft
