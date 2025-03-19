@@ -129,3 +129,12 @@ Nastas95/SteamClip
 eshat69/blockchain
 talaviram/currency_utils
 DanielMDouglas/GAMPixPy
+sudesh0sudesh/ExpressVPN-IPs
+Jeffser/Alpaca
+sadiqkassamali/VoiceAuth
+rwx9032/AdguardHome
+gsajko/QLD_fuel_scraping
+rcy1314/Rss-Translation
+liblaf/awesome-list-generator
+franciscobmacedo/debtors-scraper
+jimgate07/grtv
