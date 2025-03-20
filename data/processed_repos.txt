@@ -166,3 +166,12 @@ Bogdan26Bogdan/Ferry_data
 wrmsr/omlish
 isyuricunha/pokemon-greeting
 zolodev/bumbisaft
+mrym-emm/nafas
+Setiawan007/Temp-Mail-BOT
+salma752540/meteo-scraper
+euroargodev/argopy-status
+ThomasGRoberts/space-board
+Byirosaleshd/Automatizated-Petty-cash
+molangning/fire-av
+to-be-pass/python-coding-test
+microsoft/mstic
