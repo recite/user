@@ -192,3 +192,12 @@ MadeAgents/mobile-use
 Botsie696/Stokks
 peter279k/cdc-data-mirror
 Security-Phoenix-demo/autoconfig
+noobdawn/SnowMazer
+BruceEckel/pybooktools
+kentris/kiji
+v2clash/openit
+shibaji7/pynasonde
+rix4uni/cvemapping
+EXP-code/EXP-container
+Kyrylo-Ktl/LeetCode-Solutions
+Mayumiwandi/Emilia
