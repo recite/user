@@ -6,6 +6,7 @@ import subprocess
 import time
 from datetime import datetime
 import ast
+import sys
 import re
 import json
 import argparse
@@ -13,20 +14,7 @@ from typing import List, Tuple, Set, Optional
 from github_utils import save_results, is_runtime_expired
 
 # Standard library modules to exclude
-STANDARD_LIBS = {
-    'abc', 'argparse', 'ast', 'asyncio', 'base64', 'collections', 'concurrent', 
-    'contextlib', 'copy', 'csv', 'datetime', 'decimal', 'enum', 'functools', 
-    'glob', 'gzip', 'hashlib', 'http', 'io', 'itertools', 'json', 'logging', 
-    'math', 'multiprocessing', 'os', 'pathlib', 'pickle', 'random', 're', 
-    'shutil', 'signal', 'socket', 'sqlite3', 'string', 'subprocess', 'sys', 
-    'tempfile', 'threading', 'time', 'timeit', 'traceback', 'typing', 'unittest', 
-    'urllib', 'uuid', 'xml', 'zipfile', 'heapq', 'bisect', 'codecs', 'configparser',
-    'dataclasses', 'distutils', 'email', 'fnmatch', 'fractions', 'ftplib', 'getpass',
-    'gettext', 'hmac', 'html', 'imp', 'importlib', 'inspect', 'numbers', 'operator',
-    'platform', 'pprint', 'pwd', 'queue', 'smtplib', 'statistics', 'struct', 'tarfile',
-    'textwrap', 'types', 'warnings', 'weakref', 'zlib', 'builtins', 'calendar',
-    'cmd', 'cmath', 'curses', 'dbm', 'locale', 'mmap', 'sched'
-}
+STANDARD_LIBS = sys.stdlib_module_names
 
 def extract_imports(content: str) -> Set[str]:
     """
