@@ -10,6 +10,7 @@ import csv
 import re
 import argparse
 import logging
+import datetime
 
 # Configure logging
 logging.basicConfig(
@@ -51,6 +52,9 @@ def update_readme_with_library_stats(csv_file, readme_file, top_n=10):
     if not top_libraries:
         logging.warning("No library data found in CSV")
         return False
+
+    # Get the last modified time of the CSV file as a UTC datetime string
+    timestamp = datetime.datetime.utcfromtimestamp(os.path.getmtime(csv_file)).strftime("%Y-%m-%d %H:%M:%S UTC")
     
     # Format the data as a markdown table
     table_content = "## Top Python Libraries\n\n"
@@ -60,7 +64,7 @@ def update_readme_with_library_stats(csv_file, readme_file, top_n=10):
     for i, (library, count) in enumerate(top_libraries, 1):
         table_content += f"| {i} | {library} | {count} |\n"
     
-    table_content += f"\n*Last updated: {os.path.getmtime(csv_file)}*\n"
+    table_content += f"\n*Last updated: {timestamp}*\n"
     
     # Check if README exists
     if not os.path.exists(readme_file):
@@ -76,17 +80,18 @@ def update_readme_with_library_stats(csv_file, readme_file, top_n=10):
     with open(readme_file, 'r', encoding='utf-8') as f:
         content = f.read()
     
-    # Define regex pattern to find the existing table section
-    pattern = r"## Top Python Libraries\n\n\|.*?\n\n"
+    # Remove any existing "## Top Python Libraries" sections (including the timestamp)
+    # This regex matches from the header until the next header (starting with "##") or end-of-file.
+    pattern = r"## Top Python Libraries[\s\S]*?(?=\n## |\Z)"
+    new_content = re.sub(pattern, "", content, flags=re.DOTALL)
     
-    if re.search(pattern, content, re.DOTALL):
-        # Replace existing table
-        new_content = re.sub(pattern, table_content, content, flags=re.DOTALL)
-    else:
-        # Append the table to the end of the README
-        new_content = content + "\n\n" + table_content
+    # Remove trailing whitespace before appending new content
+    new_content = new_content.rstrip()
     
-    # Write updated content
+    # Append the updated table at the end
+    new_content = new_content + "\n\n" + table_content
+    
+    # Write updated content back to the README
     with open(readme_file, 'w', encoding='utf-8') as f:
         f.write(new_content)
     
