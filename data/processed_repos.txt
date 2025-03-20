@@ -184,3 +184,11 @@ garlic0000/ME-GCN-Project
 ljk5403/Dining-Good-Alert
 Undb0/Msdpodg4
 amdefiguy/amdefiguy-2
+SoupyzInc/SoupyzInc
+mai19950/clash_config
+Ascend/pytorch
+openshift-eng/art-tools
+MadeAgents/mobile-use
+Botsie696/Stokks
+peter279k/cdc-data-mirror
+Security-Phoenix-demo/autoconfig
