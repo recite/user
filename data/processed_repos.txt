@@ -211,3 +211,11 @@ DRKCTRL/DRKSRC
 commaai/openpilot
 cruzdariel/how_is_mco_today
 malinkang/todo2notion
+notchum/dotfiles
+Holemar/my_flask_celery
+freedomofpress/securedrop-apt-test
+ckswilliams/medphunc
+albertyw/git-browse
+brightway-lca/brightway-documentation
+DAIKICHI-PSC/RS-02
+AmirMansurian/AttnFD

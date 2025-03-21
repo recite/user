@@ -1,17 +1,17 @@
 library,count
 requests,151
-numpy,75
-pandas,56
+numpy,80
+pandas,57
 pytest,51
 os,40
-torch,33
+torch,35
 sys,32
 yaml,32
 bs4,32
-utils,29
+utils,31
+tqdm,27
 __future__,26
-tqdm,25
-setuptools,23
+setuptools,24
 typing,19
 dotenv,18
 matplotlib,18
@@ -32,10 +32,10 @@ src,11
 logging,10
 yahoofinance,10
 transformers,10
+scipy,10
 typing_extensions,9
 pytz,9
 ctypes,9
-scipy,9
 base,9
 util,9
 argparse,8
@@ -84,6 +84,7 @@ portfolio_tracker,5
 datasette,5
 omlish,5
 openpilot,5
+ranger,5
 functools,4
 zoneinfo,4
 threading,4
@@ -92,6 +93,7 @@ random,4
 math,4
 pyrogram,4
 telethon,4
+PySide6,4
 meshly,4
 joblib,4
 streamlink,4
@@ -123,6 +125,7 @@ lerobot,4
 grain,4
 exceptions,4
 providers,4
+git_browse,4
 urllib,3
 ssl,3
 library,3
@@ -187,7 +190,6 @@ multiprocessing,2
 textwrap,2
 cupy,2
 nv_ingest_api,2
-PySide6,2
 tarfile,2
 xml,2
 Util,2
@@ -227,6 +229,7 @@ limiter,2
 storages,2
 gs_manager,2
 github,2
+settings,2
 users,2
 google,2
 duckdb,2
@@ -250,6 +253,7 @@ lazy_loader,2
 openquake,2
 mpm_pytorch,2
 mpm_solver,2
+wandb,2
 flask_login,2
 shared_lib,2
 requests_html,2
@@ -265,6 +269,9 @@ pynasonde,2
 fastapi,2
 plans,2
 path,2
+dataloaders,2
+modeling,2
+mypath,2
 assets,1
 color,1
 object_with_optional_field,1
@@ -427,7 +434,6 @@ tomllib,1
 hatchling,1
 job_library,1
 remote_executor,1
-settings,1
 open_job_template_api,1
 gymnasium,1
 install_venv_common,1
@@ -566,7 +572,6 @@ skimage,1
 napari_tmidas,1
 qtpy,1
 mosestokenizer,1
-wandb,1
 bbDoChk,1
 asks,1
 trio,1
@@ -634,3 +639,12 @@ retrying,1
 notion_client,1
 pendulum,1
 emoji,1
+adam,1
+__init__,1
+medphunc,1
+MODBUS_ASCII_CONVERTERS,1
+MODBUS_ASCII_LRC,1
+pykeigan,1
+serial,1
+RS02_GUI,1
+distiller,1
