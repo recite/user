@@ -219,3 +219,12 @@ albertyw/git-browse
 brightway-lca/brightway-documentation
 DAIKICHI-PSC/RS-02
 AmirMansurian/AttnFD
+geoadmin/mf-chsdi3
+Riderich/psycho_benchmark
+tjhickey724/discrete_math
+hkpc/openit
+michaelscutari/protclust
+QuBenhao/LeetCode
+Axenide/Ax-Shell
+watchakorn-18k/watchakorn-18k
+Clarifai/clarifai-python
