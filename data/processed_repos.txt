@@ -201,3 +201,13 @@ rix4uni/cvemapping
 EXP-code/EXP-container
 Kyrylo-Ktl/LeetCode-Solutions
 Mayumiwandi/Emilia
+williammw/agdoc
+OWASP/Nest
+udishadc/NUBot
+Pixel-Trackify/api
+Bobyue0118/3D-Reconstruction-in-Dynamic-Environments
+Jonty/uk-notam-archive
+DRKCTRL/DRKSRC
+commaai/openpilot
+cruzdariel/how_is_mco_today
+malinkang/todo2notion
