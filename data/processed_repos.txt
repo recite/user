@@ -228,3 +228,13 @@ QuBenhao/LeetCode
 Axenide/Ax-Shell
 watchakorn-18k/watchakorn-18k
 Clarifai/clarifai-python
+gioinocente/SteamMarketCandlestick
+jundoll/bs-ranked-playlist
+sandialabs/pyttb
+huangweipeng7/lsnpc
+KYCOKX/OTP-Bot-Telegram
+GNOME-Nepal/contributors
+monosans/pywttr-models
+xiatian0502/super-T
+enzortorres/python
+dimension-sh/tildejsongen
