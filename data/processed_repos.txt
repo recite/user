@@ -256,3 +256,12 @@ ucb-ee106-classrooms/project-3-autonomotrons
 QiChaiQiChai/IPDB-Modified
 gferreira/xTools4
 GMyhf/2025spring-cs201
+joaorb64/SmashTwitterBot
+BradyAJohnston/warbler
+kevinheavey/anchorpy
+NiceVPN123/NiceVPN
+malinkang/weread2notion-pro
+spincat/SmartProxyPipeline
+biansty/IPTV-EPG
+4n0nymou3/multi-proxy-config-fetcher
+DataShades/ckanext-selfinfo
