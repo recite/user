@@ -238,3 +238,12 @@ monosans/pywttr-models
 xiatian0502/super-T
 enzortorres/python
 dimension-sh/tildejsongen
+Setiawan007/Shopee-Flashsale-BOT
+bloedboemmel/bloedboemmel
+AndydeCleyre/lastfeeder
+SnapdragonLee/SystemProxy
+malinkang/weread2notion
+hwenjun18/arxiv-daily
+anuja-rahul/Weather-CLI-App
+ProselyteCoding/citicup
+Kitty-Shackleford/tsb
