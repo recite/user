@@ -247,3 +247,12 @@ hwenjun18/arxiv-daily
 anuja-rahul/Weather-CLI-App
 ProselyteCoding/citicup
 Kitty-Shackleford/tsb
+mirabarukaso/character_select_stand_alone_app
+pytorch/pytorch
+satyamjay-iitd/cop290_autograder
+LtgXs/HSR-Download-Info
+Kanin/Kanin
+ucb-ee106-classrooms/project-3-autonomotrons
+QiChaiQiChai/IPDB-Modified
+gferreira/xTools4
+GMyhf/2025spring-cs201
