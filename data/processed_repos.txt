@@ -265,3 +265,12 @@ spincat/SmartProxyPipeline
 biansty/IPTV-EPG
 4n0nymou3/multi-proxy-config-fetcher
 DataShades/ckanext-selfinfo
+SamanGho/v2ray_collector
+ZhiXuanWang/cf-speed-dns
+sunil-log/util_sac
+VolkanSah/Auto-Proxy-Fetcher
+v5tech/weibo-trending-hot-search
+dbreunig/foggy-bot
+franzesegiovanni/franka_human_friendly_controllers
+elydre/stats
+sajjadium/ctf-archives
