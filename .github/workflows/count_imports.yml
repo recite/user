@@ -58,8 +58,8 @@ jobs:
             --repos-file data/repos.jsonl \
             --imports-file data/imports.jsonl \
             --processed-file data/processed_repos.txt \
-            --repos-to-find 20 \
-            --repos-to-process 20 \
+            --repos-to-find 50 \
+            --repos-to-process 50 \
             --min-stars 1 \
             --language python \
             --max-files 5
