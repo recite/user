@@ -1,8 +1,8 @@
 library,count
-requests,211
+requests,221
 numpy,110
-pandas,67
-pytest,66
+pandas,69
+pytest,68
 yaml,46
 torch,46
 os,40
@@ -11,16 +11,16 @@ utils,37
 bs4,35
 sys,32
 setuptools,31
+django,30
 __future__,26
 dotenv,25
 matplotlib,24
+PIL,23
 aiohttp,22
-PIL,22
 typing,19
 tests,17
 config,17
 cv2,17
-django,17
 unittest,16
 transformers,16
 json,15
@@ -34,6 +34,7 @@ scipy,13
 re,12
 streamlit,12
 pydantic,12
+models,11
 logging,10
 yahoofinance,10
 typing_extensions,9
@@ -41,6 +42,7 @@ ctypes,9
 selenium,9
 base,9
 datasets,9
+rest_framework,9
 util,9
 argparse,8
 asyncio,8
@@ -53,11 +55,11 @@ dns,8
 langfun,8
 colorama,8
 rich,8
-models,8
 omegaconf,8
 letta_client,7
 helpers,7
 PyQt5,7
+lib,7
 dataclasses,6
 collections,6
 pyglove,6
@@ -67,7 +69,6 @@ openai,6
 lxml,6
 urllib3,6
 feedparser,6
-rest_framework,6
 google,6
 gi,6
 clash,6
@@ -100,7 +101,6 @@ openpilot,5
 ranger,5
 pyttb,5
 pywttr_models,5
-lib,5
 xTools4,5
 astro_utils,5
 functools,4
@@ -172,6 +172,7 @@ core,3
 pytest_homeassistant_custom_component,3
 ipex_llm,3
 box2d,3
+serializers,3
 websocket,3
 github,3
 unreal,3
@@ -193,6 +194,7 @@ mobile_use,3
 betterstokks,3
 dataprovider,3
 read,3
+Utils,3
 parse,3
 maxminddb,3
 flag,3
@@ -263,7 +265,6 @@ custom_components,2
 tifffile,2
 peft,2
 geopandas,2
-serializers,2
 marimo,2
 cog,2
 dune,2
@@ -291,6 +292,7 @@ client,2
 configuration,2
 data_layer,2
 astropy,2
+api,2
 roms_tools,2
 bea,2
 gampixpy,2
@@ -312,7 +314,6 @@ codegen,2
 sysconfig,2
 wheel,2
 financedata,2
-Utils,2
 pybooktools,2
 pynasonde,2
 fastapi,2
@@ -341,6 +342,8 @@ PyPDF2,2
 pyotp,2
 werkzeug,2
 features,2
+rest_framework_simplejwt,2
+weechat,2
 assets,1
 color,1
 object_with_optional_field,1
@@ -579,7 +582,6 @@ openvino,1
 IPython,1
 dingtalk,1
 handler_events,1
-api,1
 xarray,1
 dask,1
 pooch,1
@@ -782,3 +784,8 @@ streamlit_lottie,1
 prompt_scripts,1
 evaluation,1
 zebrazoom,1
+jwt,1
+docker,1
+linux,1
+courses,1
+pystray,1

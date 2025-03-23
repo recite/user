@@ -294,3 +294,12 @@ AnubhavYadavBCA25/PrepSmart-AI-Powered-Teaching-Assistant
 birlumbus/Darcy
 Kachiens/Gmail-Account-Creator-Bulk
 oliviermirat/ZebraZoom
+jekhuz/jekhuz
+mahmanuel/software_dev_pro_sem2
+4n0nymou3/auto-warp-config
+demisto/content
+traders-ark/hyperliquid-carry-screener
+setarcos/DjangoLab
+pigzillaaaaa/iptv-scraper
+almostearthling/when-command
+weechat/weechat.org
