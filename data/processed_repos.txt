@@ -303,3 +303,13 @@ setarcos/DjangoLab
 pigzillaaaaa/iptv-scraper
 almostearthling/when-command
 weechat/weechat.org
+Astrofili-Centesi/Helios
+68foxboris/enigma2
+NCAR/dset-web-accessible-folder-dev
+Kachiens/GitHub-Account-Creator-Bot
+drwiiche/google-trend-morocco
+eyelevelai/groundx-python
+cbschicago/chicago-crime-data
+William-wAng618/roboticAttack
+Drjacky/Drjacky
+openkentuckiana/power-outage-data
