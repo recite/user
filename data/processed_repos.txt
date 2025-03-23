@@ -284,3 +284,13 @@ tytydraco/yessleep
 RulerOfCakes/drlcontrol
 ferasaljoudi/ferasaljoudi
 hhhh1138/poster-generation-arxiv-daily
+moohr/ipBlacklist
+yuval-harpaz/astro
+muhammed-mizaj/muhammed-mizaj
+RamVasuthevan/Personal-Website-Flask
+proplayer919/Economix
+Unpublished/GithubTrending
+AnubhavYadavBCA25/PrepSmart-AI-Powered-Teaching-Assistant
+birlumbus/Darcy
+Kachiens/Gmail-Account-Creator-Bulk
+oliviermirat/ZebraZoom
