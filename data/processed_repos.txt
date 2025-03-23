@@ -274,3 +274,13 @@ dbreunig/foggy-bot
 franzesegiovanni/franka_human_friendly_controllers
 elydre/stats
 sajjadium/ctf-archives
+yngfijiwtr/DeskPal
+Henry-Hiles/github-stats
+Jan-Fcloud/SI-CERT-PiHole
+abhi-05-04/abhi-05-04
+mepeltier/cs2450-group-04
+NAOC-pulsar/FAST_ClockFile
+tytydraco/yessleep
+RulerOfCakes/drlcontrol
+ferasaljoudi/ferasaljoudi
+hhhh1138/poster-generation-arxiv-daily
