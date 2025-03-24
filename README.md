@@ -13,7 +13,7 @@ The system continually improves its accuracy by sampling additional repositories
 
 **Note:** We have stopped considering standard Python libraries but have not yet removed all the data.
 
-### Analysis Scripts
+### Scripts
 
 | Script | Purpose |
 |--------|---------|
@@ -23,18 +23,21 @@ The system continually improves its accuracy by sampling additional repositories
 | [update_readme.py](https://github.com/recite/user/blob/main/scripts/update_readme.py) | Refreshes this README with latest data |
 | [total_python_repos.ipynb](https://github.com/recite/user/blob/main/scripts/total_python_repos.ipynb) | Estimates total Python repository count on GitHub |
 
-### Scripts
-
-1. [Get Random Repos.](https://github.com/recite/user/blob/main/scripts/find_repos.py)
-2. [Analyze Imports](https://github.com/recite/user/blob/main/scripts/analyze_imports.py)
-3. [Count Imports](https://github.com/recite/user/blob/main/scripts/count_libs.py)
-4. [Update Readme](https://github.com/recite/user/blob/main/scripts/update_readme.py)
-
 ### Data
 
-1. [Processed Repos. (JSONL)](https://github.com/recite/user/blob/main/data/repos.jsonl)
-2. [Imports (JSONL)](https://github.com/recite/user/blob/main/data/imports.jsonl)
-3. [Counts (CSV)](https://github.com/recite/user/blob/main/data/library_counts.csv)
+| File | Description | Format |
+|------|-------------|--------|
+| [repos.jsonl](https://github.com/recite/user/blob/main/data/repos.jsonl) | Details of processed repositories | JSONL |
+| [imports.jsonl](https://github.com/recite/user/blob/main/data/imports.jsonl) | Raw import statements extracted from repos | JSONL |
+| [library_counts.csv](https://github.com/recite/user/blob/main/data/library_counts.csv) | Aggregated package usage statistics | CSV |
+
+### Workflow
+
+Our [GitHub Actions workflow](https://github.com/recite/user/blob/main/.github/workflows/count_imports.yml) orchestrates the entire process:
+```
+Find Random Repos → Analyze Imports → Count Package Usage → Update Statistics → Refresh README
+```
+
 
 ## Top Python Libraries
 
