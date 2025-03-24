@@ -1,17 +1,17 @@
 library,count
 requests,230
 numpy,120
-pandas,77
+pandas,79
 pytest,68
-torch,57
+torch,59
 yaml,46
 tqdm,44
 os,40
-utils,38
+utils,40
 bs4,36
+setuptools,35
 django,33
 sys,32
-setuptools,32
 dotenv,27
 matplotlib,27
 __future__,26
@@ -39,10 +39,10 @@ typing_extensions,10
 logging,10
 yahoofinance,10
 selenium,10
+base,10
+datasets,10
 constants,9
 ctypes,9
-base,9
-datasets,9
 rest_framework,9
 util,9
 argparse,8
@@ -61,6 +61,7 @@ omegaconf,8
 letta_client,7
 urllib3,7
 helpers,7
+google,7
 PyQt5,7
 lib,7
 dataclasses,6
@@ -72,7 +73,6 @@ jinja2,6
 openai,6
 lxml,6
 feedparser,6
-google,6
 gi,6
 wandb,6
 clash,6
@@ -92,6 +92,7 @@ github_stats,5
 gui,5
 logger,5
 app,5
+cli,5
 misinfo_general,5
 hydra,5
 portfolio_tracker,5
@@ -124,8 +125,10 @@ infrastructure,4
 homeassistant,4
 lfdfiles,4
 vllm,4
+geopandas,4
 ai_orb,4
 llmeter,4
+github,4
 elleelleaime,4
 libretranslate,4
 gymnasium,4
@@ -137,7 +140,6 @@ bot,4
 fernet,4
 cordex_cv,4
 boac,4
-cli,4
 lerobot,4
 grain,4
 exceptions,4
@@ -174,11 +176,9 @@ h5py,3
 core,3
 pytest_homeassistant_custom_component,3
 ipex_llm,3
-geopandas,3
 box2d,3
 serializers,3
 websocket,3
-github,3
 unreal,3
 deadline,3
 sqlalchemy,3
@@ -217,6 +217,7 @@ mpl_toolkits,3
 anchorpy,3
 solana,3
 solders,3
+web,3
 geometry_msgs,3
 rospy,3
 digitalio,3
@@ -227,6 +228,7 @@ extract_model_activations,3
 vinetrimmer,3
 coloredlogs,3
 Crypto,3
+absl,3
 assets,2
 undiscriminated_shape,2
 uuid,2
@@ -291,6 +293,7 @@ storages,2
 gs_manager,2
 toml,2
 settings,2
+ccxt,2
 users,2
 duckdb,2
 steam,2
@@ -328,6 +331,7 @@ wheel,2
 financedata,2
 pybooktools,2
 pynasonde,2
+BeautifulSoup,2
 fastapi,2
 plans,2
 path,2
@@ -336,6 +340,7 @@ modeling,2
 mypath,2
 solution,2
 testcase,2
+version,2
 plumbum,2
 ml,2
 langchain_core,2
@@ -346,7 +351,6 @@ mojo,2
 drawResults,2
 weread2notionpro,2
 schedule,2
-web,2
 ckan,2
 adafruit_character_lcd,2
 board,2
@@ -362,6 +366,9 @@ weechat,2
 openvla_dataloader,2
 white_patch,2
 base_scraper,2
+swift,2
+hytorch,2
+tickr,2
 color,1
 object_with_optional_field,1
 square,1
@@ -521,7 +528,6 @@ keystonemiddleware,1
 optparse,1
 polars,1
 hyperliquid,1
-ccxt,1
 python_build_utils,1
 system_server,1
 dev_server,1
@@ -680,7 +686,6 @@ multipledispatch,1
 email_validator,1
 UI,1
 ephem,1
-BeautifulSoup,1
 databases,1
 threadpoolctl,1
 lifespan,1
@@ -711,7 +716,6 @@ setproctitle,1
 clarifai_grpc,1
 mplfinance,1
 BSAPI,1
-version,1
 test_utils,1
 torchmetrics,1
 telebot,1
@@ -820,3 +824,16 @@ daemon,1
 validate,1
 kodijson,1
 configobj,1
+trainers,1
+tuners,1
+unsloth,1
+torchgeo,1
+batch_command,1
+single_command,1
+cStringIO,1
+tornado,1
+markupbase,1
+sgmllib,1
+wikisnip,1
+urllib2,1
+urlparse,1

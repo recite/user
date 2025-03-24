@@ -322,3 +322,10 @@ Harshin1V/Hybrid-RAG
 binhex/trigger-docker-build
 UtopiaXA/MS-Renew
 Arif1025/Placeholder
+DarkLordlk/trash
+modelscope/ms-swift
+cjy8922/STU_Algorithm
+wBeckettHills/hytorch
+anandology/sandbox
+bieniu/ha-shellies-discovery-gen2
+syncsoftco/tickr
