@@ -329,3 +329,12 @@ wBeckettHills/hytorch
 anandology/sandbox
 bieniu/ha-shellies-discovery-gen2
 syncsoftco/tickr
+Mubashir-414/TaleStreamAI
+3yed82/warp-lP
+gloriastucchi/fair-medical-AI-fin
+Nikita4823975/Brainrot
+joseguzman1337/offensive-security
+astroflash-frb/burst_analyzer
+AutumnVN/AutumnVN
+0xMarcio/cve
+helmholtz-analytics/heat
