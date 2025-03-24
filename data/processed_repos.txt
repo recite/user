@@ -313,3 +313,12 @@ cbschicago/chicago-crime-data
 William-wAng618/roboticAttack
 Drjacky/Drjacky
 openkentuckiana/power-outage-data
+cileong/cileong
+nkondapa/RSVC
+BMogetta/PoS-random-client-list
+sodabreak/MHA2HLA
+chu23465/VT-PR
+Harshin1V/Hybrid-RAG
+binhex/trigger-docker-build
+UtopiaXA/MS-Renew
+Arif1025/Placeholder
