@@ -1,10 +1,27 @@
-## user: estimate how often a library is used in a public GitHub repository
+## user: estimate how often a Python library is used in a public GitHub repository
 
-Count how often a Python package has been imported in scripts on public repos in GitHub. We take a random sample of GitHub repositories with Python as the main language, tally the imports, and then pro-rate the number by the estimate of [the total number of repositories with Python as the main language (~ 18M)](https://github.com/recite/user/blob/main/scripts/total_python_repos.ipynb). 
+Estimate how frequently Python packages are imported across public GitHub repositories.
 
-*We have stopped considering standard Python libraries but have not yet removed all the data.
+## Overview
 
-We use [GitHub Actions](https://github.com/recite/user/blob/main/.github/workflows/count_imports.yml) to incrementally sample and analyze a small set of repositories every 6 hours, and we keep updating counts based on that.
+We determine package popularity by:
+1. Randomly sampling GitHub repositories with Python as the main language
+2. Analyzing Python import statements in these repositories
+3. Extrapolating findings based on the total Python repository count ([~18M repositories]((https://github.com/recite/user/blob/main/scripts/total_python_repos.ipynb))
+
+The system continually improves its accuracy by sampling additional repositories every 6 hours via [GitHub Actions](https://github.com/recite/user/blob/main/.github/workflows/count_imports.yml).
+
+**Note:** We have stopped considering standard Python libraries but have not yet removed all the data.
+
+### Analysis Scripts
+
+| Script | Purpose |
+|--------|---------|
+| [find_repos.py](https://github.com/recite/user/blob/main/scripts/find_repos.py) | Queries GitHub API for random Python repositories |
+| [analyze_imports.py](https://github.com/recite/user/blob/main/scripts/analyze_imports.py) | Extracts import statements from repository files |
+| [count_libs.py](https://github.com/recite/user/blob/main/scripts/count_libs.py) | Aggregates and calculates package usage statistics |
+| [update_readme.py](https://github.com/recite/user/blob/main/scripts/update_readme.py) | Refreshes this README with latest data |
+| [total_python_repos.ipynb](https://github.com/recite/user/blob/main/scripts/total_python_repos.ipynb) | Estimates total Python repository count on GitHub |
 
 ### Scripts
 
