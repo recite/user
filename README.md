@@ -1,13 +1,23 @@
 ## user: estimate how often a library is used in a public GitHub repository
 
-Count how often a Python package has been imported in scripts on public repos in GitHub. We take a random sample of GitHub repositories with Python as the main language, tally the imports, and then pro-rate the number by the estimate of the total number of repositories with Python as the main language (~ 18M). 
+Count how often a Python package has been imported in scripts on public repos in GitHub. We take a random sample of GitHub repositories with Python as the main language, tally the imports, and then pro-rate the number by the estimate of [the total number of repositories with Python as the main language (~ 18M)](https://github.com/recite/user/blob/main/scripts/total_python_repos.ipynb). 
 
 *We have stopped considering standard Python libraries but have not yet removed all the data.
 
-The repository is set up to analyze a small random sample of repositories each day, and we keep updating counts based on that.
+We use [GitHub Actions](https://github.com/recite/user/blob/main/.github/workflows/count_imports.yml) to incrementally sample and analyze a small set of repositories every 6 hours, and we keep updating counts based on that.
 
+### Scripts
 
-We use GitHub Actions to incrementally sample and analyze a small set of repositories every 6 hours.
+1. [Get Random Repos.](https://github.com/recite/user/blob/main/scripts/find_repos.py)
+2. [Analyze Imports](https://github.com/recite/user/blob/main/scripts/analyze_imports.py)
+3. [Count Imports](https://github.com/recite/user/blob/main/scripts/count_libs.py)
+4. [Update Readme](https://github.com/recite/user/blob/main/scripts/update_readme.py)
+
+### Data
+
+1. [Processed Repos. (JSONL)](https://github.com/recite/user/blob/main/data/repos.jsonl)
+2. [Imports (JSONL)](https://github.com/recite/user/blob/main/data/imports.jsonl)
+3. [Counts (CSV)](https://github.com/recite/user/blob/main/data/library_counts.csv)
 
 ## Top Python Libraries
 
