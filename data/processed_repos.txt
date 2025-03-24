@@ -338,3 +338,13 @@ astroflash-frb/burst_analyzer
 AutumnVN/AutumnVN
 0xMarcio/cve
 helmholtz-analytics/heat
+8DE4732A/iptv
+ken22i/ken22i
+openproblems-bio/task_grn_inference
+kushal-s0/CommUnity
+mikatiba/SWE-II-Project
+arthurdrk/Jeu-appariement-sur-une-grille
+jhnc-oss/poky
+mlvjfchen/zoomeye
+mozilla/bigquery-etl
+edrewitz/firewxpy
