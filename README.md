@@ -42,15 +42,15 @@ Find Random Repos → Analyze Imports → Count Package Usage → Update Statist
 
 | Rank | Library | Count |
 |------|---------|-------|
-| 1 | requests | 245 |
-| 2 | numpy | 190 |
-| 3 | pandas | 105 |
-| 4 | torch | 88 |
-| 5 | pytest | 79 |
-| 6 | utils | 58 |
-| 7 | tqdm | 56 |
-| 8 | matplotlib | 50 |
-| 9 | yaml | 49 |
-| 10 | setuptools | 46 |
+| 1 | requests | 249 |
+| 2 | numpy | 230 |
+| 3 | pandas | 109 |
+| 4 | torch | 98 |
+| 5 | pytest | 81 |
+| 6 | utils | 62 |
+| 7 | matplotlib | 61 |
+| 8 | tqdm | 60 |
+| 9 | django | 59 |
+| 10 | setuptools | 51 |
 
-*Last updated: 2025-03-25 03:55:45 UTC*
+*Last updated: 2025-03-25 06:36:38 UTC*
