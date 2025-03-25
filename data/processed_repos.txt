@@ -348,3 +348,12 @@ jhnc-oss/poky
 mlvjfchen/zoomeye
 mozilla/bigquery-etl
 edrewitz/firewxpy
+mypdns/matrix
+bcfletcher/lego_projects
+andersen-lab/Freyja-SRA
+VirtualFlyBrain/VFB_reporting_results
+yfun-lab/bing-wallpaper
+abkfenris/safewaters
+vic-yush/Brynhildr
+klaasnicolaas/python-weerlive
+DeMarcoLab/fibsem

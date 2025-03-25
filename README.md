@@ -38,20 +38,19 @@ Our [GitHub Actions workflow](https://github.com/recite/user/blob/main/.github/w
 Find Random Repos → Analyze Imports → Count Package Usage → Update Statistics → Refresh README
 ```
 
-
 ## Top Python Libraries
 
 | Rank | Library | Count |
 |------|---------|-------|
-| 1 | requests | 238 |
-| 2 | numpy | 135 |
-| 3 | pandas | 91 |
-| 4 | pytest | 69 |
+| 1 | requests | 241 |
+| 2 | numpy | 140 |
+| 3 | pandas | 98 |
+| 4 | pytest | 72 |
 | 5 | torch | 63 |
 | 6 | tqdm | 50 |
 | 7 | yaml | 48 |
 | 8 | os | 40 |
-| 9 | utils | 40 |
-| 10 | bs4 | 38 |
+| 9 | bs4 | 40 |
+| 10 | utils | 40 |
 
-*Last updated: 2025-03-24 18:35:15 UTC*
+*Last updated: 2025-03-25 01:56:42 UTC*
