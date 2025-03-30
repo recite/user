@@ -12504,3 +12504,419 @@
 {"library": "numpy", "repo": "ShiehShieh/shieh-recsys", "file_path": "recsys.py", "fetch_date": "2025-03-30T06:34:53.282585", "last_updated": "2016-05-30T16:03:21Z"}
 {"library": "Cython", "repo": "ShiehShieh/shieh-recsys", "file_path": "setup.py", "fetch_date": "2025-03-30T06:34:53.282585", "last_updated": "2016-05-30T16:03:21Z"}
 {"library": "numpy", "repo": "ShiehShieh/shieh-recsys", "file_path": "setup.py", "fetch_date": "2025-03-30T06:34:53.282585", "last_updated": "2016-05-30T16:03:21Z"}
+{"library": "resources", "repo": "nejcd/LSSdownloader", "file_path": "getLSSplugin.py", "fetch_date": "2025-03-30T12:44:34.252412", "last_updated": "2017-12-26T08:30:51Z"}
+{"library": "getLSSplugin_dockwidget", "repo": "nejcd/LSSdownloader", "file_path": "getLSSplugin.py", "fetch_date": "2025-03-30T12:44:34.252412", "last_updated": "2017-12-26T08:30:51Z"}
+{"library": "getLSS", "repo": "nejcd/LSSdownloader", "file_path": "getLSSplugin.py", "fetch_date": "2025-03-30T12:44:34.252412", "last_updated": "2017-12-26T08:30:51Z"}
+{"library": "qgis", "repo": "nejcd/LSSdownloader", "file_path": "getLSSplugin.py", "fetch_date": "2025-03-30T12:44:34.252412", "last_updated": "2017-12-26T08:30:51Z"}
+{"library": "PyQt4", "repo": "nejcd/LSSdownloader", "file_path": "getLSSplugin.py", "fetch_date": "2025-03-30T12:44:34.252412", "last_updated": "2017-12-26T08:30:51Z"}
+{"library": "PyQt4", "repo": "nejcd/LSSdownloader", "file_path": "getLSSplugin_dockwidget.py", "fetch_date": "2025-03-30T12:44:34.252412", "last_updated": "2017-12-26T08:30:51Z"}
+{"library": "PyQt4", "repo": "nejcd/LSSdownloader", "file_path": "resources.py", "fetch_date": "2025-03-30T12:44:34.252412", "last_updated": "2017-12-26T08:30:51Z"}
+{"library": "getLSSplugin", "repo": "nejcd/LSSdownloader", "file_path": "__init__.py", "fetch_date": "2025-03-30T12:44:34.252412", "last_updated": "2017-12-26T08:30:51Z"}
+{"library": "matplotlib", "repo": "chenzirun/kuan_app_analysis", "file_path": "\u9177\u5b896000\u6b3eapp\u5206\u6790,\u627e\u5230\u826f\u5fc3\u4f73\u8f6f/kuan_analysis.py", "fetch_date": "2025-03-30T12:44:36.184778", "last_updated": "2019-12-17T09:15:10Z"}
+{"library": "pyecharts", "repo": "chenzirun/kuan_app_analysis", "file_path": "\u9177\u5b896000\u6b3eapp\u5206\u6790,\u627e\u5230\u826f\u5fc3\u4f73\u8f6f/kuan_analysis.py", "fetch_date": "2025-03-30T12:44:36.184778", "last_updated": "2019-12-17T09:15:10Z"}
+{"library": "pandas", "repo": "chenzirun/kuan_app_analysis", "file_path": "\u9177\u5b896000\u6b3eapp\u5206\u6790,\u627e\u5230\u826f\u5fc3\u4f73\u8f6f/kuan_analysis.py", "fetch_date": "2025-03-30T12:44:36.184778", "last_updated": "2019-12-17T09:15:10Z"}
+{"library": "numpy", "repo": "chenzirun/kuan_app_analysis", "file_path": "\u9177\u5b896000\u6b3eapp\u5206\u6790,\u627e\u5230\u826f\u5fc3\u4f73\u8f6f/kuan_analysis.py", "fetch_date": "2025-03-30T12:44:36.184778", "last_updated": "2019-12-17T09:15:10Z"}
+{"library": "flask", "repo": "AnniePawl/Tweet_Generator", "file_path": "app.py", "fetch_date": "2025-03-30T12:44:37.965528", "last_updated": "2022-02-09T02:32:27Z"}
+{"library": "cv2", "repo": "siddarthjha/Opencv", "file_path": "GUI Features/05_Trackbar.py", "fetch_date": "2025-03-30T12:44:39.990420", "last_updated": "2020-09-10T05:57:54Z"}
+{"library": "numpy", "repo": "siddarthjha/Opencv", "file_path": "GUI Features/05_Trackbar.py", "fetch_date": "2025-03-30T12:44:39.990420", "last_updated": "2020-09-10T05:57:54Z"}
+{"library": "matplotlib", "repo": "siddarthjha/Opencv", "file_path": "GUI Features/02_Video.py", "fetch_date": "2025-03-30T12:44:39.990420", "last_updated": "2020-09-10T05:57:54Z"}
+{"library": "cv2", "repo": "siddarthjha/Opencv", "file_path": "GUI Features/02_Video.py", "fetch_date": "2025-03-30T12:44:39.990420", "last_updated": "2020-09-10T05:57:54Z"}
+{"library": "numpy", "repo": "siddarthjha/Opencv", "file_path": "GUI Features/02_Video.py", "fetch_date": "2025-03-30T12:44:39.990420", "last_updated": "2020-09-10T05:57:54Z"}
+{"library": "cv2", "repo": "siddarthjha/Opencv", "file_path": "GUI Features/03_Shapes.py", "fetch_date": "2025-03-30T12:44:39.990420", "last_updated": "2020-09-10T05:57:54Z"}
+{"library": "numpy", "repo": "siddarthjha/Opencv", "file_path": "GUI Features/03_Shapes.py", "fetch_date": "2025-03-30T12:44:39.990420", "last_updated": "2020-09-10T05:57:54Z"}
+{"library": "cv2", "repo": "siddarthjha/Opencv", "file_path": "GUI Features/04_Paintbrush.py", "fetch_date": "2025-03-30T12:44:39.990420", "last_updated": "2020-09-10T05:57:54Z"}
+{"library": "numpy", "repo": "siddarthjha/Opencv", "file_path": "GUI Features/04_Paintbrush.py", "fetch_date": "2025-03-30T12:44:39.990420", "last_updated": "2020-09-10T05:57:54Z"}
+{"library": "setuptools", "repo": "wutong8023/CoLL", "file_path": "setup.py", "fetch_date": "2025-03-30T12:44:41.443406", "last_updated": "2024-02-29T04:56:36Z"}
+{"library": "coll", "repo": "wutong8023/CoLL", "file_path": "example/unit_test.py", "fetch_date": "2025-03-30T12:44:41.443406", "last_updated": "2024-02-29T04:56:36Z"}
+{"library": "firmiana", "repo": "wutong8023/CoLL", "file_path": "test/test_pypi.py", "fetch_date": "2025-03-30T12:44:41.443406", "last_updated": "2024-02-29T04:56:36Z"}
+{"library": "datasets", "repo": "wutong8023/CoLL", "file_path": "test/test_dataset.py", "fetch_date": "2025-03-30T12:44:41.443406", "last_updated": "2024-02-29T04:56:36Z"}
+{"library": "pandas", "repo": "dungtran209/Modelling-and-Analysis-of-a-Vehicle-Routing-Problem-with-Time-Windows-in-Freight-Delivery", "file_path": "code/2. Test_ExactMethod.py", "fetch_date": "2025-03-30T12:44:43.196287", "last_updated": "2025-03-25T08:25:45Z"}
+{"library": "numpy", "repo": "dungtran209/Modelling-and-Analysis-of-a-Vehicle-Routing-Problem-with-Time-Windows-in-Freight-Delivery", "file_path": "code/2. Test_ExactMethod.py", "fetch_date": "2025-03-30T12:44:43.196287", "last_updated": "2025-03-25T08:25:45Z"}
+{"library": "sklearn", "repo": "dungtran209/Modelling-and-Analysis-of-a-Vehicle-Routing-Problem-with-Time-Windows-in-Freight-Delivery", "file_path": "code/2. Test_ExactMethod.py", "fetch_date": "2025-03-30T12:44:43.196287", "last_updated": "2025-03-25T08:25:45Z"}
+{"library": "docplex", "repo": "dungtran209/Modelling-and-Analysis-of-a-Vehicle-Routing-Problem-with-Time-Windows-in-Freight-Delivery", "file_path": "code/2. Test_ExactMethod.py", "fetch_date": "2025-03-30T12:44:43.196287", "last_updated": "2025-03-25T08:25:45Z"}
+{"library": "matplotlib", "repo": "dungtran209/Modelling-and-Analysis-of-a-Vehicle-Routing-Problem-with-Time-Windows-in-Freight-Delivery", "file_path": "code/2. Test_ExactMethod.py", "fetch_date": "2025-03-30T12:44:43.196287", "last_updated": "2025-03-25T08:25:45Z"}
+{"library": "scipy", "repo": "dungtran209/Modelling-and-Analysis-of-a-Vehicle-Routing-Problem-with-Time-Windows-in-Freight-Delivery", "file_path": "code/2. Test_ExactMethod.py", "fetch_date": "2025-03-30T12:44:43.196287", "last_updated": "2025-03-25T08:25:45Z"}
+{"library": "pandas", "repo": "dungtran209/Modelling-and-Analysis-of-a-Vehicle-Routing-Problem-with-Time-Windows-in-Freight-Delivery", "file_path": "code/6. Real_GVNS_S1.py", "fetch_date": "2025-03-30T12:44:43.196287", "last_updated": "2025-03-25T08:25:45Z"}
+{"library": "numpy", "repo": "dungtran209/Modelling-and-Analysis-of-a-Vehicle-Routing-Problem-with-Time-Windows-in-Freight-Delivery", "file_path": "code/6. Real_GVNS_S1.py", "fetch_date": "2025-03-30T12:44:43.196287", "last_updated": "2025-03-25T08:25:45Z"}
+{"library": "pandas", "repo": "dungtran209/Modelling-and-Analysis-of-a-Vehicle-Routing-Problem-with-Time-Windows-in-Freight-Delivery", "file_path": "code/5. Real_ExactMethod.py", "fetch_date": "2025-03-30T12:44:43.196287", "last_updated": "2025-03-25T08:25:45Z"}
+{"library": "numpy", "repo": "dungtran209/Modelling-and-Analysis-of-a-Vehicle-Routing-Problem-with-Time-Windows-in-Freight-Delivery", "file_path": "code/5. Real_ExactMethod.py", "fetch_date": "2025-03-30T12:44:43.196287", "last_updated": "2025-03-25T08:25:45Z"}
+{"library": "sklearn", "repo": "dungtran209/Modelling-and-Analysis-of-a-Vehicle-Routing-Problem-with-Time-Windows-in-Freight-Delivery", "file_path": "code/5. Real_ExactMethod.py", "fetch_date": "2025-03-30T12:44:43.196287", "last_updated": "2025-03-25T08:25:45Z"}
+{"library": "docplex", "repo": "dungtran209/Modelling-and-Analysis-of-a-Vehicle-Routing-Problem-with-Time-Windows-in-Freight-Delivery", "file_path": "code/5. Real_ExactMethod.py", "fetch_date": "2025-03-30T12:44:43.196287", "last_updated": "2025-03-25T08:25:45Z"}
+{"library": "matplotlib", "repo": "dungtran209/Modelling-and-Analysis-of-a-Vehicle-Routing-Problem-with-Time-Windows-in-Freight-Delivery", "file_path": "code/5. Real_ExactMethod.py", "fetch_date": "2025-03-30T12:44:43.196287", "last_updated": "2025-03-25T08:25:45Z"}
+{"library": "scipy", "repo": "dungtran209/Modelling-and-Analysis-of-a-Vehicle-Routing-Problem-with-Time-Windows-in-Freight-Delivery", "file_path": "code/5. Real_ExactMethod.py", "fetch_date": "2025-03-30T12:44:43.196287", "last_updated": "2025-03-25T08:25:45Z"}
+{"library": "matplotlib", "repo": "dungtran209/Modelling-and-Analysis-of-a-Vehicle-Routing-Problem-with-Time-Windows-in-Freight-Delivery", "file_path": "code/4. Test_GVNS_SAV.py", "fetch_date": "2025-03-30T12:44:43.196287", "last_updated": "2025-03-25T08:25:45Z"}
+{"library": "numpy", "repo": "dungtran209/Modelling-and-Analysis-of-a-Vehicle-Routing-Problem-with-Time-Windows-in-Freight-Delivery", "file_path": "code/4. Test_GVNS_SAV.py", "fetch_date": "2025-03-30T12:44:43.196287", "last_updated": "2025-03-25T08:25:45Z"}
+{"library": "pandas", "repo": "dungtran209/Modelling-and-Analysis-of-a-Vehicle-Routing-Problem-with-Time-Windows-in-Freight-Delivery", "file_path": "code/7. Real_GVNS_SAV.py", "fetch_date": "2025-03-30T12:44:43.196287", "last_updated": "2025-03-25T08:25:45Z"}
+{"library": "numpy", "repo": "dungtran209/Modelling-and-Analysis-of-a-Vehicle-Routing-Problem-with-Time-Windows-in-Freight-Delivery", "file_path": "code/7. Real_GVNS_SAV.py", "fetch_date": "2025-03-30T12:44:43.196287", "last_updated": "2025-03-25T08:25:45Z"}
+{"library": "Parsing", "repo": "JusthackOne/Telegram-Bot-Parsing-Anime-Filter-Site", "file_path": "main.py", "fetch_date": "2025-03-30T12:44:44.777599", "last_updated": "2025-01-07T23:29:02Z"}
+{"library": "requests", "repo": "JusthackOne/Telegram-Bot-Parsing-Anime-Filter-Site", "file_path": "test.py", "fetch_date": "2025-03-30T12:44:44.777599", "last_updated": "2025-01-07T23:29:02Z"}
+{"library": "create_bot", "repo": "JusthackOne/Telegram-Bot-Parsing-Anime-Filter-Site", "file_path": "bot_telegram.py", "fetch_date": "2025-03-30T12:44:44.777599", "last_updated": "2025-01-07T23:29:02Z"}
+{"library": "aiogram", "repo": "JusthackOne/Telegram-Bot-Parsing-Anime-Filter-Site", "file_path": "bot_telegram.py", "fetch_date": "2025-03-30T12:44:44.777599", "last_updated": "2025-01-07T23:29:02Z"}
+{"library": "data_base", "repo": "JusthackOne/Telegram-Bot-Parsing-Anime-Filter-Site", "file_path": "bot_telegram.py", "fetch_date": "2025-03-30T12:44:44.777599", "last_updated": "2025-01-07T23:29:02Z"}
+{"library": "handlers", "repo": "JusthackOne/Telegram-Bot-Parsing-Anime-Filter-Site", "file_path": "bot_telegram.py", "fetch_date": "2025-03-30T12:44:44.777599", "last_updated": "2025-01-07T23:29:02Z"}
+{"library": "aiogram", "repo": "JusthackOne/Telegram-Bot-Parsing-Anime-Filter-Site", "file_path": "create_bot.py", "fetch_date": "2025-03-30T12:44:44.777599", "last_updated": "2025-01-07T23:29:02Z"}
+{"library": "aiogram", "repo": "JusthackOne/Telegram-Bot-Parsing-Anime-Filter-Site", "file_path": "keyboards/admin_kb.py", "fetch_date": "2025-03-30T12:44:44.777599", "last_updated": "2025-01-07T23:29:02Z"}
+{"library": "xcute", "repo": "eight04/pyDesktop3", "file_path": "cute.py", "fetch_date": "2025-03-30T12:44:46.956042", "last_updated": "2023-10-08T10:54:05Z"}
+{"library": "livereload", "repo": "eight04/pyDesktop3", "file_path": "cute.py", "fetch_date": "2025-03-30T12:44:46.956042", "last_updated": "2023-10-08T10:54:05Z"}
+{"library": "setuptools", "repo": "eight04/pyDesktop3", "file_path": "setup.py", "fetch_date": "2025-03-30T12:44:46.956042", "last_updated": "2023-10-08T10:54:05Z"}
+{"library": "commands", "repo": "eight04/pyDesktop3", "file_path": "tests/test this.py", "fetch_date": "2025-03-30T12:44:46.956042", "last_updated": "2023-10-08T10:54:05Z"}
+{"library": "desktop", "repo": "eight04/pyDesktop3", "file_path": "tests/test_dialog.py", "fetch_date": "2025-03-30T12:44:46.956042", "last_updated": "2023-10-08T10:54:05Z"}
+{"library": "desktop", "repo": "eight04/pyDesktop3", "file_path": "desktop/dialog.py", "fetch_date": "2025-03-30T12:44:46.956042", "last_updated": "2023-10-08T10:54:05Z"}
+{"library": "options", "repo": "AlicanAKCA/pixera", "file_path": "test.py", "fetch_date": "2025-03-30T12:44:48.407304", "last_updated": "2024-07-25T12:34:37Z"}
+{"library": "data", "repo": "AlicanAKCA/pixera", "file_path": "test.py", "fetch_date": "2025-03-30T12:44:48.407304", "last_updated": "2024-07-25T12:34:37Z"}
+{"library": "models", "repo": "AlicanAKCA/pixera", "file_path": "test.py", "fetch_date": "2025-03-30T12:44:48.407304", "last_updated": "2024-07-25T12:34:37Z"}
+{"library": "util", "repo": "AlicanAKCA/pixera", "file_path": "test.py", "fetch_date": "2025-03-30T12:44:48.407304", "last_updated": "2024-07-25T12:34:37Z"}
+{"library": "wandb", "repo": "AlicanAKCA/pixera", "file_path": "test.py", "fetch_date": "2025-03-30T12:44:48.407304", "last_updated": "2024-07-25T12:34:37Z"}
+{"library": "numpy", "repo": "AlicanAKCA/pixera", "file_path": "app.py", "fetch_date": "2025-03-30T12:44:48.407304", "last_updated": "2024-07-25T12:34:37Z"}
+{"library": "torch", "repo": "AlicanAKCA/pixera", "file_path": "app.py", "fetch_date": "2025-03-30T12:44:48.407304", "last_updated": "2024-07-25T12:34:37Z"}
+{"library": "data", "repo": "AlicanAKCA/pixera", "file_path": "app.py", "fetch_date": "2025-03-30T12:44:48.407304", "last_updated": "2024-07-25T12:34:37Z"}
+{"library": "gradio", "repo": "AlicanAKCA/pixera", "file_path": "app.py", "fetch_date": "2025-03-30T12:44:48.407304", "last_updated": "2024-07-25T12:34:37Z"}
+{"library": "models", "repo": "AlicanAKCA/pixera", "file_path": "app.py", "fetch_date": "2025-03-30T12:44:48.407304", "last_updated": "2024-07-25T12:34:37Z"}
+{"library": "options", "repo": "AlicanAKCA/pixera", "file_path": "app.py", "fetch_date": "2025-03-30T12:44:48.407304", "last_updated": "2024-07-25T12:34:37Z"}
+{"library": "util", "repo": "AlicanAKCA/pixera", "file_path": "app.py", "fetch_date": "2025-03-30T12:44:48.407304", "last_updated": "2024-07-25T12:34:37Z"}
+{"library": "cv2", "repo": "AlicanAKCA/pixera", "file_path": "app.py", "fetch_date": "2025-03-30T12:44:48.407304", "last_updated": "2024-07-25T12:34:37Z"}
+{"library": "base_options", "repo": "AlicanAKCA/pixera", "file_path": "options/train_options.py", "fetch_date": "2025-03-30T12:44:48.407304", "last_updated": "2024-07-25T12:34:37Z"}
+{"library": "base_options", "repo": "AlicanAKCA/pixera", "file_path": "options/test_options.py", "fetch_date": "2025-03-30T12:44:48.407304", "last_updated": "2024-07-25T12:34:37Z"}
+{"library": "Question", "repo": "HarrisonFok/L02_04", "file_path": "tests/TestQuestion.py", "fetch_date": "2025-03-30T12:44:50.014243", "last_updated": "2021-07-19T00:14:26Z"}
+{"library": "ProfessorProfileIndex", "repo": "HarrisonFok/L02_04", "file_path": "tests/test_ProfessorIndex.py", "fetch_date": "2025-03-30T12:44:50.014243", "last_updated": "2021-07-19T00:14:26Z"}
+{"library": "StudentProfileIndex", "repo": "HarrisonFok/L02_04", "file_path": "tests/test_StudentIndex.py", "fetch_date": "2025-03-30T12:44:50.014243", "last_updated": "2021-07-19T00:14:26Z"}
+{"library": "User", "repo": "HarrisonFok/L02_04", "file_path": "tests/test_Users.py", "fetch_date": "2025-03-30T12:44:50.014243", "last_updated": "2021-07-19T00:14:26Z"}
+{"library": "Assignment", "repo": "HarrisonFok/L02_04", "file_path": "tests/TestAssignment.py", "fetch_date": "2025-03-30T12:44:50.014243", "last_updated": "2021-07-19T00:14:26Z"}
+{"library": "Question", "repo": "HarrisonFok/L02_04", "file_path": "tests/TestAssignment.py", "fetch_date": "2025-03-30T12:44:50.014243", "last_updated": "2021-07-19T00:14:26Z"}
+{"library": "sklearn", "repo": "DrDongSi/Psychosis_NLP", "file_path": "previous work/main_v20180414.py", "fetch_date": "2025-03-30T12:44:52.784970", "last_updated": "2021-05-09T19:36:39Z"}
+{"library": "matplotlib", "repo": "DrDongSi/Psychosis_NLP", "file_path": "previous work/main_v20180414.py", "fetch_date": "2025-03-30T12:44:52.784970", "last_updated": "2021-05-09T19:36:39Z"}
+{"library": "numpy", "repo": "DrDongSi/Psychosis_NLP", "file_path": "previous work/main_v20180414.py", "fetch_date": "2025-03-30T12:44:52.784970", "last_updated": "2021-05-09T19:36:39Z"}
+{"library": "keras", "repo": "DrDongSi/Psychosis_NLP", "file_path": "previous work/main_v20180414.py", "fetch_date": "2025-03-30T12:44:52.784970", "last_updated": "2021-05-09T19:36:39Z"}
+{"library": "numpy", "repo": "DrDongSi/Psychosis_NLP", "file_path": "previous work/old/use model test.py", "fetch_date": "2025-03-30T12:44:52.784970", "last_updated": "2021-05-09T19:36:39Z"}
+{"library": "keras", "repo": "DrDongSi/Psychosis_NLP", "file_path": "previous work/old/use model test.py", "fetch_date": "2025-03-30T12:44:52.784970", "last_updated": "2021-05-09T19:36:39Z"}
+{"library": "numpy", "repo": "DrDongSi/Psychosis_NLP", "file_path": "previous work/old/train model.py", "fetch_date": "2025-03-30T12:44:52.784970", "last_updated": "2021-05-09T19:36:39Z"}
+{"library": "keras", "repo": "DrDongSi/Psychosis_NLP", "file_path": "previous work/old/train model.py", "fetch_date": "2025-03-30T12:44:52.784970", "last_updated": "2021-05-09T19:36:39Z"}
+{"library": "pandas", "repo": "DrDongSi/Psychosis_NLP", "file_path": "previous work/old/process_data.py", "fetch_date": "2025-03-30T12:44:52.784970", "last_updated": "2021-05-09T19:36:39Z"}
+{"library": "numpy", "repo": "DrDongSi/Psychosis_NLP", "file_path": "previous work/old/process_data.py", "fetch_date": "2025-03-30T12:44:52.784970", "last_updated": "2021-05-09T19:36:39Z"}
+{"library": "sklearn", "repo": "DrDongSi/Psychosis_NLP", "file_path": "previous work/old/gridsearch_optimizer.py", "fetch_date": "2025-03-30T12:44:52.784970", "last_updated": "2021-05-09T19:36:39Z"}
+{"library": "numpy", "repo": "DrDongSi/Psychosis_NLP", "file_path": "previous work/old/gridsearch_optimizer.py", "fetch_date": "2025-03-30T12:44:52.784970", "last_updated": "2021-05-09T19:36:39Z"}
+{"library": "keras", "repo": "DrDongSi/Psychosis_NLP", "file_path": "previous work/old/gridsearch_optimizer.py", "fetch_date": "2025-03-30T12:44:52.784970", "last_updated": "2021-05-09T19:36:39Z"}
+{"library": "django", "repo": "mayank1206/BigDataTool", "file_path": "manage.py", "fetch_date": "2025-03-30T12:44:54.450858", "last_updated": "2023-03-05T14:56:02Z"}
+{"library": "requests", "repo": "mayank1206/BigDataTool", "file_path": "tool/views.py", "fetch_date": "2025-03-30T12:44:54.450858", "last_updated": "2023-03-05T14:56:02Z"}
+{"library": "camelot", "repo": "mayank1206/BigDataTool", "file_path": "tool/views.py", "fetch_date": "2025-03-30T12:44:54.450858", "last_updated": "2023-03-05T14:56:02Z"}
+{"library": "models", "repo": "mayank1206/BigDataTool", "file_path": "tool/views.py", "fetch_date": "2025-03-30T12:44:54.450858", "last_updated": "2023-03-05T14:56:02Z"}
+{"library": "django", "repo": "mayank1206/BigDataTool", "file_path": "tool/views.py", "fetch_date": "2025-03-30T12:44:54.450858", "last_updated": "2023-03-05T14:56:02Z"}
+{"library": "django", "repo": "mayank1206/BigDataTool", "file_path": "tool/models.py", "fetch_date": "2025-03-30T12:44:54.450858", "last_updated": "2023-03-05T14:56:02Z"}
+{"library": "django", "repo": "mayank1206/BigDataTool", "file_path": "tool/urls.py", "fetch_date": "2025-03-30T12:44:54.450858", "last_updated": "2023-03-05T14:56:02Z"}
+{"library": "setuptools", "repo": "gerdos/PyRAMA", "file_path": "setup.py", "fetch_date": "2025-03-30T12:44:56.000468", "last_updated": "2025-03-23T07:54:54Z"}
+{"library": "matplotlib", "repo": "gerdos/PyRAMA", "file_path": "pyrama/config.py", "fetch_date": "2025-03-30T12:44:56.000468", "last_updated": "2025-03-23T07:54:54Z"}
+{"library": "config", "repo": "gerdos/PyRAMA", "file_path": "pyrama/__init__.py", "fetch_date": "2025-03-30T12:44:56.000468", "last_updated": "2025-03-23T07:54:54Z"}
+{"library": "matplotlib", "repo": "gerdos/PyRAMA", "file_path": "pyrama/__init__.py", "fetch_date": "2025-03-30T12:44:56.000468", "last_updated": "2025-03-23T07:54:54Z"}
+{"library": "Bio", "repo": "gerdos/PyRAMA", "file_path": "pyrama/__init__.py", "fetch_date": "2025-03-30T12:44:56.000468", "last_updated": "2025-03-23T07:54:54Z"}
+{"library": "numpy", "repo": "gerdos/PyRAMA", "file_path": "pyrama/__init__.py", "fetch_date": "2025-03-30T12:44:56.000468", "last_updated": "2025-03-23T07:54:54Z"}
+{"library": "PyPDF2", "repo": "ravivarapuk/py_playground", "file_path": "img_proc/src/pdf.py", "fetch_date": "2025-03-30T12:44:59.093559", "last_updated": "2020-01-29T04:13:58Z"}
+{"library": "PIL", "repo": "ravivarapuk/py_playground", "file_path": "img_proc/src/Jpeg2Png.py", "fetch_date": "2025-03-30T12:44:59.093559", "last_updated": "2020-01-29T04:13:58Z"}
+{"library": "PIL", "repo": "ravivarapuk/py_playground", "file_path": "img_proc/src/image_proc.py", "fetch_date": "2025-03-30T12:44:59.093559", "last_updated": "2020-01-29T04:13:58Z"}
+{"library": "bs4", "repo": "ravivarapuk/py_playground", "file_path": "webScrpping/scrapper.py", "fetch_date": "2025-03-30T12:44:59.093559", "last_updated": "2020-01-29T04:13:58Z"}
+{"library": "requests", "repo": "ravivarapuk/py_playground", "file_path": "webScrpping/scrapper.py", "fetch_date": "2025-03-30T12:44:59.093559", "last_updated": "2020-01-29T04:13:58Z"}
+{"library": "tweepy", "repo": "ravivarapuk/py_playground", "file_path": "twitterbot/tweetch.py", "fetch_date": "2025-03-30T12:44:59.093559", "last_updated": "2020-01-29T04:13:58Z"}
+{"library": "wishlib", "repo": "csaez/riglab", "file_path": "riglab_plugin.py", "fetch_date": "2025-03-30T12:45:00.987842", "last_updated": "2024-09-09T15:25:07Z"}
+{"library": "riglab", "repo": "csaez/riglab", "file_path": "riglab_plugin.py", "fetch_date": "2025-03-30T12:45:00.987842", "last_updated": "2024-09-09T15:25:07Z"}
+{"library": "setuptools", "repo": "csaez/riglab", "file_path": "setup.py", "fetch_date": "2025-03-30T12:45:00.987842", "last_updated": "2024-09-09T15:25:07Z"}
+{"library": "wishlib", "repo": "csaez/riglab", "file_path": "riglab/joint.py", "fetch_date": "2025-03-30T12:45:00.987842", "last_updated": "2024-09-09T15:25:07Z"}
+{"library": "wishlib", "repo": "csaez/riglab", "file_path": "riglab/manipulator.py", "fetch_date": "2025-03-30T12:45:00.987842", "last_updated": "2024-09-09T15:25:07Z"}
+{"library": "rigicon", "repo": "csaez/riglab", "file_path": "riglab/manipulator.py", "fetch_date": "2025-03-30T12:45:00.987842", "last_updated": "2024-09-09T15:25:07Z"}
+{"library": "", "repo": "csaez/riglab", "file_path": "riglab/manipulator.py", "fetch_date": "2025-03-30T12:45:00.987842", "last_updated": "2024-09-09T15:25:07Z"}
+{"library": "naming", "repo": "csaez/riglab", "file_path": "riglab/manipulator.py", "fetch_date": "2025-03-30T12:45:00.987842", "last_updated": "2024-09-09T15:25:07Z"}
+{"library": "wishlib", "repo": "csaez/riglab", "file_path": "riglab/utils.py", "fetch_date": "2025-03-30T12:45:00.987842", "last_updated": "2024-09-09T15:25:07Z"}
+{"library": "joint", "repo": "csaez/riglab", "file_path": "riglab/utils.py", "fetch_date": "2025-03-30T12:45:00.987842", "last_updated": "2024-09-09T15:25:07Z"}
+{"library": "naming", "repo": "csaez/riglab", "file_path": "riglab/utils.py", "fetch_date": "2025-03-30T12:45:00.987842", "last_updated": "2024-09-09T15:25:07Z"}
+{"library": "numpy", "repo": "abhiroopghosh71/large-scale-truss-optimization", "file_path": "obj_eval.py", "fetch_date": "2025-03-30T12:45:02.505636", "last_updated": "2024-04-01T12:42:19Z"}
+{"library": "matlab", "repo": "abhiroopghosh71/large-scale-truss-optimization", "file_path": "obj_eval.py", "fetch_date": "2025-03-30T12:45:02.505636", "last_updated": "2024-04-01T12:42:19Z"}
+{"library": "numpy", "repo": "abhiroopghosh71/large-scale-truss-optimization", "file_path": "truss_matlab_fea_demo.py", "fetch_date": "2025-03-30T12:45:02.505636", "last_updated": "2024-04-01T12:42:19Z"}
+{"library": "matlab", "repo": "abhiroopghosh71/large-scale-truss-optimization", "file_path": "truss_matlab_fea_demo.py", "fetch_date": "2025-03-30T12:45:02.505636", "last_updated": "2024-04-01T12:42:19Z"}
+{"library": "numpy", "repo": "abhiroopghosh71/large-scale-truss-optimization", "file_path": "optimize_truss_matlab_fea.py", "fetch_date": "2025-03-30T12:45:02.505636", "last_updated": "2024-04-01T12:42:19Z"}
+{"library": "matlab", "repo": "abhiroopghosh71/large-scale-truss-optimization", "file_path": "optimize_truss_matlab_fea.py", "fetch_date": "2025-03-30T12:45:02.505636", "last_updated": "2024-04-01T12:42:19Z"}
+{"library": "pymoo", "repo": "abhiroopghosh71/large-scale-truss-optimization", "file_path": "optimize_truss_matlab_fea.py", "fetch_date": "2025-03-30T12:45:02.505636", "last_updated": "2024-04-01T12:42:19Z"}
+{"library": "matplotlib", "repo": "abhiroopghosh71/large-scale-truss-optimization", "file_path": "optimize_truss_matlab_fea.py", "fetch_date": "2025-03-30T12:45:02.505636", "last_updated": "2024-04-01T12:42:19Z"}
+{"library": "h5py", "repo": "abhiroopghosh71/large-scale-truss-optimization", "file_path": "optimize_truss_matlab_fea.py", "fetch_date": "2025-03-30T12:45:02.505636", "last_updated": "2024-04-01T12:42:19Z"}
+{"library": "truss", "repo": "abhiroopghosh71/large-scale-truss-optimization", "file_path": "optimize_truss_matlab_fea.py", "fetch_date": "2025-03-30T12:45:02.505636", "last_updated": "2024-04-01T12:42:19Z"}
+{"library": "numpy", "repo": "abhiroopghosh71/large-scale-truss-optimization", "file_path": "optimize_truss_python_fea_parallel.py", "fetch_date": "2025-03-30T12:45:02.505636", "last_updated": "2024-04-01T12:42:19Z"}
+{"library": "pymoo", "repo": "abhiroopghosh71/large-scale-truss-optimization", "file_path": "optimize_truss_python_fea_parallel.py", "fetch_date": "2025-03-30T12:45:02.505636", "last_updated": "2024-04-01T12:42:19Z"}
+{"library": "matplotlib", "repo": "abhiroopghosh71/large-scale-truss-optimization", "file_path": "optimize_truss_python_fea_parallel.py", "fetch_date": "2025-03-30T12:45:02.505636", "last_updated": "2024-04-01T12:42:19Z"}
+{"library": "h5py", "repo": "abhiroopghosh71/large-scale-truss-optimization", "file_path": "optimize_truss_python_fea_parallel.py", "fetch_date": "2025-03-30T12:45:02.505636", "last_updated": "2024-04-01T12:42:19Z"}
+{"library": "truss", "repo": "abhiroopghosh71/large-scale-truss-optimization", "file_path": "optimize_truss_python_fea_parallel.py", "fetch_date": "2025-03-30T12:45:02.505636", "last_updated": "2024-04-01T12:42:19Z"}
+{"library": "optimize_truss_matlab_fea", "repo": "abhiroopghosh71/large-scale-truss-optimization", "file_path": "tests/test_truss_pymoo_matlab_fea.py", "fetch_date": "2025-03-30T12:45:02.505636", "last_updated": "2024-04-01T12:42:19Z"}
+{"library": "pymoo", "repo": "abhiroopghosh71/large-scale-truss-optimization", "file_path": "tests/test_truss_pymoo_matlab_fea.py", "fetch_date": "2025-03-30T12:45:02.505636", "last_updated": "2024-04-01T12:42:19Z"}
+{"library": "numpy", "repo": "abhiroopghosh71/large-scale-truss-optimization", "file_path": "tests/test_truss_pymoo_matlab_fea.py", "fetch_date": "2025-03-30T12:45:02.505636", "last_updated": "2024-04-01T12:42:19Z"}
+{"library": "util", "repo": "dpollot/petsy", "file_path": "api.py", "fetch_date": "2025-03-30T12:45:04.054018", "last_updated": "2024-03-26T10:07:04Z"}
+{"library": "requests", "repo": "dpollot/petsy", "file_path": "api.py", "fetch_date": "2025-03-30T12:45:04.054018", "last_updated": "2024-03-26T10:07:04Z"}
+{"library": "petsy", "repo": "dpollot/petsy", "file_path": "api.py", "fetch_date": "2025-03-30T12:45:04.054018", "last_updated": "2024-03-26T10:07:04Z"}
+{"library": "requests_oauthlib", "repo": "dpollot/petsy", "file_path": "api.py", "fetch_date": "2025-03-30T12:45:04.054018", "last_updated": "2024-03-26T10:07:04Z"}
+{"library": "requests", "repo": "dpollot/petsy", "file_path": "test_resource.py", "fetch_date": "2025-03-30T12:45:04.054018", "last_updated": "2024-03-26T10:07:04Z"}
+{"library": "petsy", "repo": "dpollot/petsy", "file_path": "test_resource.py", "fetch_date": "2025-03-30T12:45:04.054018", "last_updated": "2024-03-26T10:07:04Z"}
+{"library": "util", "repo": "dpollot/petsy", "file_path": "resource.py", "fetch_date": "2025-03-30T12:45:04.054018", "last_updated": "2024-03-26T10:07:04Z"}
+{"library": "requests", "repo": "dpollot/petsy", "file_path": "resource.py", "fetch_date": "2025-03-30T12:45:04.054018", "last_updated": "2024-03-26T10:07:04Z"}
+{"library": "requests_oauthlib", "repo": "dpollot/petsy", "file_path": "resource.py", "fetch_date": "2025-03-30T12:45:04.054018", "last_updated": "2024-03-26T10:07:04Z"}
+{"library": "paho", "repo": "subhradeepdutta/BlindRunner", "file_path": "Car Pi/Car-Pi.py", "fetch_date": "2025-03-30T12:45:05.505130", "last_updated": "2018-08-21T01:20:54Z"}
+{"library": "RPi", "repo": "subhradeepdutta/BlindRunner", "file_path": "Car Pi/Car-Pi.py", "fetch_date": "2025-03-30T12:45:05.505130", "last_updated": "2018-08-21T01:20:54Z"}
+{"library": "boto3", "repo": "subhradeepdutta/BlindRunner", "file_path": "Car Pi/Car-Pi.py", "fetch_date": "2025-03-30T12:45:05.505130", "last_updated": "2018-08-21T01:20:54Z"}
+{"library": "picamera", "repo": "subhradeepdutta/BlindRunner", "file_path": "Car Pi/Car-Pi.py", "fetch_date": "2025-03-30T12:45:05.505130", "last_updated": "2018-08-21T01:20:54Z"}
+{"library": "PyQt5", "repo": "subhradeepdutta/BlindRunner", "file_path": "User Interface Pi/UI_LoginIn.py", "fetch_date": "2025-03-30T12:45:05.505130", "last_updated": "2018-08-21T01:20:54Z"}
+{"library": "Images_rc", "repo": "subhradeepdutta/BlindRunner", "file_path": "User Interface Pi/UI_LoginIn.py", "fetch_date": "2025-03-30T12:45:05.505130", "last_updated": "2018-08-21T01:20:54Z"}
+{"library": "picamera", "repo": "subhradeepdutta/BlindRunner", "file_path": "User Interface Pi/UI_LoginIn.py", "fetch_date": "2025-03-30T12:45:05.505130", "last_updated": "2018-08-21T01:20:54Z"}
+{"library": "boto3", "repo": "subhradeepdutta/BlindRunner", "file_path": "User Interface Pi/UI_LoginIn.py", "fetch_date": "2025-03-30T12:45:05.505130", "last_updated": "2018-08-21T01:20:54Z"}
+{"library": "PIL", "repo": "subhradeepdutta/BlindRunner", "file_path": "User Interface Pi/UI_LoginIn.py", "fetch_date": "2025-03-30T12:45:05.505130", "last_updated": "2018-08-21T01:20:54Z"}
+{"library": "UI_Logic", "repo": "subhradeepdutta/BlindRunner", "file_path": "User Interface Pi/UI_LoginIn.py", "fetch_date": "2025-03-30T12:45:05.505130", "last_updated": "2018-08-21T01:20:54Z"}
+{"library": "paho", "repo": "subhradeepdutta/BlindRunner", "file_path": "User Interface Pi/UI_Logic.py", "fetch_date": "2025-03-30T12:45:05.505130", "last_updated": "2018-08-21T01:20:54Z"}
+{"library": "PIL", "repo": "subhradeepdutta/BlindRunner", "file_path": "User Interface Pi/UI_Logic.py", "fetch_date": "2025-03-30T12:45:05.505130", "last_updated": "2018-08-21T01:20:54Z"}
+{"library": "UI", "repo": "subhradeepdutta/BlindRunner", "file_path": "User Interface Pi/UI_Logic.py", "fetch_date": "2025-03-30T12:45:05.505130", "last_updated": "2018-08-21T01:20:54Z"}
+{"library": "PyQt5", "repo": "subhradeepdutta/BlindRunner", "file_path": "User Interface Pi/UI_Logic.py", "fetch_date": "2025-03-30T12:45:05.505130", "last_updated": "2018-08-21T01:20:54Z"}
+{"library": "Images_rc", "repo": "subhradeepdutta/BlindRunner", "file_path": "User Interface Pi/UI.py", "fetch_date": "2025-03-30T12:45:05.505130", "last_updated": "2018-08-21T01:20:54Z"}
+{"library": "PyQt5", "repo": "subhradeepdutta/BlindRunner", "file_path": "User Interface Pi/UI.py", "fetch_date": "2025-03-30T12:45:05.505130", "last_updated": "2018-08-21T01:20:54Z"}
+{"library": "PyQt5", "repo": "subhradeepdutta/BlindRunner", "file_path": "User Interface Pi/Images_rc.py", "fetch_date": "2025-03-30T12:45:05.505130", "last_updated": "2018-08-21T01:20:54Z"}
+{"library": "openerp", "repo": "LasLabs/odoo-base", "file_path": "res_users_case_insensitive/tests/test_res_users.py", "fetch_date": "2025-03-30T12:45:08.838535", "last_updated": "2020-05-14T21:45:31Z"}
+{"library": "core", "repo": "ymxkiss/sycgram00", "file_path": "main.py", "fetch_date": "2025-03-30T12:45:12.140429", "last_updated": "2023-11-04T06:39:24Z"}
+{"library": "pyrogram", "repo": "ymxkiss/sycgram00", "file_path": "main.py", "fetch_date": "2025-03-30T12:45:12.140429", "last_updated": "2023-11-04T06:39:24Z"}
+{"library": "tools", "repo": "ymxkiss/sycgram00", "file_path": "main.py", "fetch_date": "2025-03-30T12:45:12.140429", "last_updated": "2023-11-04T06:39:24Z"}
+{"library": "helpers", "repo": "ymxkiss/sycgram00", "file_path": "tools/stickers.py", "fetch_date": "2025-03-30T12:45:12.140429", "last_updated": "2023-11-04T06:39:24Z"}
+{"library": "loguru", "repo": "ymxkiss/sycgram00", "file_path": "tools/stickers.py", "fetch_date": "2025-03-30T12:45:12.140429", "last_updated": "2023-11-04T06:39:24Z"}
+{"library": "pyrogram", "repo": "ymxkiss/sycgram00", "file_path": "tools/stickers.py", "fetch_date": "2025-03-30T12:45:12.140429", "last_updated": "2023-11-04T06:39:24Z"}
+{"library": "PIL", "repo": "ymxkiss/sycgram00", "file_path": "tools/stickers.py", "fetch_date": "2025-03-30T12:45:12.140429", "last_updated": "2023-11-04T06:39:24Z"}
+{"library": "emoji", "repo": "ymxkiss/sycgram00", "file_path": "tools/stickers.py", "fetch_date": "2025-03-30T12:45:12.140429", "last_updated": "2023-11-04T06:39:24Z"}
+{"library": "constants", "repo": "ymxkiss/sycgram00", "file_path": "tools/stickers.py", "fetch_date": "2025-03-30T12:45:12.140429", "last_updated": "2023-11-04T06:39:24Z"}
+{"library": "bs4", "repo": "ymxkiss/sycgram00", "file_path": "tools/poster.py", "fetch_date": "2025-03-30T12:45:12.140429", "last_updated": "2023-11-04T06:39:24Z"}
+{"library": "loguru", "repo": "ymxkiss/sycgram00", "file_path": "tools/poster.py", "fetch_date": "2025-03-30T12:45:12.140429", "last_updated": "2023-11-04T06:39:24Z"}
+{"library": "sessions", "repo": "ymxkiss/sycgram00", "file_path": "tools/poster.py", "fetch_date": "2025-03-30T12:45:12.140429", "last_updated": "2023-11-04T06:39:24Z"}
+{"library": "aiohttp", "repo": "ymxkiss/sycgram00", "file_path": "tools/sessions.py", "fetch_date": "2025-03-30T12:45:12.140429", "last_updated": "2023-11-04T06:39:24Z"}
+{"library": "langchain_community", "repo": "ylebecque/talking_llama", "file_path": "chat.py", "fetch_date": "2025-03-30T12:45:15.088406", "last_updated": "2024-07-04T14:03:54Z"}
+{"library": "ollama", "repo": "ylebecque/talking_llama", "file_path": "chat.py", "fetch_date": "2025-03-30T12:45:15.088406", "last_updated": "2024-07-04T14:03:54Z"}
+{"library": "chromadb", "repo": "ylebecque/talking_llama", "file_path": "chat.py", "fetch_date": "2025-03-30T12:45:15.088406", "last_updated": "2024-07-04T14:03:54Z"}
+{"library": "langchain_core", "repo": "ylebecque/talking_llama", "file_path": "chat.py", "fetch_date": "2025-03-30T12:45:15.088406", "last_updated": "2024-07-04T14:03:54Z"}
+{"library": "streamlit", "repo": "ylebecque/talking_llama", "file_path": "chat.py", "fetch_date": "2025-03-30T12:45:15.088406", "last_updated": "2024-07-04T14:03:54Z"}
+{"library": "tqdm", "repo": "ylebecque/talking_llama", "file_path": "utils/make_vdb.py", "fetch_date": "2025-03-30T12:45:15.088406", "last_updated": "2024-07-04T14:03:54Z"}
+{"library": "langchain_community", "repo": "ylebecque/talking_llama", "file_path": "utils/make_vdb.py", "fetch_date": "2025-03-30T12:45:15.088406", "last_updated": "2024-07-04T14:03:54Z"}
+{"library": "ollama", "repo": "ylebecque/talking_llama", "file_path": "utils/make_vdb.py", "fetch_date": "2025-03-30T12:45:15.088406", "last_updated": "2024-07-04T14:03:54Z"}
+{"library": "chromadb", "repo": "ylebecque/talking_llama", "file_path": "utils/make_vdb.py", "fetch_date": "2025-03-30T12:45:15.088406", "last_updated": "2024-07-04T14:03:54Z"}
+{"library": "langchain_text_splitters", "repo": "ylebecque/talking_llama", "file_path": "utils/make_vdb.py", "fetch_date": "2025-03-30T12:45:15.088406", "last_updated": "2024-07-04T14:03:54Z"}
+{"library": "scipy", "repo": "anderson93/projeto_final_IA", "file_path": "pso.py", "fetch_date": "2025-03-30T12:45:16.614562", "last_updated": "2017-06-20T03:39:47Z"}
+{"library": "numpy", "repo": "anderson93/projeto_final_IA", "file_path": "pso.py", "fetch_date": "2025-03-30T12:45:16.614562", "last_updated": "2017-06-20T03:39:47Z"}
+{"library": "pso", "repo": "anderson93/projeto_final_IA", "file_path": "comparator.py", "fetch_date": "2025-03-30T12:45:16.614562", "last_updated": "2017-06-20T03:39:47Z"}
+{"library": "openpyxl", "repo": "anderson93/projeto_final_IA", "file_path": "comparator.py", "fetch_date": "2025-03-30T12:45:16.614562", "last_updated": "2017-06-20T03:39:47Z"}
+{"library": "django", "repo": "spanickroon/Market-Place", "file_path": "manage.py", "fetch_date": "2025-03-30T12:45:18.235168", "last_updated": "2024-03-12T14:54:55Z"}
+{"library": "services", "repo": "spanickroon/Market-Place", "file_path": "marketplace/views.py", "fetch_date": "2025-03-30T12:45:18.235168", "last_updated": "2024-03-12T14:54:55Z"}
+{"library": "account", "repo": "spanickroon/Market-Place", "file_path": "marketplace/views.py", "fetch_date": "2025-03-30T12:45:18.235168", "last_updated": "2024-03-12T14:54:55Z"}
+{"library": "django", "repo": "spanickroon/Market-Place", "file_path": "marketplace/views.py", "fetch_date": "2025-03-30T12:45:18.235168", "last_updated": "2024-03-12T14:54:55Z"}
+{"library": "account", "repo": "spanickroon/Market-Place", "file_path": "marketplace/models.py", "fetch_date": "2025-03-30T12:45:18.235168", "last_updated": "2024-03-12T14:54:55Z"}
+{"library": "django", "repo": "spanickroon/Market-Place", "file_path": "marketplace/models.py", "fetch_date": "2025-03-30T12:45:18.235168", "last_updated": "2024-03-12T14:54:55Z"}
+{"library": "django", "repo": "spanickroon/Market-Place", "file_path": "marketplace/tests.py", "fetch_date": "2025-03-30T12:45:18.235168", "last_updated": "2024-03-12T14:54:55Z"}
+{"library": "models", "repo": "FaGuoMa/Azure-IB", "file_path": "Python_Code/main.py", "fetch_date": "2025-03-30T12:45:19.886488", "last_updated": "2024-01-22T05:12:43Z"}
+{"library": "pytz", "repo": "FaGuoMa/Azure-IB", "file_path": "Python_Code/models/hft_model.py", "fetch_date": "2025-03-30T12:45:19.886488", "last_updated": "2024-01-22T05:12:43Z"}
+{"library": "pandas", "repo": "FaGuoMa/Azure-IB", "file_path": "Python_Code/models/hft_model.py", "fetch_date": "2025-03-30T12:45:19.886488", "last_updated": "2024-01-22T05:12:43Z"}
+{"library": "numpy", "repo": "FaGuoMa/Azure-IB", "file_path": "Python_Code/models/hft_model.py", "fetch_date": "2025-03-30T12:45:19.886488", "last_updated": "2024-01-22T05:12:43Z"}
+{"library": "algos", "repo": "FaGuoMa/Azure-IB", "file_path": "Python_Code/models/hft_model.py", "fetch_date": "2025-03-30T12:45:19.886488", "last_updated": "2024-01-22T05:12:43Z"}
+{"library": "talib", "repo": "FaGuoMa/Azure-IB", "file_path": "Python_Code/models/hft_model.py", "fetch_date": "2025-03-30T12:45:19.886488", "last_updated": "2024-01-22T05:12:43Z"}
+{"library": "params", "repo": "FaGuoMa/Azure-IB", "file_path": "Python_Code/models/hft_model.py", "fetch_date": "2025-03-30T12:45:19.886488", "last_updated": "2024-01-22T05:12:43Z"}
+{"library": "classes", "repo": "FaGuoMa/Azure-IB", "file_path": "Python_Code/models/hft_model.py", "fetch_date": "2025-03-30T12:45:19.886488", "last_updated": "2024-01-22T05:12:43Z"}
+{"library": "ib", "repo": "FaGuoMa/Azure-IB", "file_path": "Python_Code/models/hft_model.py", "fetch_date": "2025-03-30T12:45:19.886488", "last_updated": "2024-01-22T05:12:43Z"}
+{"library": "params", "repo": "FaGuoMa/Azure-IB", "file_path": "Python_Code/classes/ml_api_call.py", "fetch_date": "2025-03-30T12:45:19.886488", "last_updated": "2024-01-22T05:12:43Z"}
+{"library": "urllib2", "repo": "FaGuoMa/Azure-IB", "file_path": "Python_Code/classes/ml_api_call.py", "fetch_date": "2025-03-30T12:45:19.886488", "last_updated": "2024-01-22T05:12:43Z"}
+{"library": "pandas", "repo": "FaGuoMa/Azure-IB", "file_path": "Python_Code/classes/ml_api_call.py", "fetch_date": "2025-03-30T12:45:19.886488", "last_updated": "2024-01-22T05:12:43Z"}
+{"library": "numpy", "repo": "FaGuoMa/Azure-IB", "file_path": "Python_Code/classes/ml_api_call.py", "fetch_date": "2025-03-30T12:45:19.886488", "last_updated": "2024-01-22T05:12:43Z"}
+{"library": "torch", "repo": "daikichiba9511/my-kaggle-template", "file_path": "src/optim.py", "fetch_date": "2025-03-30T12:45:21.460429", "last_updated": "2025-03-28T00:40:15Z"}
+{"library": "transformers", "repo": "daikichiba9511/my-kaggle-template", "file_path": "src/optim.py", "fetch_date": "2025-03-30T12:45:21.460429", "last_updated": "2025-03-28T00:40:15Z"}
+{"library": "numpy", "repo": "daikichiba9511/my-kaggle-template", "file_path": "src/log.py", "fetch_date": "2025-03-30T12:45:21.460429", "last_updated": "2025-03-28T00:40:15Z"}
+{"library": "numpy", "repo": "daikichiba9511/my-kaggle-template", "file_path": "src/engine.py", "fetch_date": "2025-03-30T12:45:21.460429", "last_updated": "2025-03-28T00:40:15Z"}
+{"library": "torch", "repo": "daikichiba9511/my-kaggle-template", "file_path": "src/engine.py", "fetch_date": "2025-03-30T12:45:21.460429", "last_updated": "2025-03-28T00:40:15Z"}
+{"library": "typing_extensions", "repo": "daikichiba9511/my-kaggle-template", "file_path": "src/engine.py", "fetch_date": "2025-03-30T12:45:21.460429", "last_updated": "2025-03-28T00:40:15Z"}
+{"library": "polars", "repo": "daikichiba9511/my-kaggle-template", "file_path": "src/engine.py", "fetch_date": "2025-03-30T12:45:21.460429", "last_updated": "2025-03-28T00:40:15Z"}
+{"library": "src", "repo": "daikichiba9511/my-kaggle-template", "file_path": "src/engine.py", "fetch_date": "2025-03-30T12:45:21.460429", "last_updated": "2025-03-28T00:40:15Z"}
+{"library": "matplotlib", "repo": "daikichiba9511/my-kaggle-template", "file_path": "src/engine.py", "fetch_date": "2025-03-30T12:45:21.460429", "last_updated": "2025-03-28T00:40:15Z"}
+{"library": "timm", "repo": "daikichiba9511/my-kaggle-template", "file_path": "src/engine.py", "fetch_date": "2025-03-30T12:45:21.460429", "last_updated": "2025-03-28T00:40:15Z"}
+{"library": "wandb", "repo": "daikichiba9511/my-kaggle-template", "file_path": "src/engine.py", "fetch_date": "2025-03-30T12:45:21.460429", "last_updated": "2025-03-28T00:40:15Z"}
+{"library": "torch", "repo": "daikichiba9511/my-kaggle-template", "file_path": "src/loss.py", "fetch_date": "2025-03-30T12:45:21.460429", "last_updated": "2025-03-28T00:40:15Z"}
+{"library": "scrapy", "repo": "joray86/maizeSpider", "file_path": "main.py", "fetch_date": "2025-03-30T12:45:22.934771", "last_updated": "2022-09-21T13:47:30Z"}
+{"library": "scrapy", "repo": "joray86/maizeSpider", "file_path": "entrypoint.py", "fetch_date": "2025-03-30T12:45:22.934771", "last_updated": "2022-09-21T13:47:30Z"}
+{"library": "matplotlib", "repo": "joray86/maizeSpider", "file_path": "formatData.py", "fetch_date": "2025-03-30T12:45:22.934771", "last_updated": "2022-09-21T13:47:30Z"}
+{"library": "seaborn", "repo": "joray86/maizeSpider", "file_path": "formatData.py", "fetch_date": "2025-03-30T12:45:22.934771", "last_updated": "2022-09-21T13:47:30Z"}
+{"library": "pandas", "repo": "joray86/maizeSpider", "file_path": "formatData.py", "fetch_date": "2025-03-30T12:45:22.934771", "last_updated": "2022-09-21T13:47:30Z"}
+{"library": "pymysql", "repo": "joray86/maizeSpider", "file_path": "formatData.py", "fetch_date": "2025-03-30T12:45:22.934771", "last_updated": "2022-09-21T13:47:30Z"}
+{"library": "matplotlib", "repo": "joray86/maizeSpider", "file_path": "maize/output.py", "fetch_date": "2025-03-30T12:45:22.934771", "last_updated": "2022-09-21T13:47:30Z"}
+{"library": "seaborn", "repo": "joray86/maizeSpider", "file_path": "maize/output.py", "fetch_date": "2025-03-30T12:45:22.934771", "last_updated": "2022-09-21T13:47:30Z"}
+{"library": "pandas", "repo": "joray86/maizeSpider", "file_path": "maize/output.py", "fetch_date": "2025-03-30T12:45:22.934771", "last_updated": "2022-09-21T13:47:30Z"}
+{"library": "pymysql", "repo": "joray86/maizeSpider", "file_path": "maize/output.py", "fetch_date": "2025-03-30T12:45:22.934771", "last_updated": "2022-09-21T13:47:30Z"}
+{"library": "scrapy", "repo": "joray86/maizeSpider", "file_path": "maize/items.py", "fetch_date": "2025-03-30T12:45:22.934771", "last_updated": "2022-09-21T13:47:30Z"}
+{"library": "car", "repo": "tdude92/driftmaster", "file_path": "main.py", "fetch_date": "2025-03-30T12:45:24.608144", "last_updated": "2019-07-06T17:29:14Z"}
+{"library": "evolution", "repo": "tdude92/driftmaster", "file_path": "car.py", "fetch_date": "2025-03-30T12:45:24.608144", "last_updated": "2019-07-06T17:29:14Z"}
+{"library": "matplotlib", "repo": "lijason8035/CS4613", "file_path": "Neural Network/Neural_network.py", "fetch_date": "2025-03-30T12:45:26.064606", "last_updated": "2018-12-23T09:21:26Z"}
+{"library": "pandas", "repo": "lijason8035/CS4613", "file_path": "Neural Network/Neural_network.py", "fetch_date": "2025-03-30T12:45:26.064606", "last_updated": "2018-12-23T09:21:26Z"}
+{"library": "numpy", "repo": "lijason8035/CS4613", "file_path": "Neural Network/Neural_network.py", "fetch_date": "2025-03-30T12:45:26.064606", "last_updated": "2018-12-23T09:21:26Z"}
+{"library": "setuptools", "repo": "victor-bogdan/coauthorship-centrality", "file_path": "setup.py", "fetch_date": "2025-03-30T12:45:27.839943", "last_updated": "2023-11-09T17:00:04Z"}
+{"library": "coauthorship_centrality", "repo": "victor-bogdan/coauthorship-centrality", "file_path": "coauthorship_centrality/__init__.py", "fetch_date": "2025-03-30T12:45:27.839943", "last_updated": "2023-11-09T17:00:04Z"}
+{"library": "coauthorship_centrality", "repo": "victor-bogdan/coauthorship-centrality", "file_path": "coauthorship_centrality/analyzers/coauthorship_centrality_analyzers.py", "fetch_date": "2025-03-30T12:45:27.839943", "last_updated": "2023-11-09T17:00:04Z"}
+{"library": "coauthorship_centrality", "repo": "victor-bogdan/coauthorship-centrality", "file_path": "coauthorship_centrality/analyzers/__init__.py", "fetch_date": "2025-03-30T12:45:27.839943", "last_updated": "2023-11-09T17:00:04Z"}
+{"library": "retrying", "repo": "StarfishCodeMachine/EpiChat", "file_path": "EpiChat_v20190828a.py", "fetch_date": "2025-03-30T12:45:29.294629", "last_updated": "2019-10-24T16:18:26Z"}
+{"library": "win32net", "repo": "StarfishCodeMachine/EpiChat", "file_path": "EpiChat_v20190828a.py", "fetch_date": "2025-03-30T12:45:29.294629", "last_updated": "2019-10-24T16:18:26Z"}
+{"library": "win32api", "repo": "StarfishCodeMachine/EpiChat", "file_path": "EpiChat_v20190828a.py", "fetch_date": "2025-03-30T12:45:29.294629", "last_updated": "2019-10-24T16:18:26Z"}
+{"library": "scrapy", "repo": "songrgg/crawljobs", "file_path": "crawljobs/items.py", "fetch_date": "2025-03-30T12:45:30.758913", "last_updated": "2016-09-01T04:04:25Z"}
+{"library": "redis", "repo": "songrgg/crawljobs", "file_path": "crawljobs/config/filter.py", "fetch_date": "2025-03-30T12:45:30.758913", "last_updated": "2016-09-01T04:04:25Z"}
+{"library": "scrapy", "repo": "songrgg/crawljobs", "file_path": "crawljobs/config/filter.py", "fetch_date": "2025-03-30T12:45:30.758913", "last_updated": "2016-09-01T04:04:25Z"}
+{"library": "PyQt4", "repo": "euriconicacio/SPGG-Plugin", "file_path": "spgg_dialog_options.py", "fetch_date": "2025-03-30T12:45:32.183472", "last_updated": "2024-04-18T05:34:08Z"}
+{"library": "resources", "repo": "euriconicacio/SPGG-Plugin", "file_path": "spgg.py", "fetch_date": "2025-03-30T12:45:32.183472", "last_updated": "2024-04-18T05:34:08Z"}
+{"library": "spgg_dialog_options", "repo": "euriconicacio/SPGG-Plugin", "file_path": "spgg.py", "fetch_date": "2025-03-30T12:45:32.183472", "last_updated": "2024-04-18T05:34:08Z"}
+{"library": "xlutils", "repo": "euriconicacio/SPGG-Plugin", "file_path": "spgg.py", "fetch_date": "2025-03-30T12:45:32.183472", "last_updated": "2024-04-18T05:34:08Z"}
+{"library": "selenium", "repo": "euriconicacio/SPGG-Plugin", "file_path": "spgg.py", "fetch_date": "2025-03-30T12:45:32.183472", "last_updated": "2024-04-18T05:34:08Z"}
+{"library": "xlwt", "repo": "euriconicacio/SPGG-Plugin", "file_path": "spgg.py", "fetch_date": "2025-03-30T12:45:32.183472", "last_updated": "2024-04-18T05:34:08Z"}
+{"library": "pyvirtualdisplay", "repo": "euriconicacio/SPGG-Plugin", "file_path": "spgg.py", "fetch_date": "2025-03-30T12:45:32.183472", "last_updated": "2024-04-18T05:34:08Z"}
+{"library": "qgis", "repo": "euriconicacio/SPGG-Plugin", "file_path": "spgg.py", "fetch_date": "2025-03-30T12:45:32.183472", "last_updated": "2024-04-18T05:34:08Z"}
+{"library": "PyQt4", "repo": "euriconicacio/SPGG-Plugin", "file_path": "spgg.py", "fetch_date": "2025-03-30T12:45:32.183472", "last_updated": "2024-04-18T05:34:08Z"}
+{"library": "spgg_dialog_proc", "repo": "euriconicacio/SPGG-Plugin", "file_path": "spgg.py", "fetch_date": "2025-03-30T12:45:32.183472", "last_updated": "2024-04-18T05:34:08Z"}
+{"library": "spgg_dialog", "repo": "euriconicacio/SPGG-Plugin", "file_path": "spgg.py", "fetch_date": "2025-03-30T12:45:32.183472", "last_updated": "2024-04-18T05:34:08Z"}
+{"library": "xlrd", "repo": "euriconicacio/SPGG-Plugin", "file_path": "spgg.py", "fetch_date": "2025-03-30T12:45:32.183472", "last_updated": "2024-04-18T05:34:08Z"}
+{"library": "PyQt4", "repo": "euriconicacio/SPGG-Plugin", "file_path": "resources.py", "fetch_date": "2025-03-30T12:45:32.183472", "last_updated": "2024-04-18T05:34:08Z"}
+{"library": "spgg", "repo": "euriconicacio/SPGG-Plugin", "file_path": "__init__.py", "fetch_date": "2025-03-30T12:45:32.183472", "last_updated": "2024-04-18T05:34:08Z"}
+{"library": "PyQt4", "repo": "euriconicacio/SPGG-Plugin", "file_path": "spgg_dialog_proc.py", "fetch_date": "2025-03-30T12:45:32.183472", "last_updated": "2024-04-18T05:34:08Z"}
+{"library": "django", "repo": "nabeel03103n/Jarvis", "file_path": "main.py", "fetch_date": "2025-03-30T12:45:33.822206", "last_updated": "2024-02-18T18:00:40Z"}
+{"library": "regex", "repo": "nabeel03103n/Jarvis", "file_path": "main.py", "fetch_date": "2025-03-30T12:45:33.822206", "last_updated": "2024-02-18T18:00:40Z"}
+{"library": "googlesearch", "repo": "nabeel03103n/Jarvis", "file_path": "main.py", "fetch_date": "2025-03-30T12:45:33.822206", "last_updated": "2024-02-18T18:00:40Z"}
+{"library": "pyjokes", "repo": "nabeel03103n/Jarvis", "file_path": "main.py", "fetch_date": "2025-03-30T12:45:33.822206", "last_updated": "2024-02-18T18:00:40Z"}
+{"library": "keyboard", "repo": "nabeel03103n/Jarvis", "file_path": "main.py", "fetch_date": "2025-03-30T12:45:33.822206", "last_updated": "2024-02-18T18:00:40Z"}
+{"library": "drawing", "repo": "nabeel03103n/Jarvis", "file_path": "main.py", "fetch_date": "2025-03-30T12:45:33.822206", "last_updated": "2024-02-18T18:00:40Z"}
+{"library": "speech_recognition", "repo": "nabeel03103n/Jarvis", "file_path": "main.py", "fetch_date": "2025-03-30T12:45:33.822206", "last_updated": "2024-02-18T18:00:40Z"}
+{"library": "pyautogui", "repo": "nabeel03103n/Jarvis", "file_path": "main.py", "fetch_date": "2025-03-30T12:45:33.822206", "last_updated": "2024-02-18T18:00:40Z"}
+{"library": "pyttsx3", "repo": "nabeel03103n/Jarvis", "file_path": "main.py", "fetch_date": "2025-03-30T12:45:33.822206", "last_updated": "2024-02-18T18:00:40Z"}
+{"library": "gtts", "repo": "nabeel03103n/Jarvis", "file_path": "main.py", "fetch_date": "2025-03-30T12:45:33.822206", "last_updated": "2024-02-18T18:00:40Z"}
+{"library": "sympy", "repo": "nabeel03103n/Jarvis", "file_path": "main.py", "fetch_date": "2025-03-30T12:45:33.822206", "last_updated": "2024-02-18T18:00:40Z"}
+{"library": "playsound", "repo": "nabeel03103n/Jarvis", "file_path": "main.py", "fetch_date": "2025-03-30T12:45:33.822206", "last_updated": "2024-02-18T18:00:40Z"}
+{"library": "cv2", "repo": "nabeel03103n/Jarvis", "file_path": "main.py", "fetch_date": "2025-03-30T12:45:33.822206", "last_updated": "2024-02-18T18:00:40Z"}
+{"library": "wikipedia", "repo": "nabeel03103n/Jarvis", "file_path": "main.py", "fetch_date": "2025-03-30T12:45:33.822206", "last_updated": "2024-02-18T18:00:40Z"}
+{"library": "speech_recognition", "repo": "nabeel03103n/Jarvis", "file_path": "voice controller.py", "fetch_date": "2025-03-30T12:45:33.822206", "last_updated": "2024-02-18T18:00:40Z"}
+{"library": "pyttsx3", "repo": "nabeel03103n/Jarvis", "file_path": "voice controller.py", "fetch_date": "2025-03-30T12:45:33.822206", "last_updated": "2024-02-18T18:00:40Z"}
+{"library": "keyboard", "repo": "nabeel03103n/Jarvis", "file_path": "voice controller.py", "fetch_date": "2025-03-30T12:45:33.822206", "last_updated": "2024-02-18T18:00:40Z"}
+{"library": "sklearn", "repo": "aayush26/Kobe_Bryant_Shot_Selection", "file_path": "cv_xgboost.py", "fetch_date": "2025-03-30T12:45:35.579998", "last_updated": "2022-06-24T15:46:14Z"}
+{"library": "xgboost", "repo": "aayush26/Kobe_Bryant_Shot_Selection", "file_path": "cv_xgboost.py", "fetch_date": "2025-03-30T12:45:35.579998", "last_updated": "2022-06-24T15:46:14Z"}
+{"library": "pandas", "repo": "aayush26/Kobe_Bryant_Shot_Selection", "file_path": "cv_xgboost.py", "fetch_date": "2025-03-30T12:45:35.579998", "last_updated": "2022-06-24T15:46:14Z"}
+{"library": "numpy", "repo": "aayush26/Kobe_Bryant_Shot_Selection", "file_path": "cv_xgboost.py", "fetch_date": "2025-03-30T12:45:35.579998", "last_updated": "2022-06-24T15:46:14Z"}
+{"library": "sklearn", "repo": "aayush26/Kobe_Bryant_Shot_Selection", "file_path": "preprocess.py", "fetch_date": "2025-03-30T12:45:35.579998", "last_updated": "2022-06-24T15:46:14Z"}
+{"library": "matplotlib", "repo": "aayush26/Kobe_Bryant_Shot_Selection", "file_path": "preprocess.py", "fetch_date": "2025-03-30T12:45:35.579998", "last_updated": "2022-06-24T15:46:14Z"}
+{"library": "pandas", "repo": "aayush26/Kobe_Bryant_Shot_Selection", "file_path": "preprocess.py", "fetch_date": "2025-03-30T12:45:35.579998", "last_updated": "2022-06-24T15:46:14Z"}
+{"library": "numpy", "repo": "aayush26/Kobe_Bryant_Shot_Selection", "file_path": "preprocess.py", "fetch_date": "2025-03-30T12:45:35.579998", "last_updated": "2022-06-24T15:46:14Z"}
+{"library": "xgboost", "repo": "aayush26/Kobe_Bryant_Shot_Selection", "file_path": "submit_xgboost.py", "fetch_date": "2025-03-30T12:45:35.579998", "last_updated": "2022-06-24T15:46:14Z"}
+{"library": "pandas", "repo": "aayush26/Kobe_Bryant_Shot_Selection", "file_path": "submit_xgboost.py", "fetch_date": "2025-03-30T12:45:35.579998", "last_updated": "2022-06-24T15:46:14Z"}
+{"library": "numpy", "repo": "aayush26/Kobe_Bryant_Shot_Selection", "file_path": "submit_xgboost.py", "fetch_date": "2025-03-30T12:45:35.579998", "last_updated": "2022-06-24T15:46:14Z"}
+{"library": "xgboost", "repo": "aayush26/Kobe_Bryant_Shot_Selection", "file_path": "Bry_xgboost.py", "fetch_date": "2025-03-30T12:45:35.579998", "last_updated": "2022-06-24T15:46:14Z"}
+{"library": "pandas", "repo": "aayush26/Kobe_Bryant_Shot_Selection", "file_path": "Bry_xgboost.py", "fetch_date": "2025-03-30T12:45:35.579998", "last_updated": "2022-06-24T15:46:14Z"}
+{"library": "numpy", "repo": "aayush26/Kobe_Bryant_Shot_Selection", "file_path": "Bry_xgboost.py", "fetch_date": "2025-03-30T12:45:35.579998", "last_updated": "2022-06-24T15:46:14Z"}
+{"library": "torch", "repo": "claws-lab/TDAP", "file_path": "metrics.py", "fetch_date": "2025-03-30T12:45:37.099128", "last_updated": "2024-11-08T08:53:36Z"}
+{"library": "sklearn", "repo": "claws-lab/TDAP", "file_path": "metrics.py", "fetch_date": "2025-03-30T12:45:37.099128", "last_updated": "2024-11-08T08:53:36Z"}
+{"library": "torch_sparse", "repo": "claws-lab/TDAP", "file_path": "metrics.py", "fetch_date": "2025-03-30T12:45:37.099128", "last_updated": "2024-11-08T08:53:36Z"}
+{"library": "numpy", "repo": "claws-lab/TDAP", "file_path": "metrics.py", "fetch_date": "2025-03-30T12:45:37.099128", "last_updated": "2024-11-08T08:53:36Z"}
+{"library": "networkx", "repo": "claws-lab/TDAP", "file_path": "preprocess.py", "fetch_date": "2025-03-30T12:45:37.099128", "last_updated": "2024-11-08T08:53:36Z"}
+{"library": "pandas", "repo": "claws-lab/TDAP", "file_path": "preprocess.py", "fetch_date": "2025-03-30T12:45:37.099128", "last_updated": "2024-11-08T08:53:36Z"}
+{"library": "pandas", "repo": "claws-lab/TDAP", "file_path": "combine_results_noise_dzttest.py", "fetch_date": "2025-03-30T12:45:37.099128", "last_updated": "2024-11-08T08:53:36Z"}
+{"library": "numpy", "repo": "claws-lab/TDAP", "file_path": "combine_results_noise_dzttest.py", "fetch_date": "2025-03-30T12:45:37.099128", "last_updated": "2024-11-08T08:53:36Z"}
+{"library": "torch", "repo": "claws-lab/TDAP", "file_path": "combine_results_noise_dzttest.py", "fetch_date": "2025-03-30T12:45:37.099128", "last_updated": "2024-11-08T08:53:36Z"}
+{"library": "matplotlib", "repo": "claws-lab/TDAP", "file_path": "combine_results_noise_dzttest.py", "fetch_date": "2025-03-30T12:45:37.099128", "last_updated": "2024-11-08T08:53:36Z"}
+{"library": "scipy", "repo": "claws-lab/TDAP", "file_path": "combine_results_noise_dzttest.py", "fetch_date": "2025-03-30T12:45:37.099128", "last_updated": "2024-11-08T08:53:36Z"}
+{"library": "networkx", "repo": "claws-lab/TDAP", "file_path": "utils.py", "fetch_date": "2025-03-30T12:45:37.099128", "last_updated": "2024-11-08T08:53:36Z"}
+{"library": "torch_geometric", "repo": "claws-lab/TDAP", "file_path": "utils.py", "fetch_date": "2025-03-30T12:45:37.099128", "last_updated": "2024-11-08T08:53:36Z"}
+{"library": "numpy", "repo": "claws-lab/TDAP", "file_path": "utils.py", "fetch_date": "2025-03-30T12:45:37.099128", "last_updated": "2024-11-08T08:53:36Z"}
+{"library": "torch", "repo": "claws-lab/TDAP", "file_path": "utils.py", "fetch_date": "2025-03-30T12:45:37.099128", "last_updated": "2024-11-08T08:53:36Z"}
+{"library": "scipy", "repo": "claws-lab/TDAP", "file_path": "utils.py", "fetch_date": "2025-03-30T12:45:37.099128", "last_updated": "2024-11-08T08:53:36Z"}
+{"library": "networkx", "repo": "claws-lab/TDAP", "file_path": "dataset.py", "fetch_date": "2025-03-30T12:45:37.099128", "last_updated": "2024-11-08T08:53:36Z"}
+{"library": "utils", "repo": "claws-lab/TDAP", "file_path": "dataset.py", "fetch_date": "2025-03-30T12:45:37.099128", "last_updated": "2024-11-08T08:53:36Z"}
+{"library": "numpy", "repo": "claws-lab/TDAP", "file_path": "dataset.py", "fetch_date": "2025-03-30T12:45:37.099128", "last_updated": "2024-11-08T08:53:36Z"}
+{"library": "iteration_utilities", "repo": "claws-lab/TDAP", "file_path": "dataset.py", "fetch_date": "2025-03-30T12:45:37.099128", "last_updated": "2024-11-08T08:53:36Z"}
+{"library": "preprocess", "repo": "claws-lab/TDAP", "file_path": "dataset.py", "fetch_date": "2025-03-30T12:45:37.099128", "last_updated": "2024-11-08T08:53:36Z"}
+{"library": "scipy", "repo": "claws-lab/TDAP", "file_path": "dataset.py", "fetch_date": "2025-03-30T12:45:37.099128", "last_updated": "2024-11-08T08:53:36Z"}
+{"library": "FLAlgorithms", "repo": "dual-grp/FedU_FMTL", "file_path": "main.py", "fetch_date": "2025-03-30T12:45:41.693415", "last_updated": "2024-09-06T03:42:02Z"}
+{"library": "numpy", "repo": "dual-grp/FedU_FMTL", "file_path": "main.py", "fetch_date": "2025-03-30T12:45:41.693415", "last_updated": "2024-09-06T03:42:02Z"}
+{"library": "utils", "repo": "dual-grp/FedU_FMTL", "file_path": "main.py", "fetch_date": "2025-03-30T12:45:41.693415", "last_updated": "2024-09-06T03:42:02Z"}
+{"library": "comet_ml", "repo": "dual-grp/FedU_FMTL", "file_path": "main.py", "fetch_date": "2025-03-30T12:45:41.693415", "last_updated": "2024-09-06T03:42:02Z"}
+{"library": "torch", "repo": "dual-grp/FedU_FMTL", "file_path": "main.py", "fetch_date": "2025-03-30T12:45:41.693415", "last_updated": "2024-09-06T03:42:02Z"}
+{"library": "matplotlib", "repo": "dual-grp/FedU_FMTL", "file_path": "main.py", "fetch_date": "2025-03-30T12:45:41.693415", "last_updated": "2024-09-06T03:42:02Z"}
+{"library": "h5py", "repo": "dual-grp/FedU_FMTL", "file_path": "main.py", "fetch_date": "2025-03-30T12:45:41.693415", "last_updated": "2024-09-06T03:42:02Z"}
+{"library": "tqdm", "repo": "dual-grp/FedU_FMTL", "file_path": "mocha.py", "fetch_date": "2025-03-30T12:45:41.693415", "last_updated": "2024-09-06T03:42:02Z"}
+{"library": "pandas", "repo": "dual-grp/FedU_FMTL", "file_path": "mocha.py", "fetch_date": "2025-03-30T12:45:41.693415", "last_updated": "2024-09-06T03:42:02Z"}
+{"library": "numpy", "repo": "dual-grp/FedU_FMTL", "file_path": "mocha.py", "fetch_date": "2025-03-30T12:45:41.693415", "last_updated": "2024-09-06T03:42:02Z"}
+{"library": "utils", "repo": "dual-grp/FedU_FMTL", "file_path": "mocha.py", "fetch_date": "2025-03-30T12:45:41.693415", "last_updated": "2024-09-06T03:42:02Z"}
+{"library": "comet_ml", "repo": "dual-grp/FedU_FMTL", "file_path": "mocha.py", "fetch_date": "2025-03-30T12:45:41.693415", "last_updated": "2024-09-06T03:42:02Z"}
+{"library": "torch", "repo": "dual-grp/FedU_FMTL", "file_path": "mocha.py", "fetch_date": "2025-03-30T12:45:41.693415", "last_updated": "2024-09-06T03:42:02Z"}
+{"library": "models", "repo": "dual-grp/FedU_FMTL", "file_path": "mocha.py", "fetch_date": "2025-03-30T12:45:41.693415", "last_updated": "2024-09-06T03:42:02Z"}
+{"library": "h5py", "repo": "dual-grp/FedU_FMTL", "file_path": "mocha.py", "fetch_date": "2025-03-30T12:45:41.693415", "last_updated": "2024-09-06T03:42:02Z"}
+{"library": "torchvision", "repo": "dual-grp/FedU_FMTL", "file_path": "mocha.py", "fetch_date": "2025-03-30T12:45:41.693415", "last_updated": "2024-09-06T03:42:02Z"}
+{"library": "scipy", "repo": "dual-grp/FedU_FMTL", "file_path": "mocha.py", "fetch_date": "2025-03-30T12:45:41.693415", "last_updated": "2024-09-06T03:42:02Z"}
+{"library": "utils", "repo": "dual-grp/FedU_FMTL", "file_path": "main_plot.py", "fetch_date": "2025-03-30T12:45:41.693415", "last_updated": "2024-09-06T03:42:02Z"}
+{"library": "numpy", "repo": "dual-grp/FedU_FMTL", "file_path": "main_plot.py", "fetch_date": "2025-03-30T12:45:41.693415", "last_updated": "2024-09-06T03:42:02Z"}
+{"library": "torch", "repo": "dual-grp/FedU_FMTL", "file_path": "main_plot.py", "fetch_date": "2025-03-30T12:45:41.693415", "last_updated": "2024-09-06T03:42:02Z"}
+{"library": "matplotlib", "repo": "dual-grp/FedU_FMTL", "file_path": "main_plot.py", "fetch_date": "2025-03-30T12:45:41.693415", "last_updated": "2024-09-06T03:42:02Z"}
+{"library": "h5py", "repo": "dual-grp/FedU_FMTL", "file_path": "main_plot.py", "fetch_date": "2025-03-30T12:45:41.693415", "last_updated": "2024-09-06T03:42:02Z"}
+{"library": "scipy", "repo": "dual-grp/FedU_FMTL", "file_path": "models/test.py", "fetch_date": "2025-03-30T12:45:41.693415", "last_updated": "2024-09-06T03:42:02Z"}
+{"library": "torch", "repo": "dual-grp/FedU_FMTL", "file_path": "models/test.py", "fetch_date": "2025-03-30T12:45:41.693415", "last_updated": "2024-09-06T03:42:02Z"}
+{"library": "numpy", "repo": "dual-grp/FedU_FMTL", "file_path": "models/test.py", "fetch_date": "2025-03-30T12:45:41.693415", "last_updated": "2024-09-06T03:42:02Z"}
+{"library": "torch", "repo": "dual-grp/FedU_FMTL", "file_path": "models/Update.py", "fetch_date": "2025-03-30T12:45:41.693415", "last_updated": "2024-09-06T03:42:02Z"}
+{"library": "tqdm", "repo": "dual-grp/FedU_FMTL", "file_path": "models/Update.py", "fetch_date": "2025-03-30T12:45:41.693415", "last_updated": "2024-09-06T03:42:02Z"}
+{"library": "pycreate2", "repo": "APChehadi/HackCU-Roomba", "file_path": "src/runExample.py", "fetch_date": "2025-03-30T12:45:43.821590", "last_updated": "2019-10-04T18:15:34Z"}
+{"library": "cv2", "repo": "APChehadi/HackCU-Roomba", "file_path": "src/roombacv.py", "fetch_date": "2025-03-30T12:45:43.821590", "last_updated": "2019-10-04T18:15:34Z"}
+{"library": "numpy", "repo": "APChehadi/HackCU-Roomba", "file_path": "src/roombacv.py", "fetch_date": "2025-03-30T12:45:43.821590", "last_updated": "2019-10-04T18:15:34Z"}
+{"library": "cv2", "repo": "APChehadi/HackCU-Roomba", "file_path": "src/calibration.py", "fetch_date": "2025-03-30T12:45:43.821590", "last_updated": "2019-10-04T18:15:34Z"}
+{"library": "roombacv", "repo": "APChehadi/HackCU-Roomba", "file_path": "src/srcfinaltracker.py", "fetch_date": "2025-03-30T12:45:43.821590", "last_updated": "2019-10-04T18:15:34Z"}
+{"library": "pycreate2", "repo": "APChehadi/HackCU-Roomba", "file_path": "src/srcfinaltracker.py", "fetch_date": "2025-03-30T12:45:43.821590", "last_updated": "2019-10-04T18:15:34Z"}
+{"library": "cv2", "repo": "APChehadi/HackCU-Roomba", "file_path": "src/calc_calibration.py", "fetch_date": "2025-03-30T12:45:43.821590", "last_updated": "2019-10-04T18:15:34Z"}
+{"library": "numpy", "repo": "APChehadi/HackCU-Roomba", "file_path": "src/calc_calibration.py", "fetch_date": "2025-03-30T12:45:43.821590", "last_updated": "2019-10-04T18:15:34Z"}
+{"library": "transformers", "repo": "pengbo807/ConditionVideo", "file_path": "ConditionVideo.py", "fetch_date": "2025-03-30T12:45:45.458516", "last_updated": "2025-02-13T09:50:21Z"}
+{"library": "tqdm", "repo": "pengbo807/ConditionVideo", "file_path": "ConditionVideo.py", "fetch_date": "2025-03-30T12:45:45.458516", "last_updated": "2025-02-13T09:50:21Z"}
+{"library": "conditionvideo", "repo": "pengbo807/ConditionVideo", "file_path": "ConditionVideo.py", "fetch_date": "2025-03-30T12:45:45.458516", "last_updated": "2025-02-13T09:50:21Z"}
+{"library": "torch", "repo": "pengbo807/ConditionVideo", "file_path": "ConditionVideo.py", "fetch_date": "2025-03-30T12:45:45.458516", "last_updated": "2025-02-13T09:50:21Z"}
+{"library": "accelerate", "repo": "pengbo807/ConditionVideo", "file_path": "ConditionVideo.py", "fetch_date": "2025-03-30T12:45:45.458516", "last_updated": "2025-02-13T09:50:21Z"}
+{"library": "einops", "repo": "pengbo807/ConditionVideo", "file_path": "ConditionVideo.py", "fetch_date": "2025-03-30T12:45:45.458516", "last_updated": "2025-02-13T09:50:21Z"}
+{"library": "imageio", "repo": "pengbo807/ConditionVideo", "file_path": "ConditionVideo.py", "fetch_date": "2025-03-30T12:45:45.458516", "last_updated": "2025-02-13T09:50:21Z"}
+{"library": "diffusers", "repo": "pengbo807/ConditionVideo", "file_path": "ConditionVideo.py", "fetch_date": "2025-03-30T12:45:45.458516", "last_updated": "2025-02-13T09:50:21Z"}
+{"library": "omegaconf", "repo": "pengbo807/ConditionVideo", "file_path": "ConditionVideo.py", "fetch_date": "2025-03-30T12:45:45.458516", "last_updated": "2025-02-13T09:50:21Z"}
+{"library": "tqdm", "repo": "pengbo807/ConditionVideo", "file_path": "ConditionVideo/util.py", "fetch_date": "2025-03-30T12:45:45.458516", "last_updated": "2025-02-13T09:50:21Z"}
+{"library": "numpy", "repo": "pengbo807/ConditionVideo", "file_path": "ConditionVideo/util.py", "fetch_date": "2025-03-30T12:45:45.458516", "last_updated": "2025-02-13T09:50:21Z"}
+{"library": "torch", "repo": "pengbo807/ConditionVideo", "file_path": "ConditionVideo/util.py", "fetch_date": "2025-03-30T12:45:45.458516", "last_updated": "2025-02-13T09:50:21Z"}
+{"library": "einops", "repo": "pengbo807/ConditionVideo", "file_path": "ConditionVideo/util.py", "fetch_date": "2025-03-30T12:45:45.458516", "last_updated": "2025-02-13T09:50:21Z"}
+{"library": "imageio", "repo": "pengbo807/ConditionVideo", "file_path": "ConditionVideo/util.py", "fetch_date": "2025-03-30T12:45:45.458516", "last_updated": "2025-02-13T09:50:21Z"}
+{"library": "torchvision", "repo": "pengbo807/ConditionVideo", "file_path": "ConditionVideo/util.py", "fetch_date": "2025-03-30T12:45:45.458516", "last_updated": "2025-02-13T09:50:21Z"}
+{"library": "torch", "repo": "pengbo807/ConditionVideo", "file_path": "ConditionVideo/models/resnet.py", "fetch_date": "2025-03-30T12:45:45.458516", "last_updated": "2025-02-13T09:50:21Z"}
+{"library": "einops", "repo": "pengbo807/ConditionVideo", "file_path": "ConditionVideo/models/resnet.py", "fetch_date": "2025-03-30T12:45:45.458516", "last_updated": "2025-02-13T09:50:21Z"}
+{"library": "torch", "repo": "pengbo807/ConditionVideo", "file_path": "ConditionVideo/models/unet_blocks.py", "fetch_date": "2025-03-30T12:45:45.458516", "last_updated": "2025-02-13T09:50:21Z"}
+{"library": "attention", "repo": "pengbo807/ConditionVideo", "file_path": "ConditionVideo/models/unet_blocks.py", "fetch_date": "2025-03-30T12:45:45.458516", "last_updated": "2025-02-13T09:50:21Z"}
+{"library": "resnet", "repo": "pengbo807/ConditionVideo", "file_path": "ConditionVideo/models/unet_blocks.py", "fetch_date": "2025-03-30T12:45:45.458516", "last_updated": "2025-02-13T09:50:21Z"}
+{"library": "torch", "repo": "pengbo807/ConditionVideo", "file_path": "ConditionVideo/models/unet.py", "fetch_date": "2025-03-30T12:45:45.458516", "last_updated": "2025-02-13T09:50:21Z"}
+{"library": "unet_blocks", "repo": "pengbo807/ConditionVideo", "file_path": "ConditionVideo/models/unet.py", "fetch_date": "2025-03-30T12:45:45.458516", "last_updated": "2025-02-13T09:50:21Z"}
+{"library": "diffusers", "repo": "pengbo807/ConditionVideo", "file_path": "ConditionVideo/models/unet.py", "fetch_date": "2025-03-30T12:45:45.458516", "last_updated": "2025-02-13T09:50:21Z"}
+{"library": "resnet", "repo": "pengbo807/ConditionVideo", "file_path": "ConditionVideo/models/unet.py", "fetch_date": "2025-03-30T12:45:45.458516", "last_updated": "2025-02-13T09:50:21Z"}
+{"library": "pytest", "repo": "pipermerriam/ethereum-string-utils", "file_path": "tests/conversion/test_uint_to_bytes.py", "fetch_date": "2025-03-30T12:45:47.933216", "last_updated": "2024-03-14T18:00:35Z"}
+{"library": "pytest", "repo": "pipermerriam/ethereum-string-utils", "file_path": "tests/conversion/test_bytes_to_uint.py", "fetch_date": "2025-03-30T12:45:47.933216", "last_updated": "2024-03-14T18:00:35Z"}
+{"library": "numpy", "repo": "lfy79001/RegHNT", "file_path": "tatqa_utils.py", "fetch_date": "2025-03-30T12:45:49.389670", "last_updated": "2025-03-23T06:40:32Z"}
+{"library": "tatqa_metric", "repo": "lfy79001/RegHNT", "file_path": "tatqa_metric_test.py", "fetch_date": "2025-03-30T12:45:49.389670", "last_updated": "2025-03-23T06:40:32Z"}
+{"library": "tatqa_utils", "repo": "lfy79001/RegHNT", "file_path": "tatqa_utils_test.py", "fetch_date": "2025-03-30T12:45:49.389670", "last_updated": "2025-03-23T06:40:32Z"}
+{"library": "pytest", "repo": "lfy79001/RegHNT", "file_path": "tatqa_utils_test.py", "fetch_date": "2025-03-30T12:45:49.389670", "last_updated": "2025-03-23T06:40:32Z"}
+{"library": "tatqa_metric", "repo": "lfy79001/RegHNT", "file_path": "tatqa_eval.py", "fetch_date": "2025-03-30T12:45:49.389670", "last_updated": "2025-03-23T06:40:32Z"}
+{"library": "django", "repo": "tolerious/django_learning", "file_path": "final_version/manage.py", "fetch_date": "2025-03-30T12:45:51.345889", "last_updated": "2021-12-21T09:12:13Z"}
+{"library": "django", "repo": "tolerious/django_learning", "file_path": "final_version/mysite/wsgi.py", "fetch_date": "2025-03-30T12:45:51.345889", "last_updated": "2021-12-21T09:12:13Z"}
+{"library": "django", "repo": "tolerious/django_learning", "file_path": "final_version/mysite/urls.py", "fetch_date": "2025-03-30T12:45:51.345889", "last_updated": "2021-12-21T09:12:13Z"}
+{"library": "Cython", "repo": "btweinstein/AC274", "file_path": "setup.py", "fetch_date": "2025-03-30T12:45:54.650960", "last_updated": "2024-07-13T23:10:59Z"}
+{"library": "setuptools", "repo": "btweinstein/AC274", "file_path": "setup.py", "fetch_date": "2025-03-30T12:45:54.650960", "last_updated": "2024-07-13T23:10:59Z"}
+{"library": "scipy", "repo": "btweinstein/AC274", "file_path": "adr_1d/solver.py", "fetch_date": "2025-03-30T12:45:54.650960", "last_updated": "2024-07-13T23:10:59Z"}
+{"library": "numpy", "repo": "btweinstein/AC274", "file_path": "adr_1d/solver.py", "fetch_date": "2025-03-30T12:45:54.650960", "last_updated": "2024-07-13T23:10:59Z"}
+{"library": "numpy", "repo": "btweinstein/AC274", "file_path": "adr_2d/zorder.py", "fetch_date": "2025-03-30T12:45:54.650960", "last_updated": "2024-07-13T23:10:59Z"}
+{"library": "matplotlib", "repo": "hplgit/decay-book", "file_path": "doc/.src/chapters/archive/decay-reports/doconce_src/model.py", "fetch_date": "2025-03-30T12:45:58.206909", "last_updated": "2025-01-13T22:49:48Z"}
+{"library": "numpy", "repo": "hplgit/decay-book", "file_path": "doc/.src/chapters/archive/decay-reports/doconce_src/model.py", "fetch_date": "2025-03-30T12:45:58.206909", "last_updated": "2025-01-13T22:49:48Z"}
+{"library": "publish", "repo": "hplgit/decay-book", "file_path": "doc/.src/chapters/archive/decay-reports/doconce_src/publish_config.py", "fetch_date": "2025-03-30T12:45:58.206909", "last_updated": "2025-01-13T22:49:48Z"}
+{"library": "matplotlib", "repo": "hplgit/decay-book", "file_path": "doc/.src/chapters/softeng/distribution/package/decay/decay.py", "fetch_date": "2025-03-30T12:45:58.206909", "last_updated": "2025-01-13T22:49:48Z"}
+{"library": "numpy", "repo": "hplgit/decay-book", "file_path": "doc/.src/chapters/softeng/distribution/package/decay/decay.py", "fetch_date": "2025-03-30T12:45:58.206909", "last_updated": "2025-01-13T22:49:48Z"}
+{"library": "scipy", "repo": "rtavenar/CostAware_ECTS", "file_path": "datasets/UCRreader.py", "fetch_date": "2025-03-30T12:46:02.876820", "last_updated": "2024-04-10T01:22:36Z"}
+{"library": "numpy", "repo": "rtavenar/CostAware_ECTS", "file_path": "datasets/UCRreader.py", "fetch_date": "2025-03-30T12:46:02.876820", "last_updated": "2024-04-10T01:22:36Z"}
+{"library": "numpy", "repo": "rtavenar/CostAware_ECTS", "file_path": "utils/PseudoClustering.py", "fetch_date": "2025-03-30T12:46:02.876820", "last_updated": "2024-04-10T01:22:36Z"}
+{"library": "sklearn", "repo": "rtavenar/CostAware_ECTS", "file_path": "utils/PseudoClustering.py", "fetch_date": "2025-03-30T12:46:02.876820", "last_updated": "2024-04-10T01:22:36Z"}
+{"library": "numpy", "repo": "rtavenar/CostAware_ECTS", "file_path": "utils/cost.py", "fetch_date": "2025-03-30T12:46:02.876820", "last_updated": "2024-04-10T01:22:36Z"}
+{"library": "datasets", "repo": "rtavenar/CostAware_ECTS", "file_path": "utils/cluster.py", "fetch_date": "2025-03-30T12:46:02.876820", "last_updated": "2024-04-10T01:22:36Z"}
+{"library": "sklearn", "repo": "rtavenar/CostAware_ECTS", "file_path": "utils/cluster.py", "fetch_date": "2025-03-30T12:46:02.876820", "last_updated": "2024-04-10T01:22:36Z"}
+{"library": "DGK", "repo": "andreea-alexandru/MPC-with-PHE", "file_path": "server1.py", "fetch_date": "2025-03-30T12:46:04.435674", "last_updated": "2024-03-25T14:22:46Z"}
+{"library": "paillier", "repo": "andreea-alexandru/MPC-with-PHE", "file_path": "server1.py", "fetch_date": "2025-03-30T12:46:04.435674", "last_updated": "2024-03-25T14:22:46Z"}
+{"library": "numpy", "repo": "andreea-alexandru/MPC-with-PHE", "file_path": "server1.py", "fetch_date": "2025-03-30T12:46:04.435674", "last_updated": "2024-03-25T14:22:46Z"}
+{"library": "gmpy2", "repo": "andreea-alexandru/MPC-with-PHE", "file_path": "server1.py", "fetch_date": "2025-03-30T12:46:04.435674", "last_updated": "2024-03-25T14:22:46Z"}
+{"library": "paillier", "repo": "andreea-alexandru/MPC-with-PHE", "file_path": "client.py", "fetch_date": "2025-03-30T12:46:04.435674", "last_updated": "2024-03-25T14:22:46Z"}
+{"library": "numpy", "repo": "andreea-alexandru/MPC-with-PHE", "file_path": "client.py", "fetch_date": "2025-03-30T12:46:04.435674", "last_updated": "2024-03-25T14:22:46Z"}
+{"library": "gmpy2", "repo": "andreea-alexandru/MPC-with-PHE", "file_path": "client.py", "fetch_date": "2025-03-30T12:46:04.435674", "last_updated": "2024-03-25T14:22:46Z"}
+{"library": "util", "repo": "andreea-alexandru/MPC-with-PHE", "file_path": "paillier.py", "fetch_date": "2025-03-30T12:46:04.435674", "last_updated": "2024-03-25T14:22:46Z"}
+{"library": "numpy", "repo": "andreea-alexandru/MPC-with-PHE", "file_path": "paillier.py", "fetch_date": "2025-03-30T12:46:04.435674", "last_updated": "2024-03-25T14:22:46Z"}
+{"library": "gmpy2", "repo": "andreea-alexandru/MPC-with-PHE", "file_path": "paillier.py", "fetch_date": "2025-03-30T12:46:04.435674", "last_updated": "2024-03-25T14:22:46Z"}
