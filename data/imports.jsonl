@@ -20367,3 +20367,388 @@
 {"library": "numpy", "repo": "qige96/7CCSMDLC", "file_path": "exam-review/DMcode.py", "fetch_date": "2025-04-04T01:57:02.010963", "last_updated": "2021-05-17T10:09:32Z"}
 {"library": "requests", "repo": "qige96/7CCSMDLC", "file_path": "docs/bitcoin.py", "fetch_date": "2025-04-04T01:57:02.010963", "last_updated": "2021-05-17T10:09:32Z"}
 {"library": "flask", "repo": "qige96/7CCSMDLC", "file_path": "docs/bitcoin.py", "fetch_date": "2025-04-04T01:57:02.010963", "last_updated": "2021-05-17T10:09:32Z"}
+{"library": "serial", "repo": "jsleroy/bitscope-emu", "file_path": "bitscope.py", "fetch_date": "2025-04-04T06:34:52.678109", "last_updated": "2017-11-20T20:12:38Z"}
+{"library": "PIL", "repo": "majauskas/face-recognition", "file_path": "face_recognition.py", "fetch_date": "2025-04-04T06:34:54.394071", "last_updated": "2021-09-20T14:52:07Z"}
+{"library": "numpy", "repo": "majauskas/face-recognition", "file_path": "face_recognition.py", "fetch_date": "2025-04-04T06:34:54.394071", "last_updated": "2021-09-20T14:52:07Z"}
+{"library": "cv2", "repo": "majauskas/face-recognition", "file_path": "face_recognition.py", "fetch_date": "2025-04-04T06:34:54.394071", "last_updated": "2021-09-20T14:52:07Z"}
+{"library": "picamera", "repo": "majauskas/face-recognition", "file_path": "face_recognition.py", "fetch_date": "2025-04-04T06:34:54.394071", "last_updated": "2021-09-20T14:52:07Z"}
+{"library": "Displayer_3", "repo": "mashabelyi/AI-modern-approach", "file_path": "Adversarial_Search/hw/GameManager_3.py", "fetch_date": "2025-04-04T06:34:56.053671", "last_updated": "2023-07-30T18:01:25Z"}
+{"library": "ComputerAI_3", "repo": "mashabelyi/AI-modern-approach", "file_path": "Adversarial_Search/hw/GameManager_3.py", "fetch_date": "2025-04-04T06:34:56.053671", "last_updated": "2023-07-30T18:01:25Z"}
+{"library": "Grid_3", "repo": "mashabelyi/AI-modern-approach", "file_path": "Adversarial_Search/hw/GameManager_3.py", "fetch_date": "2025-04-04T06:34:56.053671", "last_updated": "2023-07-30T18:01:25Z"}
+{"library": "PlayerAI_3", "repo": "mashabelyi/AI-modern-approach", "file_path": "Adversarial_Search/hw/GameManager_3.py", "fetch_date": "2025-04-04T06:34:56.053671", "last_updated": "2023-07-30T18:01:25Z"}
+{"library": "BaseAI", "repo": "mashabelyi/AI-modern-approach", "file_path": "Adversarial_Search/hw/ComputerAI.py", "fetch_date": "2025-04-04T06:34:56.053671", "last_updated": "2023-07-30T18:01:25Z"}
+{"library": "numpy", "repo": "jCrompton/RL_Sandbox", "file_path": "RL_stuff/Q_Learning/q_table_learning.py", "fetch_date": "2025-04-04T06:34:57.718921", "last_updated": "2018-10-17T01:43:19Z"}
+{"library": "gym", "repo": "jCrompton/RL_Sandbox", "file_path": "RL_stuff/Q_Learning/q_table_learning.py", "fetch_date": "2025-04-04T06:34:57.718921", "last_updated": "2018-10-17T01:43:19Z"}
+{"library": "numpy", "repo": "jCrompton/RL_Sandbox", "file_path": "RL_stuff/DQN/slightly_more_complex_agent.py", "fetch_date": "2025-04-04T06:34:57.718921", "last_updated": "2018-10-17T01:43:19Z"}
+{"library": "skimage", "repo": "jCrompton/RL_Sandbox", "file_path": "RL_stuff/DQN/slightly_more_complex_agent.py", "fetch_date": "2025-04-04T06:34:57.718921", "last_updated": "2018-10-17T01:43:19Z"}
+{"library": "tensorflow", "repo": "jCrompton/RL_Sandbox", "file_path": "RL_stuff/DQN/slightly_more_complex_agent.py", "fetch_date": "2025-04-04T06:34:57.718921", "last_updated": "2018-10-17T01:43:19Z"}
+{"library": "gym", "repo": "jCrompton/RL_Sandbox", "file_path": "RL_stuff/DQN/slightly_more_complex_agent.py", "fetch_date": "2025-04-04T06:34:57.718921", "last_updated": "2018-10-17T01:43:19Z"}
+{"library": "numpy", "repo": "jCrompton/RL_Sandbox", "file_path": "RL_stuff/DQN/policy_grad_agent.py", "fetch_date": "2025-04-04T06:34:57.718921", "last_updated": "2018-10-17T01:43:19Z"}
+{"library": "tensorflow", "repo": "jCrompton/RL_Sandbox", "file_path": "RL_stuff/DQN/policy_grad_agent.py", "fetch_date": "2025-04-04T06:34:57.718921", "last_updated": "2018-10-17T01:43:19Z"}
+{"library": "gym", "repo": "jCrompton/RL_Sandbox", "file_path": "RL_stuff/DQN/policy_grad_agent.py", "fetch_date": "2025-04-04T06:34:57.718921", "last_updated": "2018-10-17T01:43:19Z"}
+{"library": "numpy", "repo": "jCrompton/RL_Sandbox", "file_path": "RL_stuff/DQN/simple_dqn.py", "fetch_date": "2025-04-04T06:34:57.718921", "last_updated": "2018-10-17T01:43:19Z"}
+{"library": "tensorflow", "repo": "jCrompton/RL_Sandbox", "file_path": "RL_stuff/DQN/simple_dqn.py", "fetch_date": "2025-04-04T06:34:57.718921", "last_updated": "2018-10-17T01:43:19Z"}
+{"library": "gym", "repo": "jCrompton/RL_Sandbox", "file_path": "RL_stuff/DQN/simple_dqn.py", "fetch_date": "2025-04-04T06:34:57.718921", "last_updated": "2018-10-17T01:43:19Z"}
+{"library": "gym", "repo": "jCrompton/RL_Sandbox", "file_path": "RL_stuff/DQN/auto_encoder.py", "fetch_date": "2025-04-04T06:34:57.718921", "last_updated": "2018-10-17T01:43:19Z"}
+{"library": "numpy", "repo": "jCrompton/RL_Sandbox", "file_path": "RL_stuff/DQN/auto_encoder.py", "fetch_date": "2025-04-04T06:34:57.718921", "last_updated": "2018-10-17T01:43:19Z"}
+{"library": "skimage", "repo": "jCrompton/RL_Sandbox", "file_path": "RL_stuff/DQN/auto_encoder.py", "fetch_date": "2025-04-04T06:34:57.718921", "last_updated": "2018-10-17T01:43:19Z"}
+{"library": "tensorflow", "repo": "jCrompton/RL_Sandbox", "file_path": "RL_stuff/DQN/auto_encoder.py", "fetch_date": "2025-04-04T06:34:57.718921", "last_updated": "2018-10-17T01:43:19Z"}
+{"library": "PIL", "repo": "jCrompton/RL_Sandbox", "file_path": "RL_stuff/DQN/auto_encoder.py", "fetch_date": "2025-04-04T06:34:57.718921", "last_updated": "2018-10-17T01:43:19Z"}
+{"library": "numpy", "repo": "Baidu-AIP/EasyDL-Courses", "file_path": "lesson1/EasyDL-Demo/demo/segmentation.py", "fetch_date": "2025-04-04T06:35:01.017175", "last_updated": "2022-08-08T16:47:04Z"}
+{"library": "cv2", "repo": "Baidu-AIP/EasyDL-Courses", "file_path": "lesson1/EasyDL-Demo/demo/segmentation.py", "fetch_date": "2025-04-04T06:35:01.017175", "last_updated": "2022-08-08T16:47:04Z"}
+{"library": "requests", "repo": "Baidu-AIP/EasyDL-Courses", "file_path": "lesson1/EasyDL-Demo/demo/segmentation.py", "fetch_date": "2025-04-04T06:35:01.017175", "last_updated": "2022-08-08T16:47:04Z"}
+{"library": "pycocotools", "repo": "Baidu-AIP/EasyDL-Courses", "file_path": "lesson1/EasyDL-Demo/demo/segmentation.py", "fetch_date": "2025-04-04T06:35:01.017175", "last_updated": "2022-08-08T16:47:04Z"}
+{"library": "cv2", "repo": "Baidu-AIP/EasyDL-Courses", "file_path": "lesson1/EasyDL-Demo/demo/detection.py", "fetch_date": "2025-04-04T06:35:01.017175", "last_updated": "2022-08-08T16:47:04Z"}
+{"library": "requests", "repo": "Baidu-AIP/EasyDL-Courses", "file_path": "lesson1/EasyDL-Demo/demo/detection.py", "fetch_date": "2025-04-04T06:35:01.017175", "last_updated": "2022-08-08T16:47:04Z"}
+{"library": "agent", "repo": "dockerbuddy/dockerbuddy-agent", "file_path": "src/agent/main.py", "fetch_date": "2025-04-04T06:35:02.785132", "last_updated": "2022-01-03T21:54:04Z"}
+{"library": "config", "repo": "dockerbuddy/dockerbuddy-agent", "file_path": "src/agent/main.py", "fetch_date": "2025-04-04T06:35:02.785132", "last_updated": "2022-01-03T21:54:04Z"}
+{"library": "mock_agent", "repo": "dockerbuddy/dockerbuddy-agent", "file_path": "src/agent/main.py", "fetch_date": "2025-04-04T06:35:02.785132", "last_updated": "2022-01-03T21:54:04Z"}
+{"library": "common", "repo": "dockerbuddy/dockerbuddy-agent", "file_path": "src/agent/mock_agent.py", "fetch_date": "2025-04-04T06:35:02.785132", "last_updated": "2022-01-03T21:54:04Z"}
+{"library": "config", "repo": "dockerbuddy/dockerbuddy-agent", "file_path": "src/agent/mock_agent.py", "fetch_date": "2025-04-04T06:35:02.785132", "last_updated": "2022-01-03T21:54:04Z"}
+{"library": "docker", "repo": "dockerbuddy/dockerbuddy-agent", "file_path": "src/agent/agent.py", "fetch_date": "2025-04-04T06:35:02.785132", "last_updated": "2022-01-03T21:54:04Z"}
+{"library": "psutil", "repo": "dockerbuddy/dockerbuddy-agent", "file_path": "src/agent/agent.py", "fetch_date": "2025-04-04T06:35:02.785132", "last_updated": "2022-01-03T21:54:04Z"}
+{"library": "decouple", "repo": "dockerbuddy/dockerbuddy-agent", "file_path": "src/agent/agent.py", "fetch_date": "2025-04-04T06:35:02.785132", "last_updated": "2022-01-03T21:54:04Z"}
+{"library": "common", "repo": "dockerbuddy/dockerbuddy-agent", "file_path": "src/agent/agent.py", "fetch_date": "2025-04-04T06:35:02.785132", "last_updated": "2022-01-03T21:54:04Z"}
+{"library": "config", "repo": "dockerbuddy/dockerbuddy-agent", "file_path": "src/agent/agent.py", "fetch_date": "2025-04-04T06:35:02.785132", "last_updated": "2022-01-03T21:54:04Z"}
+{"library": "versa", "repo": "versa-networks/devops", "file_path": "python/cfg-translate/forti-convert.py", "fetch_date": "2025-04-04T06:35:04.329805", "last_updated": "2024-12-18T22:00:01Z"}
+{"library": "versa", "repo": "versa-networks/devops", "file_path": "python/cfg-translate/juniper-convert.py", "fetch_date": "2025-04-04T06:35:04.329805", "last_updated": "2024-12-18T22:00:01Z"}
+{"library": "colorama", "repo": "versa-networks/devops", "file_path": "python/cfg-translate/juniper-convert.py", "fetch_date": "2025-04-04T06:35:04.329805", "last_updated": "2024-12-18T22:00:01Z"}
+{"library": "objectpath", "repo": "versa-networks/devops", "file_path": "python/cfg-translate/juniper-convert.py", "fetch_date": "2025-04-04T06:35:04.329805", "last_updated": "2024-12-18T22:00:01Z"}
+{"library": "versa", "repo": "versa-networks/devops", "file_path": "python/cfg-translate/pan-convert.py", "fetch_date": "2025-04-04T06:35:04.329805", "last_updated": "2024-12-18T22:00:01Z"}
+{"library": "versa", "repo": "versa-networks/devops", "file_path": "python/cfg-translate/cisco-asa-convert.py", "fetch_date": "2025-04-04T06:35:04.329805", "last_updated": "2024-12-18T22:00:01Z"}
+{"library": "numpy", "repo": "jahelsantiago/Sigmascript", "file_path": "alghtms.py", "fetch_date": "2025-04-04T06:35:06.345896", "last_updated": "2022-03-28T22:12:42Z"}
+{"library": "matplotlib", "repo": "jahelsantiago/Sigmascript", "file_path": "alghtms.py", "fetch_date": "2025-04-04T06:35:06.345896", "last_updated": "2022-03-28T22:12:42Z"}
+{"library": "ply", "repo": "jahelsantiago/Sigmascript", "file_path": "calc.py", "fetch_date": "2025-04-04T06:35:06.345896", "last_updated": "2022-03-28T22:12:42Z"}
+{"library": "numpy", "repo": "jahelsantiago/Sigmascript", "file_path": "calc.py", "fetch_date": "2025-04-04T06:35:06.345896", "last_updated": "2022-03-28T22:12:42Z"}
+{"library": "alghtms", "repo": "jahelsantiago/Sigmascript", "file_path": "calc.py", "fetch_date": "2025-04-04T06:35:06.345896", "last_updated": "2022-03-28T22:12:42Z"}
+{"library": "alghtms", "repo": "jahelsantiago/Sigmascript", "file_path": "algorithms_test.py", "fetch_date": "2025-04-04T06:35:06.345896", "last_updated": "2022-03-28T22:12:42Z"}
+{"library": "agents", "repo": "BratislavS/MIMO_DRL_Building_control", "file_path": "BatchRL/BatchRL.py", "fetch_date": "2025-04-04T06:35:07.954160", "last_updated": "2024-10-10T05:59:23Z"}
+{"library": "numpy", "repo": "BratislavS/MIMO_DRL_Building_control", "file_path": "BatchRL/BatchRL.py", "fetch_date": "2025-04-04T06:35:07.954160", "last_updated": "2024-10-10T05:59:23Z"}
+{"library": "envs", "repo": "BratislavS/MIMO_DRL_Building_control", "file_path": "BatchRL/BatchRL.py", "fetch_date": "2025-04-04T06:35:07.954160", "last_updated": "2024-10-10T05:59:23Z"}
+{"library": "tests", "repo": "BratislavS/MIMO_DRL_Building_control", "file_path": "BatchRL/BatchRL.py", "fetch_date": "2025-04-04T06:35:07.954160", "last_updated": "2024-10-10T05:59:23Z"}
+{"library": "rest", "repo": "BratislavS/MIMO_DRL_Building_control", "file_path": "BatchRL/BatchRL.py", "fetch_date": "2025-04-04T06:35:07.954160", "last_updated": "2024-10-10T05:59:23Z"}
+{"library": "util", "repo": "BratislavS/MIMO_DRL_Building_control", "file_path": "BatchRL/BatchRL.py", "fetch_date": "2025-04-04T06:35:07.954160", "last_updated": "2024-10-10T05:59:23Z"}
+{"library": "data_processing", "repo": "BratislavS/MIMO_DRL_Building_control", "file_path": "BatchRL/BatchRL.py", "fetch_date": "2025-04-04T06:35:07.954160", "last_updated": "2024-10-10T05:59:23Z"}
+{"library": "opcua_empa", "repo": "BratislavS/MIMO_DRL_Building_control", "file_path": "BatchRL/BatchRL.py", "fetch_date": "2025-04-04T06:35:07.954160", "last_updated": "2024-10-10T05:59:23Z"}
+{"library": "dynamics", "repo": "BratislavS/MIMO_DRL_Building_control", "file_path": "BatchRL/BatchRL.py", "fetch_date": "2025-04-04T06:35:07.954160", "last_updated": "2024-10-10T05:59:23Z"}
+{"library": "pw_cl", "repo": "BratislavS/MIMO_DRL_Building_control", "file_path": "BatchRL/rest/client.py", "fetch_date": "2025-04-04T06:35:07.954160", "last_updated": "2024-10-10T05:59:23Z"}
+{"library": "requests_negotiate_sspi", "repo": "BratislavS/MIMO_DRL_Building_control", "file_path": "BatchRL/rest/client.py", "fetch_date": "2025-04-04T06:35:07.954160", "last_updated": "2024-10-10T05:59:23Z"}
+{"library": "pandas", "repo": "BratislavS/MIMO_DRL_Building_control", "file_path": "BatchRL/rest/client.py", "fetch_date": "2025-04-04T06:35:07.954160", "last_updated": "2024-10-10T05:59:23Z"}
+{"library": "pw_gui", "repo": "BratislavS/MIMO_DRL_Building_control", "file_path": "BatchRL/rest/client.py", "fetch_date": "2025-04-04T06:35:07.954160", "last_updated": "2024-10-10T05:59:23Z"}
+{"library": "numpy", "repo": "BratislavS/MIMO_DRL_Building_control", "file_path": "BatchRL/rest/client.py", "fetch_date": "2025-04-04T06:35:07.954160", "last_updated": "2024-10-10T05:59:23Z"}
+{"library": "requests", "repo": "BratislavS/MIMO_DRL_Building_control", "file_path": "BatchRL/rest/client.py", "fetch_date": "2025-04-04T06:35:07.954160", "last_updated": "2024-10-10T05:59:23Z"}
+{"library": "util", "repo": "BratislavS/MIMO_DRL_Building_control", "file_path": "BatchRL/rest/client.py", "fetch_date": "2025-04-04T06:35:07.954160", "last_updated": "2024-10-10T05:59:23Z"}
+{"library": "Tkinter", "repo": "kumarhans/Audio-Visualizer-Drum-Tutor-", "file_path": "Audio Visualizer and Drum Tutor FINAL.py", "fetch_date": "2025-04-04T06:35:09.577903", "last_updated": "2019-01-16T20:07:18Z"}
+{"library": "numpy", "repo": "kumarhans/Audio-Visualizer-Drum-Tutor-", "file_path": "Audio Visualizer and Drum Tutor FINAL.py", "fetch_date": "2025-04-04T06:35:09.577903", "last_updated": "2019-01-16T20:07:18Z"}
+{"library": "pydub", "repo": "kumarhans/Audio-Visualizer-Drum-Tutor-", "file_path": "Audio Visualizer and Drum Tutor FINAL.py", "fetch_date": "2025-04-04T06:35:09.577903", "last_updated": "2019-01-16T20:07:18Z"}
+{"library": "pyaudio", "repo": "kumarhans/Audio-Visualizer-Drum-Tutor-", "file_path": "Audio Visualizer and Drum Tutor FINAL.py", "fetch_date": "2025-04-04T06:35:09.577903", "last_updated": "2019-01-16T20:07:18Z"}
+{"library": "scipy", "repo": "kumarhans/Audio-Visualizer-Drum-Tutor-", "file_path": "Audio Visualizer and Drum Tutor FINAL.py", "fetch_date": "2025-04-04T06:35:09.577903", "last_updated": "2019-01-16T20:07:18Z"}
+{"library": "numpy", "repo": "stiero/DeepLearningA-Z", "file_path": "Get the Machine Learning basics/Data Preprocessing Template/missing_data.py", "fetch_date": "2025-04-04T06:35:11.595473", "last_updated": "2020-02-22T06:13:25Z"}
+{"library": "matplotlib", "repo": "stiero/DeepLearningA-Z", "file_path": "Get the Machine Learning basics/Data Preprocessing Template/missing_data.py", "fetch_date": "2025-04-04T06:35:11.595473", "last_updated": "2020-02-22T06:13:25Z"}
+{"library": "pandas", "repo": "stiero/DeepLearningA-Z", "file_path": "Get the Machine Learning basics/Data Preprocessing Template/missing_data.py", "fetch_date": "2025-04-04T06:35:11.595473", "last_updated": "2020-02-22T06:13:25Z"}
+{"library": "sklearn", "repo": "stiero/DeepLearningA-Z", "file_path": "Get the Machine Learning basics/Data Preprocessing Template/missing_data.py", "fetch_date": "2025-04-04T06:35:11.595473", "last_updated": "2020-02-22T06:13:25Z"}
+{"library": "numpy", "repo": "stiero/DeepLearningA-Z", "file_path": "Get the Machine Learning basics/Data Preprocessing Template/categorical_data.py", "fetch_date": "2025-04-04T06:35:11.595473", "last_updated": "2020-02-22T06:13:25Z"}
+{"library": "matplotlib", "repo": "stiero/DeepLearningA-Z", "file_path": "Get the Machine Learning basics/Data Preprocessing Template/categorical_data.py", "fetch_date": "2025-04-04T06:35:11.595473", "last_updated": "2020-02-22T06:13:25Z"}
+{"library": "pandas", "repo": "stiero/DeepLearningA-Z", "file_path": "Get the Machine Learning basics/Data Preprocessing Template/categorical_data.py", "fetch_date": "2025-04-04T06:35:11.595473", "last_updated": "2020-02-22T06:13:25Z"}
+{"library": "sklearn", "repo": "stiero/DeepLearningA-Z", "file_path": "Get the Machine Learning basics/Data Preprocessing Template/categorical_data.py", "fetch_date": "2025-04-04T06:35:11.595473", "last_updated": "2020-02-22T06:13:25Z"}
+{"library": "numpy", "repo": "stiero/DeepLearningA-Z", "file_path": "Get the Machine Learning basics/Data Preprocessing Template/data_preprocessing_template.py", "fetch_date": "2025-04-04T06:35:11.595473", "last_updated": "2020-02-22T06:13:25Z"}
+{"library": "matplotlib", "repo": "stiero/DeepLearningA-Z", "file_path": "Get the Machine Learning basics/Data Preprocessing Template/data_preprocessing_template.py", "fetch_date": "2025-04-04T06:35:11.595473", "last_updated": "2020-02-22T06:13:25Z"}
+{"library": "pandas", "repo": "stiero/DeepLearningA-Z", "file_path": "Get the Machine Learning basics/Data Preprocessing Template/data_preprocessing_template.py", "fetch_date": "2025-04-04T06:35:11.595473", "last_updated": "2020-02-22T06:13:25Z"}
+{"library": "numpy", "repo": "stiero/DeepLearningA-Z", "file_path": "Get the Machine Learning basics/Classification Template/classification_template.py", "fetch_date": "2025-04-04T06:35:11.595473", "last_updated": "2020-02-22T06:13:25Z"}
+{"library": "matplotlib", "repo": "stiero/DeepLearningA-Z", "file_path": "Get the Machine Learning basics/Classification Template/classification_template.py", "fetch_date": "2025-04-04T06:35:11.595473", "last_updated": "2020-02-22T06:13:25Z"}
+{"library": "pandas", "repo": "stiero/DeepLearningA-Z", "file_path": "Get the Machine Learning basics/Classification Template/classification_template.py", "fetch_date": "2025-04-04T06:35:11.595473", "last_updated": "2020-02-22T06:13:25Z"}
+{"library": "sklearn", "repo": "stiero/DeepLearningA-Z", "file_path": "Get the Machine Learning basics/Classification Template/classification_template.py", "fetch_date": "2025-04-04T06:35:11.595473", "last_updated": "2020-02-22T06:13:25Z"}
+{"library": "pandas", "repo": "stiero/DeepLearningA-Z", "file_path": "Volume 1 - Supervised Deep Learning/Part 1 - Artificial Neural Networks (ANN)/Section 4 - Building an ANN/ann.py", "fetch_date": "2025-04-04T06:35:11.595473", "last_updated": "2020-02-22T06:13:25Z"}
+{"library": "numpy", "repo": "stiero/DeepLearningA-Z", "file_path": "Volume 1 - Supervised Deep Learning/Part 1 - Artificial Neural Networks (ANN)/Section 4 - Building an ANN/ann.py", "fetch_date": "2025-04-04T06:35:11.595473", "last_updated": "2020-02-22T06:13:25Z"}
+{"library": "matplotlib", "repo": "stiero/DeepLearningA-Z", "file_path": "Volume 1 - Supervised Deep Learning/Part 1 - Artificial Neural Networks (ANN)/Section 4 - Building an ANN/ann.py", "fetch_date": "2025-04-04T06:35:11.595473", "last_updated": "2020-02-22T06:13:25Z"}
+{"library": "keras", "repo": "stiero/DeepLearningA-Z", "file_path": "Volume 1 - Supervised Deep Learning/Part 1 - Artificial Neural Networks (ANN)/Section 4 - Building an ANN/ann.py", "fetch_date": "2025-04-04T06:35:11.595473", "last_updated": "2020-02-22T06:13:25Z"}
+{"library": "sklearn", "repo": "stiero/DeepLearningA-Z", "file_path": "Volume 1 - Supervised Deep Learning/Part 1 - Artificial Neural Networks (ANN)/Section 4 - Building an ANN/ann.py", "fetch_date": "2025-04-04T06:35:11.595473", "last_updated": "2020-02-22T06:13:25Z"}
+{"library": "setuptools", "repo": "jiecchen/StreamLib", "file_path": "setup.py", "fetch_date": "2025-04-04T06:35:13.171687", "last_updated": "2023-05-14T03:46:04Z"}
+{"library": "cPickle", "repo": "jiecchen/StreamLib", "file_path": "runtests.py", "fetch_date": "2025-04-04T06:35:13.171687", "last_updated": "2023-05-14T03:46:04Z"}
+{"library": "streamlib", "repo": "jiecchen/StreamLib", "file_path": "streamlib/summary.py", "fetch_date": "2025-04-04T06:35:13.171687", "last_updated": "2023-05-14T03:46:04Z"}
+{"library": "QtFusion", "repo": "VisionMillionDataStudio/comexit443", "file_path": "ui.py", "fetch_date": "2025-04-04T06:35:14.768365", "last_updated": "2024-12-20T12:59:18Z"}
+{"library": "ultralytics", "repo": "VisionMillionDataStudio/comexit443", "file_path": "predict.py", "fetch_date": "2025-04-04T06:35:14.768365", "last_updated": "2024-12-20T12:59:18Z"}
+{"library": "torch", "repo": "VisionMillionDataStudio/comexit443", "file_path": "val.py", "fetch_date": "2025-04-04T06:35:14.768365", "last_updated": "2024-12-20T12:59:18Z"}
+{"library": "numpy", "repo": "VisionMillionDataStudio/comexit443", "file_path": "val.py", "fetch_date": "2025-04-04T06:35:14.768365", "last_updated": "2024-12-20T12:59:18Z"}
+{"library": "ultralytics", "repo": "VisionMillionDataStudio/comexit443", "file_path": "val.py", "fetch_date": "2025-04-04T06:35:14.768365", "last_updated": "2024-12-20T12:59:18Z"}
+{"library": "pycocotools", "repo": "VisionMillionDataStudio/comexit443", "file_path": "val.py", "fetch_date": "2025-04-04T06:35:14.768365", "last_updated": "2024-12-20T12:59:18Z"}
+{"library": "torch", "repo": "VisionMillionDataStudio/comexit443", "file_path": "train.py", "fetch_date": "2025-04-04T06:35:14.768365", "last_updated": "2024-12-20T12:59:18Z"}
+{"library": "numpy", "repo": "VisionMillionDataStudio/comexit443", "file_path": "train.py", "fetch_date": "2025-04-04T06:35:14.768365", "last_updated": "2024-12-20T12:59:18Z"}
+{"library": "ultralytics", "repo": "VisionMillionDataStudio/comexit443", "file_path": "train.py", "fetch_date": "2025-04-04T06:35:14.768365", "last_updated": "2024-12-20T12:59:18Z"}
+{"library": "numpy", "repo": "samwinslow/clickhouse-datagraph", "file_path": "scripts/normalize_data.py", "fetch_date": "2025-04-04T06:35:19.761456", "last_updated": "2022-09-10T00:37:07Z"}
+{"library": "pandas", "repo": "samwinslow/clickhouse-datagraph", "file_path": "scripts/normalize_data.py", "fetch_date": "2025-04-04T06:35:19.761456", "last_updated": "2022-09-10T00:37:07Z"}
+{"library": "utils", "repo": "samwinslow/clickhouse-datagraph", "file_path": "scripts/normalize_data.py", "fetch_date": "2025-04-04T06:35:19.761456", "last_updated": "2022-09-10T00:37:07Z"}
+{"library": "utils", "repo": "samwinslow/clickhouse-datagraph", "file_path": "scripts/trim_whitespace.py", "fetch_date": "2025-04-04T06:35:19.761456", "last_updated": "2022-09-10T00:37:07Z"}
+{"library": "pandas", "repo": "samwinslow/clickhouse-datagraph", "file_path": "scripts/aggregate_stats.py", "fetch_date": "2025-04-04T06:35:19.761456", "last_updated": "2022-09-10T00:37:07Z"}
+{"library": "utils", "repo": "samwinslow/clickhouse-datagraph", "file_path": "scripts/aggregate_stats.py", "fetch_date": "2025-04-04T06:35:19.761456", "last_updated": "2022-09-10T00:37:07Z"}
+{"library": "utils", "repo": "samwinslow/clickhouse-datagraph", "file_path": "scripts/clean_data.py", "fetch_date": "2025-04-04T06:35:19.761456", "last_updated": "2022-09-10T00:37:07Z"}
+{"library": "pandas", "repo": "samwinslow/clickhouse-datagraph", "file_path": "scripts/utils.py", "fetch_date": "2025-04-04T06:35:19.761456", "last_updated": "2022-09-10T00:37:07Z"}
+{"library": "chardet", "repo": "samwinslow/clickhouse-datagraph", "file_path": "scripts/utils.py", "fetch_date": "2025-04-04T06:35:19.761456", "last_updated": "2022-09-10T00:37:07Z"}
+{"library": "pandas", "repo": "saurabhgadia4/ML_Project", "file_path": "How much did it rain-II/trojanVar.py", "fetch_date": "2025-04-04T06:35:37.302783", "last_updated": "2016-08-23T15:52:06Z"}
+{"library": "numpy", "repo": "saurabhgadia4/ML_Project", "file_path": "How much did it rain-II/trojanVar.py", "fetch_date": "2025-04-04T06:35:37.302783", "last_updated": "2016-08-23T15:52:06Z"}
+{"library": "matplotlib", "repo": "saurabhgadia4/ML_Project", "file_path": "How much did it rain-II/trojanVar.py", "fetch_date": "2025-04-04T06:35:37.302783", "last_updated": "2016-08-23T15:52:06Z"}
+{"library": "trojanClean", "repo": "saurabhgadia4/ML_Project", "file_path": "How much did it rain-II/trojanVar.py", "fetch_date": "2025-04-04T06:35:37.302783", "last_updated": "2016-08-23T15:52:06Z"}
+{"library": "trojanParam", "repo": "saurabhgadia4/ML_Project", "file_path": "How much did it rain-II/trojanVar.py", "fetch_date": "2025-04-04T06:35:37.302783", "last_updated": "2016-08-23T15:52:06Z"}
+{"library": "sklearn", "repo": "saurabhgadia4/ML_Project", "file_path": "How much did it rain-II/trojanVar.py", "fetch_date": "2025-04-04T06:35:37.302783", "last_updated": "2016-08-23T15:52:06Z"}
+{"library": "trojanParam", "repo": "saurabhgadia4/ML_Project", "file_path": "How much did it rain-II/trojanUtil.py", "fetch_date": "2025-04-04T06:35:37.302783", "last_updated": "2016-08-23T15:52:06Z"}
+{"library": "numpy", "repo": "saurabhgadia4/ML_Project", "file_path": "How much did it rain-II/trojanUtil.py", "fetch_date": "2025-04-04T06:35:37.302783", "last_updated": "2016-08-23T15:52:06Z"}
+{"library": "matplotlib", "repo": "saurabhgadia4/ML_Project", "file_path": "How much did it rain-II/trojanUtil.py", "fetch_date": "2025-04-04T06:35:37.302783", "last_updated": "2016-08-23T15:52:06Z"}
+{"library": "pandas", "repo": "saurabhgadia4/ML_Project", "file_path": "How much did it rain-II/trojanUtil.py", "fetch_date": "2025-04-04T06:35:37.302783", "last_updated": "2016-08-23T15:52:06Z"}
+{"library": "pandas", "repo": "saurabhgadia4/ML_Project", "file_path": "How much did it rain-II/trojanFinalEnsemble.py", "fetch_date": "2025-04-04T06:35:37.302783", "last_updated": "2016-08-23T15:52:06Z"}
+{"library": "numpy", "repo": "saurabhgadia4/ML_Project", "file_path": "How much did it rain-II/trojanFinalEnsemble.py", "fetch_date": "2025-04-04T06:35:37.302783", "last_updated": "2016-08-23T15:52:06Z"}
+{"library": "matplotlib", "repo": "saurabhgadia4/ML_Project", "file_path": "How much did it rain-II/trojanFinalEnsemble.py", "fetch_date": "2025-04-04T06:35:37.302783", "last_updated": "2016-08-23T15:52:06Z"}
+{"library": "trojanClean", "repo": "saurabhgadia4/ML_Project", "file_path": "How much did it rain-II/trojanFinalEnsemble.py", "fetch_date": "2025-04-04T06:35:37.302783", "last_updated": "2016-08-23T15:52:06Z"}
+{"library": "trojanParam", "repo": "saurabhgadia4/ML_Project", "file_path": "How much did it rain-II/trojanFinalEnsemble.py", "fetch_date": "2025-04-04T06:35:37.302783", "last_updated": "2016-08-23T15:52:06Z"}
+{"library": "sklearn", "repo": "saurabhgadia4/ML_Project", "file_path": "How much did it rain-II/trojanFinalEnsemble.py", "fetch_date": "2025-04-04T06:35:37.302783", "last_updated": "2016-08-23T15:52:06Z"}
+{"library": "pandas", "repo": "saurabhgadia4/ML_Project", "file_path": "How much did it rain-II/trojanTunedGBR.py", "fetch_date": "2025-04-04T06:35:37.302783", "last_updated": "2016-08-23T15:52:06Z"}
+{"library": "numpy", "repo": "saurabhgadia4/ML_Project", "file_path": "How much did it rain-II/trojanTunedGBR.py", "fetch_date": "2025-04-04T06:35:37.302783", "last_updated": "2016-08-23T15:52:06Z"}
+{"library": "matplotlib", "repo": "saurabhgadia4/ML_Project", "file_path": "How much did it rain-II/trojanTunedGBR.py", "fetch_date": "2025-04-04T06:35:37.302783", "last_updated": "2016-08-23T15:52:06Z"}
+{"library": "trojanClean", "repo": "saurabhgadia4/ML_Project", "file_path": "How much did it rain-II/trojanTunedGBR.py", "fetch_date": "2025-04-04T06:35:37.302783", "last_updated": "2016-08-23T15:52:06Z"}
+{"library": "trojanParam", "repo": "saurabhgadia4/ML_Project", "file_path": "How much did it rain-II/trojanTunedGBR.py", "fetch_date": "2025-04-04T06:35:37.302783", "last_updated": "2016-08-23T15:52:06Z"}
+{"library": "sklearn", "repo": "saurabhgadia4/ML_Project", "file_path": "How much did it rain-II/trojanTunedGBR.py", "fetch_date": "2025-04-04T06:35:37.302783", "last_updated": "2016-08-23T15:52:06Z"}
+{"library": "numpy", "repo": "saurabhgadia4/ML_Project", "file_path": "How much did it rain-II/trojanSolution.py", "fetch_date": "2025-04-04T06:35:37.302783", "last_updated": "2016-08-23T15:52:06Z"}
+{"library": "pandas", "repo": "saurabhgadia4/ML_Project", "file_path": "How much did it rain-II/trojanSolution.py", "fetch_date": "2025-04-04T06:35:37.302783", "last_updated": "2016-08-23T15:52:06Z"}
+{"library": "sklearn", "repo": "saurabhgadia4/ML_Project", "file_path": "How much did it rain-II/trojanSolution.py", "fetch_date": "2025-04-04T06:35:37.302783", "last_updated": "2016-08-23T15:52:06Z"}
+{"library": "matplotlib", "repo": "JudsonWilson/CS244_RC3_Mininet", "file_path": "rc3test.py", "fetch_date": "2025-04-04T06:35:38.837990", "last_updated": "2024-04-28T01:04:28Z"}
+{"library": "mininet", "repo": "JudsonWilson/CS244_RC3_Mininet", "file_path": "rc3test.py", "fetch_date": "2025-04-04T06:35:38.837990", "last_updated": "2024-04-28T01:04:28Z"}
+{"library": "figure15_helpers", "repo": "JudsonWilson/CS244_RC3_Mininet", "file_path": "rc3test.py", "fetch_date": "2025-04-04T06:35:38.837990", "last_updated": "2024-04-28T01:04:28Z"}
+{"library": "numpy", "repo": "JudsonWilson/CS244_RC3_Mininet", "file_path": "figure15_helpers.py", "fetch_date": "2025-04-04T06:35:38.837990", "last_updated": "2024-04-28T01:04:28Z"}
+{"library": "matplotlib", "repo": "JudsonWilson/CS244_RC3_Mininet", "file_path": "figure15_helpers.py", "fetch_date": "2025-04-04T06:35:38.837990", "last_updated": "2024-04-28T01:04:28Z"}
+{"library": "trytond", "repo": "openlabs/trytond-amazon-mws", "file_path": "country.py", "fetch_date": "2025-04-04T06:35:40.237714", "last_updated": "2019-04-18T05:57:48Z"}
+{"library": "setuptools", "repo": "openlabs/trytond-amazon-mws", "file_path": "setup.py", "fetch_date": "2025-04-04T06:35:40.237714", "last_updated": "2019-04-18T05:57:48Z"}
+{"library": "ConfigParser", "repo": "openlabs/trytond-amazon-mws", "file_path": "setup.py", "fetch_date": "2025-04-04T06:35:40.237714", "last_updated": "2019-04-18T05:57:48Z"}
+{"library": "tests", "repo": "openlabs/trytond-amazon-mws", "file_path": "setup.py", "fetch_date": "2025-04-04T06:35:40.237714", "last_updated": "2019-04-18T05:57:48Z"}
+{"library": "trytond", "repo": "openlabs/trytond-amazon-mws", "file_path": "sale.py", "fetch_date": "2025-04-04T06:35:40.237714", "last_updated": "2019-04-18T05:57:48Z"}
+{"library": "dateutil", "repo": "openlabs/trytond-amazon-mws", "file_path": "sale.py", "fetch_date": "2025-04-04T06:35:40.237714", "last_updated": "2019-04-18T05:57:48Z"}
+{"library": "trytond", "repo": "openlabs/trytond-amazon-mws", "file_path": "product.py", "fetch_date": "2025-04-04T06:35:40.237714", "last_updated": "2019-04-18T05:57:48Z"}
+{"library": "lxml", "repo": "openlabs/trytond-amazon-mws", "file_path": "channel.py", "fetch_date": "2025-04-04T06:35:40.237714", "last_updated": "2019-04-18T05:57:48Z"}
+{"library": "trytond", "repo": "openlabs/trytond-amazon-mws", "file_path": "channel.py", "fetch_date": "2025-04-04T06:35:40.237714", "last_updated": "2019-04-18T05:57:48Z"}
+{"library": "mws", "repo": "openlabs/trytond-amazon-mws", "file_path": "channel.py", "fetch_date": "2025-04-04T06:35:40.237714", "last_updated": "2019-04-18T05:57:48Z"}
+{"library": "dbparse", "repo": "chudooder/osutools", "file_path": "augdata.py", "fetch_date": "2025-04-04T06:35:41.721670", "last_updated": "2023-07-14T05:28:31Z"}
+{"library": "dbparse", "repo": "chudooder/osutools", "file_path": "edit_collections.py", "fetch_date": "2025-04-04T06:35:41.721670", "last_updated": "2023-07-14T05:28:31Z"}
+{"library": "SHT31", "repo": "ncdcommunity/Raspberry_Pi_SHT31_Humidity_Temperature_Sensor_Python_library", "file_path": "SHT31.py", "fetch_date": "2025-04-04T06:35:43.489903", "last_updated": "2024-04-15T08:50:04Z"}
+{"library": "smbus", "repo": "ncdcommunity/Raspberry_Pi_SHT31_Humidity_Temperature_Sensor_Python_library", "file_path": "SHT31.py", "fetch_date": "2025-04-04T06:35:43.489903", "last_updated": "2024-04-15T08:50:04Z"}
+{"library": "requests", "repo": "Tuspatil/AI-On-Edge", "file_path": "UI Complete/test.py", "fetch_date": "2025-04-04T06:35:45.062741", "last_updated": "2022-08-30T09:02:36Z"}
+{"library": "flask", "repo": "Tuspatil/AI-On-Edge", "file_path": "UI Complete/test.py", "fetch_date": "2025-04-04T06:35:45.062741", "last_updated": "2022-08-30T09:02:36Z"}
+{"library": "flask_restful", "repo": "Tuspatil/AI-On-Edge", "file_path": "UI Complete/combined.py", "fetch_date": "2025-04-04T06:35:45.062741", "last_updated": "2022-08-30T09:02:36Z"}
+{"library": "kafka", "repo": "Tuspatil/AI-On-Edge", "file_path": "UI Complete/combined.py", "fetch_date": "2025-04-04T06:35:45.062741", "last_updated": "2022-08-30T09:02:36Z"}
+{"library": "requests", "repo": "Tuspatil/AI-On-Edge", "file_path": "UI Complete/combined.py", "fetch_date": "2025-04-04T06:35:45.062741", "last_updated": "2022-08-30T09:02:36Z"}
+{"library": "mysql", "repo": "Tuspatil/AI-On-Edge", "file_path": "UI Complete/combined.py", "fetch_date": "2025-04-04T06:35:45.062741", "last_updated": "2022-08-30T09:02:36Z"}
+{"library": "flask", "repo": "Tuspatil/AI-On-Edge", "file_path": "UI Complete/combined.py", "fetch_date": "2025-04-04T06:35:45.062741", "last_updated": "2022-08-30T09:02:36Z"}
+{"library": "mysql", "repo": "Tuspatil/AI-On-Edge", "file_path": "UI Complete/sensorupload.py", "fetch_date": "2025-04-04T06:35:45.062741", "last_updated": "2022-08-30T09:02:36Z"}
+{"library": "codes", "repo": "Tuspatil/AI-On-Edge", "file_path": "UI Complete/sensorupload.py", "fetch_date": "2025-04-04T06:35:45.062741", "last_updated": "2022-08-30T09:02:36Z"}
+{"library": "requests", "repo": "Tuspatil/AI-On-Edge", "file_path": "UI Complete/sensorupload.py", "fetch_date": "2025-04-04T06:35:45.062741", "last_updated": "2022-08-30T09:02:36Z"}
+{"library": "flask", "repo": "Tuspatil/AI-On-Edge", "file_path": "UI Complete/sensorupload.py", "fetch_date": "2025-04-04T06:35:45.062741", "last_updated": "2022-08-30T09:02:36Z"}
+{"library": "requests", "repo": "Tuspatil/AI-On-Edge", "file_path": "UI Complete/codes/dashboardupdate.py", "fetch_date": "2025-04-04T06:35:45.062741", "last_updated": "2022-08-30T09:02:36Z"}
+{"library": "sklearn", "repo": "Ada008/GeoInfoMiner", "file_path": "code/svm_fit_tri.py", "fetch_date": "2025-04-04T06:35:47.782509", "last_updated": "2019-12-18T22:02:23Z"}
+{"library": "utils", "repo": "Ada008/GeoInfoMiner", "file_path": "code/svm_fit_tri.py", "fetch_date": "2025-04-04T06:35:47.782509", "last_updated": "2019-12-18T22:02:23Z"}
+{"library": "sklearn", "repo": "Ada008/GeoInfoMiner", "file_path": "code/svm_fit_poly3.py", "fetch_date": "2025-04-04T06:35:47.782509", "last_updated": "2019-12-18T22:02:23Z"}
+{"library": "utils", "repo": "Ada008/GeoInfoMiner", "file_path": "code/svm_fit_poly3.py", "fetch_date": "2025-04-04T06:35:47.782509", "last_updated": "2019-12-18T22:02:23Z"}
+{"library": "sklearn", "repo": "Ada008/GeoInfoMiner", "file_path": "code/svm_stack_mean.py", "fetch_date": "2025-04-04T06:35:47.782509", "last_updated": "2019-12-18T22:02:23Z"}
+{"library": "utils", "repo": "Ada008/GeoInfoMiner", "file_path": "code/svm_stack_mean.py", "fetch_date": "2025-04-04T06:35:47.782509", "last_updated": "2019-12-18T22:02:23Z"}
+{"library": "sklearn", "repo": "Ada008/GeoInfoMiner", "file_path": "code/kneighbors_times.py", "fetch_date": "2025-04-04T06:35:47.782509", "last_updated": "2019-12-18T22:02:23Z"}
+{"library": "utils", "repo": "Ada008/GeoInfoMiner", "file_path": "code/kneighbors_times.py", "fetch_date": "2025-04-04T06:35:47.782509", "last_updated": "2019-12-18T22:02:23Z"}
+{"library": "numpy", "repo": "Ada008/GeoInfoMiner", "file_path": "code/utils.py", "fetch_date": "2025-04-04T06:35:47.782509", "last_updated": "2019-12-18T22:02:23Z"}
+{"library": "gdal", "repo": "Ada008/GeoInfoMiner", "file_path": "code/utils.py", "fetch_date": "2025-04-04T06:35:47.782509", "last_updated": "2019-12-18T22:02:23Z"}
+{"library": "pandas", "repo": "Ada008/GeoInfoMiner", "file_path": "code/utils.py", "fetch_date": "2025-04-04T06:35:47.782509", "last_updated": "2019-12-18T22:02:23Z"}
+{"library": "numpy", "repo": "ravarmes/recsys-algorithm-impartiality", "file_path": "graphics/script1-rgpr-rsme-2plots.py", "fetch_date": "2025-04-04T06:35:49.613738", "last_updated": "2024-03-31T20:34:12Z"}
+{"library": "matplotlib", "repo": "ravarmes/recsys-algorithm-impartiality", "file_path": "graphics/script1-rgpr-rsme-2plots.py", "fetch_date": "2025-04-04T06:35:49.613738", "last_updated": "2024-03-31T20:34:12Z"}
+{"library": "numpy", "repo": "ravarmes/recsys-algorithm-impartiality", "file_path": "graphics/script3-radar-en_02.py", "fetch_date": "2025-04-04T06:35:49.613738", "last_updated": "2024-03-31T20:34:12Z"}
+{"library": "matplotlib", "repo": "ravarmes/recsys-algorithm-impartiality", "file_path": "graphics/script3-radar-en_02.py", "fetch_date": "2025-04-04T06:35:49.613738", "last_updated": "2024-03-31T20:34:12Z"}
+{"library": "numpy", "repo": "ravarmes/recsys-algorithm-impartiality", "file_path": "graphics/script3-radar-en.py", "fetch_date": "2025-04-04T06:35:49.613738", "last_updated": "2024-03-31T20:34:12Z"}
+{"library": "matplotlib", "repo": "ravarmes/recsys-algorithm-impartiality", "file_path": "graphics/script3-radar-en.py", "fetch_date": "2025-04-04T06:35:49.613738", "last_updated": "2024-03-31T20:34:12Z"}
+{"library": "numpy", "repo": "ravarmes/recsys-algorithm-impartiality", "file_path": "graphics/script1-rgpr-rsme-6plots-pt.py", "fetch_date": "2025-04-04T06:35:49.613738", "last_updated": "2024-03-31T20:34:12Z"}
+{"library": "matplotlib", "repo": "ravarmes/recsys-algorithm-impartiality", "file_path": "graphics/script1-rgpr-rsme-6plots-pt.py", "fetch_date": "2025-04-04T06:35:49.613738", "last_updated": "2024-03-31T20:34:12Z"}
+{"library": "numpy", "repo": "ravarmes/recsys-algorithm-impartiality", "file_path": "graphics/script1-rgpr-rsme-6plots-en.py", "fetch_date": "2025-04-04T06:35:49.613738", "last_updated": "2024-03-31T20:34:12Z"}
+{"library": "matplotlib", "repo": "ravarmes/recsys-algorithm-impartiality", "file_path": "graphics/script1-rgpr-rsme-6plots-en.py", "fetch_date": "2025-04-04T06:35:49.613738", "last_updated": "2024-03-31T20:34:12Z"}
+{"library": "pytesseract", "repo": "AdarshG-29/Image-Assistant-with-OCR-Model-and-Characters-Recognition", "file_path": "python_project_image_processing.py", "fetch_date": "2025-04-04T06:35:51.971977", "last_updated": "2024-06-16T05:50:43Z"}
+{"library": "PIL", "repo": "AdarshG-29/Image-Assistant-with-OCR-Model-and-Characters-Recognition", "file_path": "python_project_image_processing.py", "fetch_date": "2025-04-04T06:35:51.971977", "last_updated": "2024-06-16T05:50:43Z"}
+{"library": "cv2", "repo": "AdarshG-29/Image-Assistant-with-OCR-Model-and-Characters-Recognition", "file_path": "python_project_image_processing.py", "fetch_date": "2025-04-04T06:35:51.971977", "last_updated": "2024-06-16T05:50:43Z"}
+{"library": "numpy", "repo": "msohcw/hog-contest", "file_path": "viz.py", "fetch_date": "2025-04-04T06:35:53.681299", "last_updated": "2020-08-18T08:17:51Z"}
+{"library": "matplotlib", "repo": "msohcw/hog-contest", "file_path": "viz.py", "fetch_date": "2025-04-04T06:35:53.681299", "last_updated": "2020-08-18T08:17:51Z"}
+{"library": "Tkinter", "repo": "Pbants/Python", "file_path": "TempConvert_TK_Diag.py", "fetch_date": "2025-04-04T06:35:55.335460", "last_updated": "2016-10-16T09:32:47Z"}
+{"library": "tkMessageBox", "repo": "Pbants/Python", "file_path": "TempConvert_TK_Diag.py", "fetch_date": "2025-04-04T06:35:55.335460", "last_updated": "2016-10-16T09:32:47Z"}
+{"library": "tkSimpleDialog", "repo": "Pbants/Python", "file_path": "TempConvert_TK_Diag.py", "fetch_date": "2025-04-04T06:35:55.335460", "last_updated": "2016-10-16T09:32:47Z"}
+{"library": "Tkinter", "repo": "Pbants/Python", "file_path": "tk_clock.py", "fetch_date": "2025-04-04T06:35:55.335460", "last_updated": "2016-10-16T09:32:47Z"}
+{"library": "pytz", "repo": "Pbants/Python", "file_path": "tk_clock.py", "fetch_date": "2025-04-04T06:35:55.335460", "last_updated": "2016-10-16T09:32:47Z"}
+{"library": "numpy", "repo": "Pbants/Python", "file_path": "hangman.py", "fetch_date": "2025-04-04T06:35:55.335460", "last_updated": "2016-10-16T09:32:47Z"}
+{"library": "Tkinter", "repo": "Pbants/Python", "file_path": "Reddit_TK.py", "fetch_date": "2025-04-04T06:35:55.335460", "last_updated": "2016-10-16T09:32:47Z"}
+{"library": "praw", "repo": "Pbants/Python", "file_path": "Reddit_TK.py", "fetch_date": "2025-04-04T06:35:55.335460", "last_updated": "2016-10-16T09:32:47Z"}
+{"library": "django", "repo": "crowdbotics-apps/cleanbinsmn-34075", "file_path": "backend/manage.py", "fetch_date": "2025-04-04T06:35:56.917943", "last_updated": "2022-03-09T20:14:46Z"}
+{"library": "django", "repo": "crowdbotics-apps/cleanbinsmn-34075", "file_path": "backend/home/views.py", "fetch_date": "2025-04-04T06:35:56.917943", "last_updated": "2022-03-09T20:14:46Z"}
+{"library": "django", "repo": "crowdbotics-apps/cleanbinsmn-34075", "file_path": "backend/home/models.py", "fetch_date": "2025-04-04T06:35:56.917943", "last_updated": "2022-03-09T20:14:46Z"}
+{"library": "storages", "repo": "crowdbotics-apps/cleanbinsmn-34075", "file_path": "backend/home/storage_backends.py", "fetch_date": "2025-04-04T06:35:56.917943", "last_updated": "2022-03-09T20:14:46Z"}
+{"library": "django", "repo": "crowdbotics-apps/cleanbinsmn-34075", "file_path": "backend/home/storage_backends.py", "fetch_date": "2025-04-04T06:35:56.917943", "last_updated": "2022-03-09T20:14:46Z"}
+{"library": "django", "repo": "crowdbotics-apps/cleanbinsmn-34075", "file_path": "backend/home/tests.py", "fetch_date": "2025-04-04T06:35:56.917943", "last_updated": "2022-03-09T20:14:46Z"}
+{"library": "scrapy", "repo": "dmitryzy/gtudata", "file_path": "gtudata/items.py", "fetch_date": "2025-04-04T06:35:58.535821", "last_updated": "2019-02-24T00:15:59Z"}
+{"library": "gtudata", "repo": "dmitryzy/gtudata", "file_path": "gtudata/pipelines.py", "fetch_date": "2025-04-04T06:35:58.535821", "last_updated": "2019-02-24T00:15:59Z"}
+{"library": "scrapy", "repo": "dmitryzy/gtudata", "file_path": "gtudata/pipelines.py", "fetch_date": "2025-04-04T06:35:58.535821", "last_updated": "2019-02-24T00:15:59Z"}
+{"library": "sqlalchemy", "repo": "dmitryzy/gtudata", "file_path": "gtudata/pipelines.py", "fetch_date": "2025-04-04T06:35:58.535821", "last_updated": "2019-02-24T00:15:59Z"}
+{"library": "TamilWord", "repo": "TamilClass/amuthaa", "file_path": "amuthaa/TamilVerb.py", "fetch_date": "2025-04-04T06:36:00.008456", "last_updated": "2024-01-21T09:40:51Z"}
+{"library": "TamilLetter", "repo": "TamilClass/amuthaa", "file_path": "amuthaa/TamilVerb.py", "fetch_date": "2025-04-04T06:36:00.008456", "last_updated": "2024-01-21T09:40:51Z"}
+{"library": "amuthaa", "repo": "TamilClass/amuthaa", "file_path": "amuthaa/TamilWord.py", "fetch_date": "2025-04-04T06:36:00.008456", "last_updated": "2024-01-21T09:40:51Z"}
+{"library": "TamilWord", "repo": "TamilClass/amuthaa", "file_path": "amuthaa/TamilNoun.py", "fetch_date": "2025-04-04T06:36:00.008456", "last_updated": "2024-01-21T09:40:51Z"}
+{"library": "TamilLetter", "repo": "TamilClass/amuthaa", "file_path": "amuthaa/TamilNoun.py", "fetch_date": "2025-04-04T06:36:00.008456", "last_updated": "2024-01-21T09:40:51Z"}
+{"library": "numpy", "repo": "horaceg/discreteopt", "file_path": "tsp/tsp.py", "fetch_date": "2025-04-04T06:36:01.593208", "last_updated": "2020-11-29T08:08:57Z"}
+{"library": "matplotlib", "repo": "horaceg/discreteopt", "file_path": "tsp/tsp.py", "fetch_date": "2025-04-04T06:36:01.593208", "last_updated": "2020-11-29T08:08:57Z"}
+{"library": "solver", "repo": "horaceg/discreteopt", "file_path": "tsp/tsp.py", "fetch_date": "2025-04-04T06:36:01.593208", "last_updated": "2020-11-29T08:08:57Z"}
+{"library": "numpy", "repo": "horaceg/discreteopt", "file_path": "tsp/solver.py", "fetch_date": "2025-04-04T06:36:01.593208", "last_updated": "2020-11-29T08:08:57Z"}
+{"library": "matplotlib", "repo": "horaceg/discreteopt", "file_path": "tsp/solver.py", "fetch_date": "2025-04-04T06:36:01.593208", "last_updated": "2020-11-29T08:08:57Z"}
+{"library": "numpy", "repo": "horaceg/discreteopt", "file_path": "tsp/sub_7_final/tsp.py", "fetch_date": "2025-04-04T06:36:01.593208", "last_updated": "2020-11-29T08:08:57Z"}
+{"library": "matplotlib", "repo": "horaceg/discreteopt", "file_path": "tsp/sub_7_final/tsp.py", "fetch_date": "2025-04-04T06:36:01.593208", "last_updated": "2020-11-29T08:08:57Z"}
+{"library": "solver", "repo": "horaceg/discreteopt", "file_path": "tsp/sub_7_final/tsp.py", "fetch_date": "2025-04-04T06:36:01.593208", "last_updated": "2020-11-29T08:08:57Z"}
+{"library": "scipy", "repo": "horaceg/discreteopt", "file_path": "tsp/sub_7_final/tsp.py", "fetch_date": "2025-04-04T06:36:01.593208", "last_updated": "2020-11-29T08:08:57Z"}
+{"library": "numpy", "repo": "horaceg/discreteopt", "file_path": "tsp/sub_7_final/solver.py", "fetch_date": "2025-04-04T06:36:01.593208", "last_updated": "2020-11-29T08:08:57Z"}
+{"library": "matplotlib", "repo": "horaceg/discreteopt", "file_path": "tsp/sub_7_final/solver.py", "fetch_date": "2025-04-04T06:36:01.593208", "last_updated": "2020-11-29T08:08:57Z"}
+{"library": "numpy", "repo": "horaceg/discreteopt", "file_path": "shortpath/algos_path.py", "fetch_date": "2025-04-04T06:36:01.593208", "last_updated": "2020-11-29T08:08:57Z"}
+{"library": "RPi", "repo": "johannesrmer/UltrasonicVehicle", "file_path": "003_SoftwareV02/ultra2.py", "fetch_date": "2025-04-04T06:36:03.496721", "last_updated": "2024-07-13T17:19:14Z"}
+{"library": "RPi", "repo": "johannesrmer/UltrasonicVehicle", "file_path": "003_SoftwareV02/ultra.py", "fetch_date": "2025-04-04T06:36:03.496721", "last_updated": "2024-07-13T17:19:14Z"}
+{"library": "RPi", "repo": "johannesrmer/UltrasonicVehicle", "file_path": "003_SoftwareV02/SoftwareV01/ultrasonic_synchron_test_pi72.py", "fetch_date": "2025-04-04T06:36:03.496721", "last_updated": "2024-07-13T17:19:14Z"}
+{"library": "RPi", "repo": "johannesrmer/UltrasonicVehicle", "file_path": "003_SoftwareV02/SoftwareV01/ultraPi62_v2.py", "fetch_date": "2025-04-04T06:36:03.496721", "last_updated": "2024-07-13T17:19:14Z"}
+{"library": "ij", "repo": "xcapaldi/imagej_multicrop", "file_path": "multi_select.py", "fetch_date": "2025-04-04T06:36:05.656932", "last_updated": "2020-09-14T05:37:13Z"}
+{"library": "ij", "repo": "xcapaldi/imagej_multicrop", "file_path": "multi_crop.py", "fetch_date": "2025-04-04T06:36:05.656932", "last_updated": "2020-09-14T05:37:13Z"}
+{"library": "ij", "repo": "xcapaldi/imagej_multicrop", "file_path": "channel_split.py", "fetch_date": "2025-04-04T06:36:05.656932", "last_updated": "2020-09-14T05:37:13Z"}
+{"library": "numpy", "repo": "rcgsheffield/linux-shell", "file_path": "generate_data.py", "fetch_date": "2025-04-04T06:36:07.078851", "last_updated": "2025-01-21T17:33:41Z"}
+{"library": "django", "repo": "Astreak/Frisby", "file_path": "App/manage.py", "fetch_date": "2025-04-04T06:36:08.781406", "last_updated": "2020-10-30T06:28:41Z"}
+{"library": "django", "repo": "Astreak/Frisby", "file_path": "App/New/views.py", "fetch_date": "2025-04-04T06:36:08.781406", "last_updated": "2020-10-30T06:28:41Z"}
+{"library": "forms", "repo": "Astreak/Frisby", "file_path": "App/New/views.py", "fetch_date": "2025-04-04T06:36:08.781406", "last_updated": "2020-10-30T06:28:41Z"}
+{"library": "django", "repo": "Astreak/Frisby", "file_path": "App/New/models.py", "fetch_date": "2025-04-04T06:36:08.781406", "last_updated": "2020-10-30T06:28:41Z"}
+{"library": "models", "repo": "Astreak/Frisby", "file_path": "App/New/forms.py", "fetch_date": "2025-04-04T06:36:08.781406", "last_updated": "2020-10-30T06:28:41Z"}
+{"library": "django", "repo": "Astreak/Frisby", "file_path": "App/New/forms.py", "fetch_date": "2025-04-04T06:36:08.781406", "last_updated": "2020-10-30T06:28:41Z"}
+{"library": "django", "repo": "Astreak/Frisby", "file_path": "App/New/tests.py", "fetch_date": "2025-04-04T06:36:08.781406", "last_updated": "2020-10-30T06:28:41Z"}
+{"library": "graphs", "repo": "bond1999/Toteily-HackDFW2022", "file_path": "main.py", "fetch_date": "2025-04-04T06:36:10.993600", "last_updated": "2022-09-25T20:00:44Z"}
+{"library": "customer", "repo": "bond1999/Toteily-HackDFW2022", "file_path": "main.py", "fetch_date": "2025-04-04T06:36:10.993600", "last_updated": "2022-09-25T20:00:44Z"}
+{"library": "processor", "repo": "bond1999/Toteily-HackDFW2022", "file_path": "main.py", "fetch_date": "2025-04-04T06:36:10.993600", "last_updated": "2022-09-25T20:00:44Z"}
+{"library": "live_cam", "repo": "bond1999/Toteily-HackDFW2022", "file_path": "main.py", "fetch_date": "2025-04-04T06:36:10.993600", "last_updated": "2022-09-25T20:00:44Z"}
+{"library": "customer", "repo": "bond1999/Toteily-HackDFW2022", "file_path": "live_cam.py", "fetch_date": "2025-04-04T06:36:10.993600", "last_updated": "2022-09-25T20:00:44Z"}
+{"library": "numpy", "repo": "bond1999/Toteily-HackDFW2022", "file_path": "live_cam.py", "fetch_date": "2025-04-04T06:36:10.993600", "last_updated": "2022-09-25T20:00:44Z"}
+{"library": "pyzbar", "repo": "bond1999/Toteily-HackDFW2022", "file_path": "live_cam.py", "fetch_date": "2025-04-04T06:36:10.993600", "last_updated": "2022-09-25T20:00:44Z"}
+{"library": "cv2", "repo": "bond1999/Toteily-HackDFW2022", "file_path": "live_cam.py", "fetch_date": "2025-04-04T06:36:10.993600", "last_updated": "2022-09-25T20:00:44Z"}
+{"library": "numpy", "repo": "bond1999/Toteily-HackDFW2022", "file_path": "graphs.py", "fetch_date": "2025-04-04T06:36:10.993600", "last_updated": "2022-09-25T20:00:44Z"}
+{"library": "matplotlib", "repo": "bond1999/Toteily-HackDFW2022", "file_path": "graphs.py", "fetch_date": "2025-04-04T06:36:10.993600", "last_updated": "2022-09-25T20:00:44Z"}
+{"library": "customer", "repo": "bond1999/Toteily-HackDFW2022", "file_path": "processor.py", "fetch_date": "2025-04-04T06:36:10.993600", "last_updated": "2022-09-25T20:00:44Z"}
+{"library": "numpy", "repo": "bond1999/Toteily-HackDFW2022", "file_path": "processor.py", "fetch_date": "2025-04-04T06:36:10.993600", "last_updated": "2022-09-25T20:00:44Z"}
+{"library": "pyzbar", "repo": "bond1999/Toteily-HackDFW2022", "file_path": "processor.py", "fetch_date": "2025-04-04T06:36:10.993600", "last_updated": "2022-09-25T20:00:44Z"}
+{"library": "cv2", "repo": "bond1999/Toteily-HackDFW2022", "file_path": "processor.py", "fetch_date": "2025-04-04T06:36:10.993600", "last_updated": "2022-09-25T20:00:44Z"}
+{"library": "mainwindow", "repo": "sjh53685/new-translation-machine", "file_path": "new_translation_machine.py", "fetch_date": "2025-04-04T06:36:20.949326", "last_updated": "2024-03-22T07:31:17Z"}
+{"library": "PyQt5", "repo": "sjh53685/new-translation-machine", "file_path": "new_translation_machine.py", "fetch_date": "2025-04-04T06:36:20.949326", "last_updated": "2024-03-22T07:31:17Z"}
+{"library": "PyQt5", "repo": "sjh53685/new-translation-machine", "file_path": "mathod.py", "fetch_date": "2025-04-04T06:36:20.949326", "last_updated": "2024-03-22T07:31:17Z"}
+{"library": "mathod", "repo": "sjh53685/new-translation-machine", "file_path": "mainwindow.py", "fetch_date": "2025-04-04T06:36:20.949326", "last_updated": "2024-03-22T07:31:17Z"}
+{"library": "PyQt5", "repo": "sjh53685/new-translation-machine", "file_path": "mainwindow.py", "fetch_date": "2025-04-04T06:36:20.949326", "last_updated": "2024-03-22T07:31:17Z"}
+{"library": "callsmusic", "repo": "H1M4N5HU0P/YoneMusicBot", "file_path": "main.py", "fetch_date": "2025-04-04T06:36:23.759551", "last_updated": "2021-10-01T11:56:54Z"}
+{"library": "config", "repo": "H1M4N5HU0P/YoneMusicBot", "file_path": "main.py", "fetch_date": "2025-04-04T06:36:23.759551", "last_updated": "2021-10-01T11:56:54Z"}
+{"library": "pyrogram", "repo": "H1M4N5HU0P/YoneMusicBot", "file_path": "main.py", "fetch_date": "2025-04-04T06:36:23.759551", "last_updated": "2021-10-01T11:56:54Z"}
+{"library": "pyrogram", "repo": "H1M4N5HU0P/YoneMusicBot", "file_path": "str.py", "fetch_date": "2025-04-04T06:36:23.759551", "last_updated": "2021-10-01T11:56:54Z"}
+{"library": "dotenv", "repo": "H1M4N5HU0P/YoneMusicBot", "file_path": "config.py", "fetch_date": "2025-04-04T06:36:23.759551", "last_updated": "2021-10-01T11:56:54Z"}
+{"library": "converter", "repo": "H1M4N5HU0P/YoneMusicBot", "file_path": "converter/__init__.py", "fetch_date": "2025-04-04T06:36:23.759551", "last_updated": "2021-10-01T11:56:54Z"}
+{"library": "helpers", "repo": "H1M4N5HU0P/YoneMusicBot", "file_path": "converter/converter.py", "fetch_date": "2025-04-04T06:36:23.759551", "last_updated": "2021-10-01T11:56:54Z"}
+{"library": "xor", "repo": "YAtOff/python0-reloaded", "file_path": "week3/homework/tests.py", "fetch_date": "2025-04-04T06:36:25.338902", "last_updated": "2017-06-18T15:53:04Z"}
+{"library": "torch", "repo": "eyalRonen1/phishGuard-AI", "file_path": "4 Training distilbert with Data/newmodel.py", "fetch_date": "2025-04-04T06:36:26.944880", "last_updated": "2025-01-05T13:38:12Z"}
+{"library": "pandas", "repo": "eyalRonen1/phishGuard-AI", "file_path": "4 Training distilbert with Data/newmodel.py", "fetch_date": "2025-04-04T06:36:26.944880", "last_updated": "2025-01-05T13:38:12Z"}
+{"library": "numpy", "repo": "eyalRonen1/phishGuard-AI", "file_path": "4 Training distilbert with Data/newmodel.py", "fetch_date": "2025-04-04T06:36:26.944880", "last_updated": "2025-01-05T13:38:12Z"}
+{"library": "tqdm", "repo": "eyalRonen1/phishGuard-AI", "file_path": "4 Training distilbert with Data/newmodel.py", "fetch_date": "2025-04-04T06:36:26.944880", "last_updated": "2025-01-05T13:38:12Z"}
+{"library": "sklearn", "repo": "eyalRonen1/phishGuard-AI", "file_path": "4 Training distilbert with Data/newmodel.py", "fetch_date": "2025-04-04T06:36:26.944880", "last_updated": "2025-01-05T13:38:12Z"}
+{"library": "transformers", "repo": "eyalRonen1/phishGuard-AI", "file_path": "4 Training distilbert with Data/newmodel.py", "fetch_date": "2025-04-04T06:36:26.944880", "last_updated": "2025-01-05T13:38:12Z"}
+{"library": "torch", "repo": "eyalRonen1/phishGuard-AI", "file_path": "5 PhishGuard AI UI/ui.py", "fetch_date": "2025-04-04T06:36:26.944880", "last_updated": "2025-01-05T13:38:12Z"}
+{"library": "PIL", "repo": "eyalRonen1/phishGuard-AI", "file_path": "5 PhishGuard AI UI/ui.py", "fetch_date": "2025-04-04T06:36:26.944880", "last_updated": "2025-01-05T13:38:12Z"}
+{"library": "transformers", "repo": "eyalRonen1/phishGuard-AI", "file_path": "5 PhishGuard AI UI/ui.py", "fetch_date": "2025-04-04T06:36:26.944880", "last_updated": "2025-01-05T13:38:12Z"}
+{"library": "xgboost", "repo": "eyalRonen1/phishGuard-AI", "file_path": "3 test ML algorithms with grid search/test ML algorithms with grid search.py", "fetch_date": "2025-04-04T06:36:26.944880", "last_updated": "2025-01-05T13:38:12Z"}
+{"library": "numpy", "repo": "eyalRonen1/phishGuard-AI", "file_path": "3 test ML algorithms with grid search/test ML algorithms with grid search.py", "fetch_date": "2025-04-04T06:36:26.944880", "last_updated": "2025-01-05T13:38:12Z"}
+{"library": "pandas", "repo": "eyalRonen1/phishGuard-AI", "file_path": "3 test ML algorithms with grid search/test ML algorithms with grid search.py", "fetch_date": "2025-04-04T06:36:26.944880", "last_updated": "2025-01-05T13:38:12Z"}
+{"library": "sklearn", "repo": "eyalRonen1/phishGuard-AI", "file_path": "3 test ML algorithms with grid search/test ML algorithms with grid search.py", "fetch_date": "2025-04-04T06:36:26.944880", "last_updated": "2025-01-05T13:38:12Z"}
+{"library": "textstat", "repo": "eyalRonen1/phishGuard-AI", "file_path": "2 Extract parameters from data/textExtractor.py", "fetch_date": "2025-04-04T06:36:26.944880", "last_updated": "2025-01-05T13:38:12Z"}
+{"library": "sklearn", "repo": "eyalRonen1/phishGuard-AI", "file_path": "2 Extract parameters from data/textExtractor.py", "fetch_date": "2025-04-04T06:36:26.944880", "last_updated": "2025-01-05T13:38:12Z"}
+{"library": "extract_msg", "repo": "eyalRonen1/phishGuard-AI", "file_path": "2 Extract parameters from data/textExtractor.py", "fetch_date": "2025-04-04T06:36:26.944880", "last_updated": "2025-01-05T13:38:12Z"}
+{"library": "nltk", "repo": "eyalRonen1/phishGuard-AI", "file_path": "2 Extract parameters from data/textExtractor.py", "fetch_date": "2025-04-04T06:36:26.944880", "last_updated": "2025-01-05T13:38:12Z"}
+{"library": "PyQt5", "repo": "bebarboss/BOA", "file_path": "main.py", "fetch_date": "2025-04-04T06:36:30.176638", "last_updated": "2022-09-23T15:21:06Z"}
+{"library": "numpy", "repo": "bebarboss/BOA", "file_path": "ueye.py", "fetch_date": "2025-04-04T06:36:30.176638", "last_updated": "2022-09-23T15:21:06Z"}
+{"library": "cv2", "repo": "bebarboss/BOA", "file_path": "ueye.py", "fetch_date": "2025-04-04T06:36:30.176638", "last_updated": "2022-09-23T15:21:06Z"}
+{"library": "numpy", "repo": "bebarboss/BOA", "file_path": "crop.py", "fetch_date": "2025-04-04T06:36:30.176638", "last_updated": "2022-09-23T15:21:06Z"}
+{"library": "cv2", "repo": "bebarboss/BOA", "file_path": "crop.py", "fetch_date": "2025-04-04T06:36:30.176638", "last_updated": "2022-09-23T15:21:06Z"}
+{"library": "prepare", "repo": "bebarboss/BOA", "file_path": "crop.py", "fetch_date": "2025-04-04T06:36:30.176638", "last_updated": "2022-09-23T15:21:06Z"}
+{"library": "numpy", "repo": "bebarboss/BOA", "file_path": "camera.py", "fetch_date": "2025-04-04T06:36:30.176638", "last_updated": "2022-09-23T15:21:06Z"}
+{"library": "cv2", "repo": "bebarboss/BOA", "file_path": "camera.py", "fetch_date": "2025-04-04T06:36:30.176638", "last_updated": "2022-09-23T15:21:06Z"}
+{"library": "main", "repo": "bebarboss/BOA", "file_path": "BOAver2.py", "fetch_date": "2025-04-04T06:36:30.176638", "last_updated": "2022-09-23T15:21:06Z"}
+{"library": "pandas", "repo": "bebarboss/BOA", "file_path": "BOAver2.py", "fetch_date": "2025-04-04T06:36:30.176638", "last_updated": "2022-09-23T15:21:06Z"}
+{"library": "numpy", "repo": "bebarboss/BOA", "file_path": "BOAver2.py", "fetch_date": "2025-04-04T06:36:30.176638", "last_updated": "2022-09-23T15:21:06Z"}
+{"library": "splash_screen", "repo": "bebarboss/BOA", "file_path": "BOAver2.py", "fetch_date": "2025-04-04T06:36:30.176638", "last_updated": "2022-09-23T15:21:06Z"}
+{"library": "PIL", "repo": "bebarboss/BOA", "file_path": "BOAver2.py", "fetch_date": "2025-04-04T06:36:30.176638", "last_updated": "2022-09-23T15:21:06Z"}
+{"library": "cv2", "repo": "bebarboss/BOA", "file_path": "BOAver2.py", "fetch_date": "2025-04-04T06:36:30.176638", "last_updated": "2022-09-23T15:21:06Z"}
+{"library": "tensorflow", "repo": "bebarboss/BOA", "file_path": "BOAver2.py", "fetch_date": "2025-04-04T06:36:30.176638", "last_updated": "2022-09-23T15:21:06Z"}
+{"library": "keras", "repo": "bebarboss/BOA", "file_path": "BOAver2.py", "fetch_date": "2025-04-04T06:36:30.176638", "last_updated": "2022-09-23T15:21:06Z"}
+{"library": "sklearn", "repo": "bebarboss/BOA", "file_path": "BOAver2.py", "fetch_date": "2025-04-04T06:36:30.176638", "last_updated": "2022-09-23T15:21:06Z"}
+{"library": "PyQt5", "repo": "bebarboss/BOA", "file_path": "BOAver2.py", "fetch_date": "2025-04-04T06:36:30.176638", "last_updated": "2022-09-23T15:21:06Z"}
+{"library": "django", "repo": "marcelorobin/blog-simple-fbv", "file_path": "manage.py", "fetch_date": "2025-04-04T06:36:32.208022", "last_updated": "2023-08-16T09:03:11Z"}
+{"library": "django", "repo": "marcelorobin/blog-simple-fbv", "file_path": "blog/asgi.py", "fetch_date": "2025-04-04T06:36:32.208022", "last_updated": "2023-08-16T09:03:11Z"}
+{"library": "django", "repo": "marcelorobin/blog-simple-fbv", "file_path": "blog/wsgi.py", "fetch_date": "2025-04-04T06:36:32.208022", "last_updated": "2023-08-16T09:03:11Z"}
+{"library": "django", "repo": "marcelorobin/blog-simple-fbv", "file_path": "blog/urls.py", "fetch_date": "2025-04-04T06:36:32.208022", "last_updated": "2023-08-16T09:03:11Z"}
+{"library": "numpy", "repo": "skocevska/BSS-PLSR-for-Spectroscopy-Analysis", "file_path": "auxiliary_funs.py", "fetch_date": "2025-04-04T06:36:34.011133", "last_updated": "2024-11-29T02:25:16Z"}
+{"library": "matplotlib", "repo": "skocevska/BSS-PLSR-for-Spectroscopy-Analysis", "file_path": "auxiliary_funs.py", "fetch_date": "2025-04-04T06:36:34.011133", "last_updated": "2024-11-29T02:25:16Z"}
+{"library": "scipy", "repo": "skocevska/BSS-PLSR-for-Spectroscopy-Analysis", "file_path": "auxiliary_funs.py", "fetch_date": "2025-04-04T06:36:34.011133", "last_updated": "2024-11-29T02:25:16Z"}
+{"library": "sklearn", "repo": "skocevska/BSS-PLSR-for-Spectroscopy-Analysis", "file_path": "auxiliary_funs.py", "fetch_date": "2025-04-04T06:36:34.011133", "last_updated": "2024-11-29T02:25:16Z"}
+{"library": "numpy", "repo": "skocevska/BSS-PLSR-for-Spectroscopy-Analysis", "file_path": "back_corr_mazet.py", "fetch_date": "2025-04-04T06:36:34.011133", "last_updated": "2024-11-29T02:25:16Z"}
+{"library": "scipy", "repo": "skocevska/BSS-PLSR-for-Spectroscopy-Analysis", "file_path": "back_corr_mazet.py", "fetch_date": "2025-04-04T06:36:34.011133", "last_updated": "2024-11-29T02:25:16Z"}
+{"library": "brokenaxes", "repo": "skocevska/BSS-PLSR-for-Spectroscopy-Analysis", "file_path": "BSS-PLSR Raman.py", "fetch_date": "2025-04-04T06:36:34.011133", "last_updated": "2024-11-29T02:25:16Z"}
+{"library": "pandas", "repo": "skocevska/BSS-PLSR-for-Spectroscopy-Analysis", "file_path": "BSS-PLSR Raman.py", "fetch_date": "2025-04-04T06:36:34.011133", "last_updated": "2024-11-29T02:25:16Z"}
+{"library": "back_corr_mazet", "repo": "skocevska/BSS-PLSR-for-Spectroscopy-Analysis", "file_path": "BSS-PLSR Raman.py", "fetch_date": "2025-04-04T06:36:34.011133", "last_updated": "2024-11-29T02:25:16Z"}
+{"library": "numpy", "repo": "skocevska/BSS-PLSR-for-Spectroscopy-Analysis", "file_path": "BSS-PLSR Raman.py", "fetch_date": "2025-04-04T06:36:34.011133", "last_updated": "2024-11-29T02:25:16Z"}
+{"library": "matplotlib", "repo": "skocevska/BSS-PLSR-for-Spectroscopy-Analysis", "file_path": "BSS-PLSR Raman.py", "fetch_date": "2025-04-04T06:36:34.011133", "last_updated": "2024-11-29T02:25:16Z"}
+{"library": "pymcr", "repo": "skocevska/BSS-PLSR-for-Spectroscopy-Analysis", "file_path": "BSS-PLSR Raman.py", "fetch_date": "2025-04-04T06:36:34.011133", "last_updated": "2024-11-29T02:25:16Z"}
+{"library": "auxiliary_funs", "repo": "skocevska/BSS-PLSR-for-Spectroscopy-Analysis", "file_path": "BSS-PLSR Raman.py", "fetch_date": "2025-04-04T06:36:34.011133", "last_updated": "2024-11-29T02:25:16Z"}
+{"library": "sklearn", "repo": "skocevska/BSS-PLSR-for-Spectroscopy-Analysis", "file_path": "BSS-PLSR Raman.py", "fetch_date": "2025-04-04T06:36:34.011133", "last_updated": "2024-11-29T02:25:16Z"}
+{"library": "scipy", "repo": "skocevska/BSS-PLSR-for-Spectroscopy-Analysis", "file_path": "BSS-PLSR Raman.py", "fetch_date": "2025-04-04T06:36:34.011133", "last_updated": "2024-11-29T02:25:16Z"}
+{"library": "point", "repo": "harahu/mdvrp", "file_path": "mdvrp_ga.py", "fetch_date": "2025-04-04T06:36:35.824557", "last_updated": "2023-07-04T13:19:01Z"}
+{"library": "numpy", "repo": "harahu/mdvrp", "file_path": "mdvrp_ga.py", "fetch_date": "2025-04-04T06:36:35.824557", "last_updated": "2023-07-04T13:19:01Z"}
+{"library": "matplotlib", "repo": "harahu/mdvrp", "file_path": "mdvrp_ga.py", "fetch_date": "2025-04-04T06:36:35.824557", "last_updated": "2023-07-04T13:19:01Z"}
+{"library": "psrecord", "repo": "gaukas/psrecord_io", "file_path": "setup.py", "fetch_date": "2025-04-04T06:36:37.367066", "last_updated": "2023-08-11T21:16:41Z"}
+{"library": "setuptools", "repo": "gaukas/psrecord_io", "file_path": "setup.py", "fetch_date": "2025-04-04T06:36:37.367066", "last_updated": "2023-08-11T21:16:41Z"}
+{"library": "psutil", "repo": "gaukas/psrecord_io", "file_path": "portable/psrecord.py", "fetch_date": "2025-04-04T06:36:37.367066", "last_updated": "2023-08-11T21:16:41Z"}
+{"library": "matplotlib", "repo": "gaukas/psrecord_io", "file_path": "portable/psrecord.py", "fetch_date": "2025-04-04T06:36:37.367066", "last_updated": "2023-08-11T21:16:41Z"}
+{"library": "psutil", "repo": "gaukas/psrecord_io", "file_path": "psrecord/main.py", "fetch_date": "2025-04-04T06:36:37.367066", "last_updated": "2023-08-11T21:16:41Z"}
+{"library": "matplotlib", "repo": "gaukas/psrecord_io", "file_path": "psrecord/main.py", "fetch_date": "2025-04-04T06:36:37.367066", "last_updated": "2023-08-11T21:16:41Z"}
+{"library": "main", "repo": "gaukas/psrecord_io", "file_path": "psrecord/__init__.py", "fetch_date": "2025-04-04T06:36:37.367066", "last_updated": "2023-08-11T21:16:41Z"}
+{"library": "Levenshtein", "repo": "brelok-the-pok/DocDupRemover", "file_path": "main.py", "fetch_date": "2025-04-04T06:36:38.951055", "last_updated": "2021-04-22T15:15:51Z"}
+{"library": "Generator", "repo": "Japjappedulap/Catan", "file_path": "CatanFlask.py", "fetch_date": "2025-04-04T06:36:40.535218", "last_updated": "2024-08-19T09:51:59Z"}
+{"library": "flask", "repo": "Japjappedulap/Catan", "file_path": "CatanFlask.py", "fetch_date": "2025-04-04T06:36:40.535218", "last_updated": "2024-08-19T09:51:59Z"}
+{"library": "Generator", "repo": "Japjappedulap/Catan", "file_path": "Generator/main.py", "fetch_date": "2025-04-04T06:36:40.535218", "last_updated": "2024-08-19T09:51:59Z"}
+{"library": "Generator", "repo": "Japjappedulap/Catan", "file_path": "Generator/ExtendedMap.py", "fetch_date": "2025-04-04T06:36:40.535218", "last_updated": "2024-08-19T09:51:59Z"}
+{"library": "numpy", "repo": "Japjappedulap/Catan", "file_path": "Generator/CatanMap.py", "fetch_date": "2025-04-04T06:36:40.535218", "last_updated": "2024-08-19T09:51:59Z"}
+{"library": "astrotest", "repo": "julzhk/astrotest", "file_path": "astrotest/demo.py", "fetch_date": "2025-04-04T06:36:42.339673", "last_updated": "2019-09-23T20:31:04Z"}
+{"library": "astrotest", "repo": "julzhk/astrotest", "file_path": "astrotest/tests.py", "fetch_date": "2025-04-04T06:36:42.339673", "last_updated": "2019-09-23T20:31:04Z"}
+{"library": "torch", "repo": "boostcampaitech5/level2_objectdetection-cv-04", "file_path": "yolov5/detect.py", "fetch_date": "2025-04-04T06:36:43.798533", "last_updated": "2023-06-18T16:47:09Z"}
+{"library": "models", "repo": "boostcampaitech5/level2_objectdetection-cv-04", "file_path": "yolov5/detect.py", "fetch_date": "2025-04-04T06:36:43.798533", "last_updated": "2023-06-18T16:47:09Z"}
+{"library": "utils", "repo": "boostcampaitech5/level2_objectdetection-cv-04", "file_path": "yolov5/detect.py", "fetch_date": "2025-04-04T06:36:43.798533", "last_updated": "2023-06-18T16:47:09Z"}
+{"library": "torch", "repo": "boostcampaitech5/level2_objectdetection-cv-04", "file_path": "yolov5/train.py", "fetch_date": "2025-04-04T06:36:43.798533", "last_updated": "2023-06-18T16:47:09Z"}
+{"library": "wandb", "repo": "boostcampaitech5/level2_objectdetection-cv-04", "file_path": "yolov5/train.py", "fetch_date": "2025-04-04T06:36:43.798533", "last_updated": "2023-06-18T16:47:09Z"}
+{"library": "val", "repo": "boostcampaitech5/level2_objectdetection-cv-04", "file_path": "yolov5/train.py", "fetch_date": "2025-04-04T06:36:43.798533", "last_updated": "2023-06-18T16:47:09Z"}
+{"library": "models", "repo": "boostcampaitech5/level2_objectdetection-cv-04", "file_path": "yolov5/train.py", "fetch_date": "2025-04-04T06:36:43.798533", "last_updated": "2023-06-18T16:47:09Z"}
+{"library": "numpy", "repo": "boostcampaitech5/level2_objectdetection-cv-04", "file_path": "yolov5/train.py", "fetch_date": "2025-04-04T06:36:43.798533", "last_updated": "2023-06-18T16:47:09Z"}
+{"library": "utils", "repo": "boostcampaitech5/level2_objectdetection-cv-04", "file_path": "yolov5/train.py", "fetch_date": "2025-04-04T06:36:43.798533", "last_updated": "2023-06-18T16:47:09Z"}
+{"library": "pytz", "repo": "boostcampaitech5/level2_objectdetection-cv-04", "file_path": "yolov5/train.py", "fetch_date": "2025-04-04T06:36:43.798533", "last_updated": "2023-06-18T16:47:09Z"}
+{"library": "tqdm", "repo": "boostcampaitech5/level2_objectdetection-cv-04", "file_path": "yolov5/train.py", "fetch_date": "2025-04-04T06:36:43.798533", "last_updated": "2023-06-18T16:47:09Z"}
+{"library": "yaml", "repo": "boostcampaitech5/level2_objectdetection-cv-04", "file_path": "yolov5/train.py", "fetch_date": "2025-04-04T06:36:43.798533", "last_updated": "2023-06-18T16:47:09Z"}
+{"library": "yaml", "repo": "boostcampaitech5/level2_objectdetection-cv-04", "file_path": "yolov5/models/yolo.py", "fetch_date": "2025-04-04T06:36:43.798533", "last_updated": "2023-06-18T16:47:09Z"}
+{"library": "models", "repo": "boostcampaitech5/level2_objectdetection-cv-04", "file_path": "yolov5/models/yolo.py", "fetch_date": "2025-04-04T06:36:43.798533", "last_updated": "2023-06-18T16:47:09Z"}
+{"library": "thop", "repo": "boostcampaitech5/level2_objectdetection-cv-04", "file_path": "yolov5/models/yolo.py", "fetch_date": "2025-04-04T06:36:43.798533", "last_updated": "2023-06-18T16:47:09Z"}
+{"library": "utils", "repo": "boostcampaitech5/level2_objectdetection-cv-04", "file_path": "yolov5/models/yolo.py", "fetch_date": "2025-04-04T06:36:43.798533", "last_updated": "2023-06-18T16:47:09Z"}
+{"library": "torch", "repo": "boostcampaitech5/level2_objectdetection-cv-04", "file_path": "yolov5/models/experimental.py", "fetch_date": "2025-04-04T06:36:43.798533", "last_updated": "2023-06-18T16:47:09Z"}
+{"library": "numpy", "repo": "boostcampaitech5/level2_objectdetection-cv-04", "file_path": "yolov5/models/experimental.py", "fetch_date": "2025-04-04T06:36:43.798533", "last_updated": "2023-06-18T16:47:09Z"}
+{"library": "models", "repo": "boostcampaitech5/level2_objectdetection-cv-04", "file_path": "yolov5/models/experimental.py", "fetch_date": "2025-04-04T06:36:43.798533", "last_updated": "2023-06-18T16:47:09Z"}
+{"library": "utils", "repo": "boostcampaitech5/level2_objectdetection-cv-04", "file_path": "yolov5/models/experimental.py", "fetch_date": "2025-04-04T06:36:43.798533", "last_updated": "2023-06-18T16:47:09Z"}
+{"library": "torch", "repo": "boostcampaitech5/level2_objectdetection-cv-04", "file_path": "yolov5/models/tf.py", "fetch_date": "2025-04-04T06:36:43.798533", "last_updated": "2023-06-18T16:47:09Z"}
+{"library": "models", "repo": "boostcampaitech5/level2_objectdetection-cv-04", "file_path": "yolov5/models/tf.py", "fetch_date": "2025-04-04T06:36:43.798533", "last_updated": "2023-06-18T16:47:09Z"}
+{"library": "numpy", "repo": "boostcampaitech5/level2_objectdetection-cv-04", "file_path": "yolov5/models/tf.py", "fetch_date": "2025-04-04T06:36:43.798533", "last_updated": "2023-06-18T16:47:09Z"}
+{"library": "utils", "repo": "boostcampaitech5/level2_objectdetection-cv-04", "file_path": "yolov5/models/tf.py", "fetch_date": "2025-04-04T06:36:43.798533", "last_updated": "2023-06-18T16:47:09Z"}
+{"library": "tensorflow", "repo": "boostcampaitech5/level2_objectdetection-cv-04", "file_path": "yolov5/models/tf.py", "fetch_date": "2025-04-04T06:36:43.798533", "last_updated": "2023-06-18T16:47:09Z"}
+{"library": "yaml", "repo": "boostcampaitech5/level2_objectdetection-cv-04", "file_path": "yolov5/models/tf.py", "fetch_date": "2025-04-04T06:36:43.798533", "last_updated": "2023-06-18T16:47:09Z"}
+{"library": "setuptools", "repo": "BerkeleyAutomation/gqcnn", "file_path": "setup.py", "fetch_date": "2025-04-04T06:36:45.544935", "last_updated": "2025-04-02T21:48:13Z"}
+{"library": "gqcnn", "repo": "BerkeleyAutomation/gqcnn", "file_path": "tools/hyperparam_search.py", "fetch_date": "2025-04-04T06:36:45.544935", "last_updated": "2025-04-02T21:48:13Z"}
+{"library": "autolab_core", "repo": "BerkeleyAutomation/gqcnn", "file_path": "tools/hyperparam_search.py", "fetch_date": "2025-04-04T06:36:45.544935", "last_updated": "2025-04-02T21:48:13Z"}
+{"library": "gqcnn", "repo": "BerkeleyAutomation/gqcnn", "file_path": "tools/finetune.py", "fetch_date": "2025-04-04T06:36:45.544935", "last_updated": "2025-04-02T21:48:13Z"}
+{"library": "autolab_core", "repo": "BerkeleyAutomation/gqcnn", "file_path": "tools/finetune.py", "fetch_date": "2025-04-04T06:36:45.544935", "last_updated": "2025-04-02T21:48:13Z"}
+{"library": "numpy", "repo": "BerkeleyAutomation/gqcnn", "file_path": "tools/plot_training_losses.py", "fetch_date": "2025-04-04T06:36:45.544935", "last_updated": "2025-04-02T21:48:13Z"}
+{"library": "gqcnn", "repo": "BerkeleyAutomation/gqcnn", "file_path": "tools/plot_training_losses.py", "fetch_date": "2025-04-04T06:36:45.544935", "last_updated": "2025-04-02T21:48:13Z"}
+{"library": "matplotlib", "repo": "BerkeleyAutomation/gqcnn", "file_path": "tools/plot_training_losses.py", "fetch_date": "2025-04-04T06:36:45.544935", "last_updated": "2025-04-02T21:48:13Z"}
+{"library": "autolab_core", "repo": "BerkeleyAutomation/gqcnn", "file_path": "tools/plot_training_losses.py", "fetch_date": "2025-04-04T06:36:45.544935", "last_updated": "2025-04-02T21:48:13Z"}
+{"library": "gqcnn", "repo": "BerkeleyAutomation/gqcnn", "file_path": "tools/train.py", "fetch_date": "2025-04-04T06:36:45.544935", "last_updated": "2025-04-02T21:48:13Z"}
+{"library": "autolab_core", "repo": "BerkeleyAutomation/gqcnn", "file_path": "tools/train.py", "fetch_date": "2025-04-04T06:36:45.544935", "last_updated": "2025-04-02T21:48:13Z"}
