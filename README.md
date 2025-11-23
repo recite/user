@@ -42,15 +42,15 @@ Find Random Repos → Analyze Imports → Count Package Usage → Update Statist
 
 | Rank | Library | Count |
 |------|---------|-------|
-| 1 | numpy | 45080 |
-| 2 | matplotlib | 14723 |
-| 3 | torch | 14458 |
-| 4 | pandas | 13432 |
-| 5 | cv2 | 9774 |
-| 6 | django | 9356 |
-| 7 | sklearn | 7795 |
-| 8 | utils | 7122 |
-| 9 | requests | 7111 |
-| 10 | tensorflow | 6973 |
+| 1 | numpy | 45116 |
+| 2 | matplotlib | 14733 |
+| 3 | torch | 14478 |
+| 4 | pandas | 13440 |
+| 5 | cv2 | 9785 |
+| 6 | django | 9359 |
+| 7 | sklearn | 7799 |
+| 8 | utils | 7133 |
+| 9 | requests | 7122 |
+| 10 | tensorflow | 6976 |
 
-*Last updated: 2025-11-22 18:37:30 UTC*
+*Last updated: 2025-11-23 02:23:49 UTC*
