@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Package Usage Statistics</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/dataTables.dataTables.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h1>📊 Python Package Usage</h1>
+                <span class="tagline">Analyzing package imports across GitHub</span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="active">Dashboard</a>
+                <a href="methodology.html">Methodology</a>
+                <a href="https://github.com/recite/user" target="_blank">GitHub</a>
+                <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="search-section">
+            <div class="search-container">
+                <h2>🔍 Search for a Package</h2>
+                <div class="search-box">
+                    <input type="text" id="package-search" placeholder="Enter package name (e.g., requests, numpy, django)..." autocomplete="off">
+                    <button id="search-btn" class="btn-primary">Search</button>
+                </div>
+                <div id="search-results" class="search-results"></div>
+                <div id="search-suggestions" class="search-suggestions"></div>
+            </div>
+        </section>
+
+        <section class="stats-overview">
+            <div class="stat-card">
+                <h3>Repositories Analyzed</h3>
+                <p class="stat-value" id="repo-count">-</p>
+            </div>
+            <div class="stat-card">
+                <h3>Total Imports Found</h3>
+                <p class="stat-value" id="import-count">-</p>
+            </div>
+            <div class="stat-card">
+                <h3>Unique Packages</h3>
+                <p class="stat-value" id="package-count">-</p>
+            </div>
+            <div class="stat-card">
+                <h3>Last Updated</h3>
+                <p class="stat-value" id="last-updated">-</p>
+            </div>
+        </section>
+
+        <section class="chart-section">
+            <div class="chart-container">
+                <h2>Top 25 Python Packages</h2>
+                <div class="chart-controls">
+                    <label>
+                        Show top:
+                        <select id="chart-limit">
+                            <option value="10">10</option>
+                            <option value="25" selected>25</option>
+                            <option value="50">50</option>
+                            <option value="100">100</option>
+                        </select>
+                    </label>
+                    <button id="download-csv" class="btn-primary">📥 Download CSV</button>
+                </div>
+                <canvas id="topPackagesChart"></canvas>
+            </div>
+        </section>
+
+        <section class="table-section">
+            <h2>All Packages</h2>
+            <div class="table-container">
+                <table id="packagesTable" class="display">
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Package</th>
+                            <th>Import Count</th>
+                            <th>Percentage</th>
+                        </tr>
+                    </thead>
+                    <tbody id="packages-tbody">
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="insights-section">
+            <h2>Key Insights</h2>
+            <div class="insights-grid">
+                <div class="insight-card">
+                    <h3>🤖 AI/ML Dominance</h3>
+                    <p>Machine learning libraries like NumPy, PyTorch, and TensorFlow are among the most imported packages, reflecting Python's dominance in data science.</p>
+                </div>
+                <div class="insight-card">
+                    <h3>🌐 Web Frameworks</h3>
+                    <p>Django and Flask remain popular choices for web development, with Django showing particularly strong usage.</p>
+                </div>
+                <div class="insight-card">
+                    <h3>📊 Data Processing</h3>
+                    <p>Pandas and NumPy form the backbone of data processing in Python, appearing in a significant percentage of repositories.</p>
+                </div>
+                <div class="insight-card">
+                    <h3>📈 Visualization</h3>
+                    <p>Matplotlib remains the go-to visualization library, with strong adoption across scientific and data analysis projects.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="methodology-summary">
+            <h2>How We Collect Data</h2>
+            <p>We continuously analyze random Python repositories on GitHub to estimate package usage:</p>
+            <ul>
+                <li>Random sampling of repositories across different time periods</li>
+                <li>Analysis of Python import statements using AST parsing</li>
+                <li>Filtering of standard library imports</li>
+                <li>Automated updates every 6 hours via GitHub Actions</li>
+            </ul>
+            <a href="methodology.html" class="btn-secondary">Learn More →</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <p>© 2024 Python Package Usage Statistics | Data updated automatically via GitHub Actions</p>
+            <p>
+                <a href="https://github.com/recite/user">Source Code</a> |
+                <a href="https://github.com/recite/user/issues">Report Issue</a> |
+                <a href="data/library_counts.csv">Raw Data</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

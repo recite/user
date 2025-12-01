@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Package Usage Badge</title>
+</head>
+<body style="margin: 0; padding: 0;">
+    <script src="badge.js"></script>
+    <script>
+        // Parse query parameters
+        const params = new URLSearchParams(window.location.search);
+        const packageName = params.get('package') || 'unknown';
+        const badgeType = params.get('type') || 'rank';
+        
+        // Generate and display badge
+        document.addEventListener('DOMContentLoaded', async () => {
+            const badge = await generateBadge(packageName, badgeType);
+            document.body.innerHTML = badge;
+            
+            // Set content type for proper rendering
+            if (badge.includes('svg')) {
+                document.contentType = 'image/svg+xml';
+            }
+        });
+    </script>
+</body>
+</html>

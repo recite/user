@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Package Details - Python Package Usage</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .package-header {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        
+        .package-title {
+            color: var(--primary-color);
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .package-stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .package-stat-card {
+            background: var(--bg-color);
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+            border: 1px solid var(--border-color);
+        }
+        
+        .badge-showcase {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            margin-bottom: 2rem;
+        }
+        
+        .badge-row {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            background: var(--bg-color);
+            border-radius: 4px;
+        }
+        
+        .badge-preview {
+            flex-shrink: 0;
+        }
+        
+        .badge-code-section {
+            flex: 1;
+        }
+        
+        .code-block {
+            background: var(--card-bg);
+            padding: 1rem;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+            cursor: pointer;
+            margin-top: 0.5rem;
+            word-break: break-all;
+            transition: background-color 0.3s;
+        }
+        
+        .code-block:hover {
+            background: var(--primary-color);
+            color: white;
+        }
+        
+        .copy-hint {
+            font-size: 0.8rem;
+            opacity: 0.7;
+            margin-top: 0.25rem;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h1>📊 Python Package Usage</h1>
+                <span class="tagline">Analyzing package imports across GitHub</span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Dashboard</a>
+                <a href="methodology.html">Methodology</a>
+                <a href="https://github.com/recite/user" target="_blank">GitHub</a>
+                <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div id="package-content">
+            <div class="loading-message" style="text-align:center;padding:3rem;">
+                <p>Loading package details...</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <p>© 2024 Python Package Usage Statistics | Data updated automatically via GitHub Actions</p>
+            <p>
+                <a href="https://github.com/recite/user">Source Code</a> |
+                <a href="https://github.com/recite/user/issues">Report Issue</a> |
+                <a href="../data/library_counts.csv">Raw Data</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Theme management
+        function initTheme() {
+            const savedTheme = localStorage.getItem('theme') || 'light';
+            document.documentElement.setAttribute('data-theme', savedTheme);
+            updateThemeToggle(savedTheme);
+        }
+
+        function updateThemeToggle(theme) {
+            const toggle = document.getElementById('theme-toggle');
+            toggle.textContent = theme === 'dark' ? '☀️' : '🌙';
+        }
+
+        // Load package data
+        async function loadPackageData() {
+            const params = new URLSearchParams(window.location.search);
+            const packageName = params.get('name');
+            
+            if (!packageName) {
+                showError('No package specified');
+                return;
+            }
+            
+            try {
+                // Load library data
+                const response = await fetch('../data/library_counts.csv');
+                const csvText = await response.text();
+                const libraryData = parseCSV(csvText);
+                
+                // Find package
+                const packageData = libraryData.find(item => 
+                    item.library.toLowerCase() === packageName.toLowerCase()
+                );
+                
+                if (packageData) {
+                    displayPackageDetails(packageData, libraryData);
+                } else {
+                    showError(`Package "${packageName}" not found in our dataset`);
+                }
+            } catch (error) {
+                console.error('Error loading data:', error);
+                showError('Failed to load package data');
+            }
+        }
+        
+        function parseCSV(csvText) {
+            const lines = csvText.trim().split('\n');
+            const data = [];
+            
+            for (let i = 1; i < lines.length; i++) {
+                const values = lines[i].split(',');
+                if (values.length >= 2) {
+                    data.push({
+                        library: values[0],
+                        count: parseInt(values[1])
+                    });
+                }
+            }
+            
+            return data;
+        }
+        
+        function displayPackageDetails(packageData, allData) {
+            const rank = allData.indexOf(packageData) + 1;
+            const totalImports = allData.reduce((sum, item) => sum + item.count, 0);
+            const percentage = ((packageData.count / totalImports) * 100).toFixed(2);
+            const topPackage = allData[0];
+            const relativeUsage = ((packageData.count / topPackage.count) * 100).toFixed(1);
+            
+            const baseUrl = 'https://recite.github.io/user';
+            
+            document.getElementById('package-content').innerHTML = `
+                <div class="package-header">
+                    <h1 class="package-title">📦 ${packageData.library}</h1>
+                    <p>Python package usage statistics based on GitHub repository analysis</p>
+                </div>
+                
+                <div class="package-stats-grid">
+                    <div class="package-stat-card">
+                        <h3>Overall Rank</h3>
+                        <p class="stat-value">#${rank}</p>
+                        <small>out of ${allData.length} packages</small>
+                    </div>
+                    <div class="package-stat-card">
+                        <h3>Import Count</h3>
+                        <p class="stat-value">${packageData.count.toLocaleString()}</p>
+                        <small>across analyzed repositories</small>
+                    </div>
+                    <div class="package-stat-card">
+                        <h3>Usage Share</h3>
+                        <p class="stat-value">${percentage}%</p>
+                        <small>of all imports</small>
+                    </div>
+                    <div class="package-stat-card">
+                        <h3>Relative to ${topPackage.library}</h3>
+                        <p class="stat-value">${relativeUsage}%</p>
+                        <small>of top package usage</small>
+                    </div>
+                </div>
+                
+                <div class="badge-showcase">
+                    <h2>🏷️ README Badges</h2>
+                    <p>Add these badges to your project's README to showcase real usage statistics:</p>
+                    
+                    <div class="badge-row">
+                        <div class="badge-preview">
+                            <img src="badges.html?package=${packageData.library}&type=rank" alt="Rank Badge">
+                        </div>
+                        <div class="badge-code-section">
+                            <h4>Usage Rank Badge</h4>
+                            <div class="code-block" onclick="copyToClipboard(this)">![Python Usage](${baseUrl}/badges.html?package=${packageData.library}&type=rank)</div>
+                            <p class="copy-hint">Click to copy markdown</p>
+                        </div>
+                    </div>
+                    
+                    <div class="badge-row">
+                        <div class="badge-preview">
+                            <img src="badges.html?package=${packageData.library}&type=count" alt="Count Badge">
+                        </div>
+                        <div class="badge-code-section">
+                            <h4>Import Count Badge</h4>
+                            <div class="code-block" onclick="copyToClipboard(this)">![Import Count](${baseUrl}/badges.html?package=${packageData.library}&type=count)</div>
+                            <p class="copy-hint">Click to copy markdown</p>
+                        </div>
+                    </div>
+                    
+                    <div class="badge-row">
+                        <div class="badge-preview">
+                            <img src="badges.html?package=${packageData.library}&type=relative" alt="Relative Badge">
+                        </div>
+                        <div class="badge-code-section">
+                            <h4>Relative Usage Badge</h4>
+                            <div class="code-block" onclick="copyToClipboard(this)">![Relative Usage](${baseUrl}/badges.html?package=${packageData.library}&type=relative)</div>
+                            <p class="copy-hint">Click to copy markdown</p>
+                        </div>
+                    </div>
+                    
+                    <h3 style="margin-top:2rem;">HTML Badges</h3>
+                    <p>For HTML documentation or websites:</p>
+                    <div class="code-block" onclick="copyToClipboard(this)">&lt;img src="${baseUrl}/badges.html?package=${packageData.library}&type=rank" alt="Python Usage"&gt;</div>
+                </div>
+            `;
+        }
+        
+        function showError(message) {
+            document.getElementById('package-content').innerHTML = `
+                <div class="not-found-message">
+                    <h2>⚠️ Error</h2>
+                    <p>${message}</p>
+                    <p style="margin-top:2rem;">
+                        <a href="index.html" class="btn-primary">Back to Dashboard</a>
+                    </p>
+                </div>
+            `;
+        }
+        
+        function copyToClipboard(element) {
+            const text = element.textContent.trim();
+            navigator.clipboard.writeText(text).then(() => {
+                const originalText = element.innerHTML;
+                element.innerHTML = '✅ Copied to clipboard!';
+                element.style.background = '#28a745';
+                element.style.color = 'white';
+                setTimeout(() => {
+                    element.innerHTML = originalText;
+                    element.style.background = '';
+                    element.style.color = '';
+                }, 2000);
+            });
+        }
+        
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            initTheme();
+            loadPackageData();
+            
+            // Theme toggle
+            document.getElementById('theme-toggle').addEventListener('click', () => {
+                const currentTheme = document.documentElement.getAttribute('data-theme');
+                const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+                document.documentElement.setAttribute('data-theme', newTheme);
+                localStorage.setItem('theme', newTheme);
+                updateThemeToggle(newTheme);
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Methodology - Python Package Usage Statistics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h1>📊 Python Package Usage</h1>
+                <span class="tagline">Analyzing package imports across GitHub</span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Dashboard</a>
+                <a href="methodology.html" class="active">Methodology</a>
+                <a href="https://github.com/recite/user" target="_blank">GitHub</a>
+                <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="methodology-content">
+            <h1>Data Collection Methodology</h1>
+            
+            <div class="method-card">
+                <h2>Overview</h2>
+                <p>We estimate Python package usage by continuously sampling and analyzing public GitHub repositories. Our approach provides insights into real-world package adoption patterns across the Python ecosystem.</p>
+            </div>
+
+            <div class="method-card">
+                <h2>1. Repository Sampling</h2>
+                <p>We use a temporal randomization strategy to ensure diverse repository coverage:</p>
+                <ul>
+                    <li><strong>Random Time Selection:</strong> We randomly select hours across the past 10 years</li>
+                    <li><strong>GitHub API Query:</strong> For each random hour, we query repositories updated during that time</li>
+                    <li><strong>Quality Filters:</strong> 
+                        <ul>
+                            <li>Minimum 5 stars (configurable)</li>
+                            <li>Minimum 100KB repository size</li>
+                            <li>Primary language: Python</li>
+                        </ul>
+                    </li>
+                    <li><strong>Sample Size:</strong> Currently processing 50 repositories every 6 hours via GitHub Actions</li>
+                </ul>
+            </div>
+
+            <div class="method-card">
+                <h2>2. Import Analysis</h2>
+                <p>For each sampled repository, we perform comprehensive import analysis:</p>
+                <ul>
+                    <li><strong>Repository Cloning:</strong> We clone repositories with minimal depth for efficiency</li>
+                    <li><strong>File Discovery:</strong> Identify Python files (.py extension) throughout the repository</li>
+                    <li><strong>AST Parsing:</strong> Use Python's Abstract Syntax Tree (AST) parser for accurate import extraction</li>
+                    <li><strong>Fallback Parsing:</strong> Regex-based extraction for files with syntax errors</li>
+                    <li><strong>Resource Limits:</strong>
+                        <ul>
+                            <li>Maximum 10 Python files per repository</li>
+                            <li>Skip files larger than 1MB</li>
+                            <li>5-minute timeout per repository</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="method-card">
+                <h2>3. Data Processing</h2>
+                <p>We filter and aggregate the collected import data:</p>
+                <ul>
+                    <li><strong>Standard Library Filtering:</strong> Exclude Python standard library imports using <code>sys.stdlib_module_names</code></li>
+                    <li><strong>Package Name Extraction:</strong> Extract top-level package names from import statements</li>
+                    <li><strong>Deduplication:</strong> Track processed repositories to avoid counting the same repository multiple times</li>
+                    <li><strong>Aggregation:</strong> Count occurrences of each package across all analyzed files</li>
+                </ul>
+            </div>
+
+            <div class="method-card">
+                <h2>4. Statistical Considerations</h2>
+                <h3>Strengths:</h3>
+                <ul>
+                    <li>Random sampling reduces selection bias</li>
+                    <li>Continuous updates provide fresh data</li>
+                    <li>Quality filters ensure meaningful repositories</li>
+                    <li>AST parsing ensures accurate import detection</li>
+                </ul>
+                
+                <h3>Limitations:</h3>
+                <ul>
+                    <li><strong>Sample Size:</strong> Current sample may not be statistically representative of all ~18M Python repositories</li>
+                    <li><strong>Temporal Bias:</strong> Recently updated repositories may be overrepresented</li>
+                    <li><strong>Private Repositories:</strong> Analysis limited to public repositories only</li>
+                    <li><strong>Internal Modules:</strong> Some counted "packages" may be repository-specific modules (e.g., "utils")</li>
+                    <li><strong>Import vs Usage:</strong> Import presence doesn't indicate usage intensity</li>
+                </ul>
+            </div>
+
+            <div class="method-card">
+                <h2>5. Automation & Updates</h2>
+                <p>Our data collection is fully automated using GitHub Actions:</p>
+                <ul>
+                    <li><strong>Schedule:</strong> Runs every 6 hours</li>
+                    <li><strong>Workflow:</strong>
+                        <ol>
+                            <li>Find new random repositories</li>
+                            <li>Analyze imports in unprocessed repositories</li>
+                            <li>Aggregate and count package usage</li>
+                            <li>Update statistics and dashboard</li>
+                            <li>Commit results back to repository</li>
+                        </ol>
+                    </li>
+                    <li><strong>Incremental Processing:</strong> Only analyzes new repositories to avoid duplication</li>
+                    <li><strong>Data Persistence:</strong> All raw data stored in JSONL format for transparency</li>
+                </ul>
+            </div>
+
+            <div class="method-card">
+                <h2>6. Data Files</h2>
+                <p>All data is publicly available in our repository:</p>
+                <table class="data-files-table">
+                    <thead>
+                        <tr>
+                            <th>File</th>
+                            <th>Description</th>
+                            <th>Format</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>repos.jsonl</code></td>
+                            <td>Sampled repository information</td>
+                            <td>JSON Lines</td>
+                        </tr>
+                        <tr>
+                            <td><code>imports.jsonl</code></td>
+                            <td>Raw import statements with context</td>
+                            <td>JSON Lines</td>
+                        </tr>
+                        <tr>
+                            <td><code>library_counts.csv</code></td>
+                            <td>Aggregated package usage statistics</td>
+                            <td>CSV</td>
+                        </tr>
+                        <tr>
+                            <td><code>processed_repos.txt</code></td>
+                            <td>List of analyzed repositories</td>
+                            <td>Plain text</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="method-card">
+                <h2>7. Future Improvements</h2>
+                <p>We're continuously working to improve our methodology:</p>
+                <ul>
+                    <li>Increase sample size for better statistical significance</li>
+                    <li>Add PyPI validation to filter out internal modules</li>
+                    <li>Track package versions and Python version requirements</li>
+                    <li>Implement stratified sampling by repository characteristics</li>
+                    <li>Add confidence intervals and error margins</li>
+                    <li>Distinguish between production and test code imports</li>
+                    <li>Track temporal trends in package adoption</li>
+                </ul>
+            </div>
+
+            <div class="method-card">
+                <h2>8. Contributing</h2>
+                <p>This project is open source and welcomes contributions!</p>
+                <ul>
+                    <li><strong>Source Code:</strong> <a href="https://github.com/recite/user">GitHub Repository</a></li>
+                    <li><strong>Report Issues:</strong> <a href="https://github.com/recite/user/issues">Issue Tracker</a></li>
+                    <li><strong>Suggest Improvements:</strong> Open a pull request or issue</li>
+                    <li><strong>Use the Data:</strong> All data is freely available under open license</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <p>© 2024 Python Package Usage Statistics | Data updated automatically via GitHub Actions</p>
+            <p>
+                <a href="https://github.com/recite/user">Source Code</a> |
+                <a href="https://github.com/recite/user/issues">Report Issue</a> |
+                <a href="../data/library_counts.csv">Raw Data</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Theme management
+        document.addEventListener('DOMContentLoaded', () => {
+            const savedTheme = localStorage.getItem('theme') || 'light';
+            document.documentElement.setAttribute('data-theme', savedTheme);
+            updateThemeToggle(savedTheme);
+            
+            document.getElementById('theme-toggle').addEventListener('click', () => {
+                const currentTheme = document.documentElement.getAttribute('data-theme');
+                const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+                document.documentElement.setAttribute('data-theme', newTheme);
+                localStorage.setItem('theme', newTheme);
+                updateThemeToggle(newTheme);
+            });
+        });
+        
+        function updateThemeToggle(theme) {
+            const toggle = document.getElementById('theme-toggle');
+            toggle.textContent = theme === 'dark' ? '☀️' : '🌙';
+        }
+    </script>
+
+    <style>
+        .methodology-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .methodology-content h1 {
+            color: var(--primary-color);
+            margin-bottom: 2rem;
+            font-size: 2.5rem;
+        }
+        
+        .method-card {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            margin-bottom: 2rem;
+        }
+        
+        .method-card h2 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .method-card h3 {
+            color: var(--primary-color);
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+        
+        .method-card p {
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+        
+        .method-card ul {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .method-card li {
+            margin-bottom: 0.5rem;
+            line-height: 1.6;
+        }
+        
+        .method-card ol {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .method-card ol li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .data-files-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+        
+        .data-files-table th {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 0.75rem;
+            text-align: left;
+        }
+        
+        .data-files-table td {
+            padding: 0.75rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .data-files-table code {
+            background: var(--bg-color);
+            padding: 0.2rem 0.4rem;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+        }
+        
+        .method-card a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        .method-card a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</body>
+</html>
