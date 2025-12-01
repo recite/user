@@ -31,29 +31,14 @@ async function loadData() {
         // Try GitHub Pages path first, then fall back to raw GitHub URL
         let csvText, repoText;
         
-        try {
-            // Use relative path to data directory
-            const csvResponse = await fetch('../data/library_counts.csv');
-            csvText = await csvResponse.text();
-            console.log('CSV loaded successfully, first line:', csvText.split('\n')[0]);
-        } catch (e) {
-            console.error('Failed to load CSV from relative path:', e);
-            // Fallback to raw GitHub URL
-            const csvResponse = await fetch('https://raw.githubusercontent.com/recite/user/main/data/library_counts.csv');
-            csvText = await csvResponse.text();
-            console.log('CSV loaded from GitHub, first line:', csvText.split('\n')[0]);
-        }
-        
-        try {
-            // Use relative path to data directory
-            const repoResponse = await fetch('../data/repos.jsonl');
-            repoText = await repoResponse.text();
-        } catch (e) {
-            console.error('Failed to load JSONL from relative path:', e);
-            // Fallback to raw GitHub URL
-            const repoResponse = await fetch('https://raw.githubusercontent.com/recite/user/main/data/repos.jsonl');
-            repoText = await repoResponse.text();
-        }
+        // Use raw GitHub URLs directly (reliable on GitHub Pages)
+        const csvResponse = await fetch('https://raw.githubusercontent.com/recite/user/refs/heads/main/data/library_counts.csv');
+        csvText = await csvResponse.text();
+        console.log('CSV loaded from raw GitHub, first line:', csvText.split('\n')[0]);
+
+        const repoResponse = await fetch('https://raw.githubusercontent.com/recite/user/refs/heads/main/data/repos.jsonl');
+        repoText = await repoResponse.text();
+        console.log('JSONL loaded from raw GitHub, lines:', repoText.split('\n').length);
         
         libraryData = parseCSV(csvText);
         repoData = parseJSONL(repoText);

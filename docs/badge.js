@@ -6,15 +6,9 @@ async function generateBadge(packageName, badgeType) {
     // Try to load library data
     try {
         let csvText;
-        try {
-            // Use relative path to data directory
-            const response = await fetch('../data/library_counts.csv');
-            csvText = await response.text();
-        } catch (e) {
-            // Fallback to raw GitHub URL
-            const response = await fetch('https://raw.githubusercontent.com/recite/user/main/data/library_counts.csv');
-            csvText = await response.text();
-        }
+        // Use raw GitHub URL directly
+        const response = await fetch('https://raw.githubusercontent.com/recite/user/refs/heads/main/data/library_counts.csv');
+        csvText = await response.text();
         libraryData = parseCSV(csvText);
     } catch (error) {
         console.error('Error loading data:', error);

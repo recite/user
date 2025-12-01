@@ -147,15 +147,9 @@
             try {
                 // Load library data
                 let csvText;
-                try {
-                    // Use relative path to data directory
-                    const response = await fetch('../data/library_counts.csv');
-                    csvText = await response.text();
-                } catch (e) {
-                    // Fallback to raw GitHub URL
-                    const response = await fetch('https://raw.githubusercontent.com/recite/user/main/data/library_counts.csv');
-                    csvText = await response.text();
-                }
+                // Use raw GitHub URL directly
+                const response = await fetch('https://raw.githubusercontent.com/recite/user/refs/heads/main/data/library_counts.csv');
+                csvText = await response.text();
                 const libraryData = parseCSV(csvText);
                 
                 // Find package
