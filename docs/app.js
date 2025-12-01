@@ -32,20 +32,24 @@ async function loadData() {
         let csvText, repoText;
         
         try {
-            // Try the GitHub Pages relative path
-            const csvResponse = await fetch('/user/data/library_counts.csv');
+            // Use relative path to data directory
+            const csvResponse = await fetch('../data/library_counts.csv');
             csvText = await csvResponse.text();
+            console.log('CSV loaded successfully, first line:', csvText.split('\n')[0]);
         } catch (e) {
+            console.error('Failed to load CSV from relative path:', e);
             // Fallback to raw GitHub URL
             const csvResponse = await fetch('https://raw.githubusercontent.com/recite/user/main/data/library_counts.csv');
             csvText = await csvResponse.text();
+            console.log('CSV loaded from GitHub, first line:', csvText.split('\n')[0]);
         }
         
         try {
-            // Try the GitHub Pages relative path
-            const repoResponse = await fetch('/user/data/repos.jsonl');
+            // Use relative path to data directory
+            const repoResponse = await fetch('../data/repos.jsonl');
             repoText = await repoResponse.text();
         } catch (e) {
+            console.error('Failed to load JSONL from relative path:', e);
             // Fallback to raw GitHub URL
             const repoResponse = await fetch('https://raw.githubusercontent.com/recite/user/main/data/repos.jsonl');
             repoText = await repoResponse.text();

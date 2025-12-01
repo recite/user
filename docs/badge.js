@@ -7,8 +7,8 @@ async function generateBadge(packageName, badgeType) {
     try {
         let csvText;
         try {
-            // Try GitHub Pages path
-            const response = await fetch('/user/data/library_counts.csv');
+            // Use relative path to data directory
+            const response = await fetch('../data/library_counts.csv');
             csvText = await response.text();
         } catch (e) {
             // Fallback to raw GitHub URL
