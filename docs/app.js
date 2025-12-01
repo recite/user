@@ -1,6 +1,7 @@
 // Global variables
-let libraryData = [];
-let totalReposAnalyzed = 0;
+let dashboardData = null;
+let fullLibraryData = null;
+let searchIndex = null;
 let chart = null;
 
 // Constants
@@ -28,32 +29,59 @@ function updateThemeToggle(theme) {
     toggle.textContent = theme === 'dark' ? '☀️' : '🌙';
 }
 
-// Load data from CSV and processed repos files
+// Load optimized dashboard data (fast initial load)
 async function loadData() {
     try {
-        // Load library counts CSV
-        const csvResponse = await fetch('https://raw.githubusercontent.com/recite/user/refs/heads/main/data/library_counts.csv');
-        const csvText = await csvResponse.text();
-        console.log('CSV loaded from raw GitHub, first line:', csvText.split('\n')[0]);
-        libraryData = parseCSV(csvText);
-
-        // Load processed repos count for accurate sampling statistics
-        const processedResponse = await fetch('https://raw.githubusercontent.com/recite/user/refs/heads/main/data/processed_repos.txt');
-        const processedText = await processedResponse.text();
-        const processedRepos = processedText.trim().split('\n').filter(line => line.trim());
-        totalReposAnalyzed = processedRepos.length;
+        // Load lightweight dashboard data first (~5KB)
+        const dashboardResponse = await fetch('https://raw.githubusercontent.com/recite/user/refs/heads/main/data/dashboard.json');
+        dashboardData = await dashboardResponse.json();
         
-        console.log('Data loaded successfully:', {
-            libraries: libraryData.length,
-            totalImports: libraryData.reduce((sum, item) => sum + item.count, 0),
-            totalReposAnalyzed: totalReposAnalyzed
+        console.log('Dashboard data loaded:', {
+            topPackages: dashboardData.topPackages.length,
+            stats: dashboardData.stats
         });
         
     } catch (error) {
-        console.error('Error loading data:', error);
-        // Fallback to sample data if files not found
-        libraryData = getSampleData();
-        totalReposAnalyzed = 5000; // Fallback estimate
+        console.error('Error loading dashboard data:', error);
+        // Fallback to sample data
+        dashboardData = {
+            stats: {
+                totalRepos: 5000,
+                totalImports: 500000,
+                uniquePackages: 8000,
+                samplePercent: 0.028
+            },
+            topPackages: getSampleData()
+        };
+    }
+}
+
+// Load search index for autocomplete (lazy loaded)
+async function loadSearchIndex() {
+    if (searchIndex) return; // Already loaded
+    
+    try {
+        const response = await fetch('https://raw.githubusercontent.com/recite/user/refs/heads/main/data/search_index.json');
+        searchIndex = await response.json();
+        console.log('Search index loaded:', searchIndex.count, 'packages');
+    } catch (error) {
+        console.error('Error loading search index:', error);
+        searchIndex = { packages: dashboardData.topPackages.map(p => p.name) };
+    }
+}
+
+// Load full library data (lazy loaded when needed)
+async function loadFullData() {
+    if (fullLibraryData) return; // Already loaded
+    
+    try {
+        const csvResponse = await fetch('https://raw.githubusercontent.com/recite/user/refs/heads/main/data/library_counts.csv');
+        const csvText = await csvResponse.text();
+        fullLibraryData = parseCSV(csvText);
+        console.log('Full data loaded:', fullLibraryData.length, 'packages');
+    } catch (error) {
+        console.error('Error loading full data:', error);
+        fullLibraryData = dashboardData.topPackages;
     }
 }
 
@@ -96,26 +124,35 @@ function getSampleData() {
 
 // Update statistics cards
 function updateStatistics() {
+    if (!dashboardData) return;
+    
+    const stats = dashboardData.stats;
+    
     // Repositories analyzed (actual sample size)
-    document.getElementById('repo-count').textContent = totalReposAnalyzed.toLocaleString();
+    document.getElementById('repo-count').textContent = stats.totalRepos.toLocaleString();
     
     // Total imports analyzed (the main metric)
-    const totalImports = libraryData.reduce((sum, item) => sum + item.count, 0);
-    document.getElementById('import-count').textContent = totalImports.toLocaleString();
+    document.getElementById('import-count').textContent = stats.totalImports.toLocaleString();
     
     // Unique packages discovered
-    document.getElementById('package-count').textContent = libraryData.length.toLocaleString();
+    document.getElementById('package-count').textContent = stats.uniquePackages.toLocaleString();
     
-    // Sample percentage
-    const samplePercent = ((totalReposAnalyzed / TOTAL_PYTHON_REPOS) * 100).toFixed(3);
-    document.getElementById('last-updated').textContent = `${samplePercent}% of all Python repos`;
+    // Last updated with proper date formatting
+    const lastUpdated = new Date(stats.lastUpdated).toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'short', 
+        day: 'numeric'
+    });
+    document.getElementById('last-updated').textContent = `Updated ${lastUpdated}`;
 }
 
 // Create Chart.js bar chart
 function createChart() {
+    if (!dashboardData) return;
+    
     const ctx = document.getElementById('topPackagesChart').getContext('2d');
     const limit = parseInt(document.getElementById('chart-limit').value);
-    const topPackages = libraryData.slice(0, limit);
+    const topPackages = dashboardData.topPackages.slice(0, Math.min(limit, dashboardData.topPackages.length));
     
     // Destroy existing chart if it exists
     if (chart) {
@@ -132,14 +169,14 @@ function createChart() {
     chart = new Chart(ctx, {
         type: 'bar',
         data: {
-            labels: topPackages.map(p => decodeHTMLEntities(p.library)),
+            labels: topPackages.map(p => decodeHTMLEntities(p.name)),
             datasets: [{
                 label: 'Import Count',
                 data: topPackages.map(p => p.count),
-                backgroundColor: 'rgba(55, 118, 171, 0.8)',
-                borderColor: 'rgba(55, 118, 171, 1)',
+                backgroundColor: 'rgba(88, 166, 255, 0.8)',
+                borderColor: 'rgba(88, 166, 255, 1)',
                 borderWidth: 1,
-                hoverBackgroundColor: 'rgba(55, 118, 171, 1)'
+                hoverBackgroundColor: 'rgba(88, 166, 255, 1)'
             }]
         },
         options: {
@@ -180,17 +217,20 @@ function createChart() {
     });
 }
 
-// Populate DataTables
-function populateTable() {
+// Populate DataTables (lazy loaded)
+async function populateTable() {
+    // Load full data if not already loaded
+    await loadFullData();
+    
     const tbody = document.getElementById('packages-tbody');
     tbody.innerHTML = '';
     
-    const totalImports = libraryData.reduce((sum, item) => sum + item.count, 0);
+    const totalImports = dashboardData.stats.totalImports;
     
-    libraryData.forEach((item, index) => {
+    fullLibraryData.forEach((item, index) => {
         const row = tbody.insertRow();
         row.insertCell(0).textContent = index + 1;
-        row.insertCell(1).textContent = item.library;
+        row.insertCell(1).textContent = item.library || item.name;
         row.insertCell(2).textContent = item.count.toLocaleString();
         row.insertCell(3).textContent = ((item.count / totalImports) * 100).toFixed(2) + '%';
     });
@@ -281,14 +321,17 @@ function setupPackageSearch() {
         }
     });
     
-    function showSuggestions(query) {
-        const matches = libraryData
-            .filter(item => item.library.toLowerCase().includes(query))
+    async function showSuggestions(query) {
+        // Load search index if not already loaded
+        await loadSearchIndex();
+        
+        const matches = searchIndex.packages
+            .filter(name => name.toLowerCase().includes(query))
             .slice(0, 10);
         
         if (matches.length > 0) {
             searchSuggestions.innerHTML = matches
-                .map(item => `<div class="suggestion-item" data-package="${item.library}">${item.library}</div>`)
+                .map(name => `<div class="suggestion-item" data-package="${name}">${name}</div>`)
                 .join('');
             searchSuggestions.classList.add('active');
             currentSuggestionIndex = -1;
@@ -334,23 +377,28 @@ function setupPackageSearch() {
         searchInput.value = suggestions[currentSuggestionIndex].dataset.package;
     }
     
-    function performSearch(query) {
+    async function performSearch(query) {
         if (!query) return;
         
-        const packageData = libraryData.find(item => 
-            item.library.toLowerCase() === query.toLowerCase()
+        // Load full data if not already loaded
+        await loadFullData();
+        
+        const packageData = fullLibraryData.find(item => 
+            (item.library || item.name).toLowerCase() === query.toLowerCase()
         );
         
         if (packageData) {
-            const rank = libraryData.indexOf(packageData) + 1;
-            const usagePercent = ((packageData.count / totalReposAnalyzed) * 100).toFixed(2);
-            const estimatedTotalRepos = Math.round((packageData.count / totalReposAnalyzed) * TOTAL_PYTHON_REPOS);
-            const topPackage = libraryData[0];
+            const rank = fullLibraryData.indexOf(packageData) + 1;
+            const totalRepos = dashboardData.stats.totalRepos;
+            const usagePercent = ((packageData.count / totalRepos) * 100).toFixed(2);
+            const estimatedTotalRepos = Math.round((packageData.count / totalRepos) * TOTAL_PYTHON_REPOS);
+            const topPackage = fullLibraryData[0];
             const relativeUsage = ((packageData.count / topPackage.count) * 100).toFixed(1);
+            const packageName = packageData.library || packageData.name;
             
             searchResults.innerHTML = `
                 <div class="result-card">
-                    <h3>📦 ${packageData.library}</h3>
+                    <h3>📦 ${packageName}</h3>
                     <div class="result-stats">
                         <div class="result-stat">
                             <div class="result-stat-label">Popularity Rank</div>
@@ -370,18 +418,18 @@ function setupPackageSearch() {
                         </div>
                     </div>
                     <div class="extrapolation-note">
-                        <small><strong>Based on random sample of ${totalReposAnalyzed.toLocaleString()} repositories</strong><br>
+                        <small><strong>Based on random sample of ${totalRepos.toLocaleString()} repositories</strong><br>
                         Estimated ${estimatedTotalRepos.toLocaleString()} of ~18M Python repos (${usagePercent}%) use this package</small>
                     </div>
                     <div class="badge-section">
                         <h4>🏷️ Add Badges to Your README</h4>
                         <div class="badge-examples">
-                            <img src="badges.html?package=${packageData.library}&type=rank" alt="Rank Badge">
-                            <img src="badges.html?package=${packageData.library}&type=count" alt="Count Badge">
-                            <img src="badges.html?package=${packageData.library}&type=relative" alt="Relative Badge">
+                            <img src="badges.html?package=${packageName}&type=rank" alt="Rank Badge">
+                            <img src="badges.html?package=${packageName}&type=count" alt="Count Badge">
+                            <img src="badges.html?package=${packageName}&type=relative" alt="Relative Badge">
                         </div>
                         <div class="badge-code" onclick="copyToClipboard(this)">
-![Python Usage](https://recite.github.io/user/badges.html?package=${packageData.library}&type=rank)
+![Python Usage](https://recite.github.io/user/badges.html?package=${packageName}&type=rank)
                         </div>
                         <small style="display:block;margin-top:0.5rem;opacity:0.7;">Click to copy markdown</small>
                     </div>

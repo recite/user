@@ -68,6 +68,9 @@ jobs:
         run: |
           # Generate library usage statistics
           python scripts/count_libs.py data/imports.jsonl -o data/library_counts.csv
+          
+          # Generate optimized dashboard data files
+          python scripts/generate_dashboard_data.py --csv data/library_counts.csv --processed data/processed_repos.txt --output data
       
       - name: Update README with top libraries
         run: |
