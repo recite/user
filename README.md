@@ -2,6 +2,8 @@
 
 Estimate how frequently Python packages are imported across public GitHub repositories.
 
+**📊 [View Live Dashboard](https://recite.github.io/user/)** | **[Methodology](https://recite.github.io/user/methodology.html)** | **[Download Data](https://github.com/recite/user/blob/main/data/library_counts.csv)**
+
 ## Overview
 
 We determine package popularity by:
@@ -12,6 +14,23 @@ We determine package popularity by:
 The system continually improves its accuracy by sampling additional repositories every 6 hours via [GitHub Actions](https://github.com/recite/user/blob/main/.github/workflows/count_imports.yml).
 
 **Note:** We have stopped considering standard Python libraries but have not yet removed all the data.
+
+## Why This Matters
+
+Traditional package metrics like download counts are increasingly unreliable indicators of real-world usage. Every CI/CD run, dependency resolver cache miss, and mirror sync inflates these numbers without representing actual adoption. A package with millions of downloads might be used by only a handful of projects, while genuinely popular tools can be undercounted due to efficient caching.
+
+This project provides a more meaningful metric: **actual usage in production code**. By analyzing import statements across a random sample of GitHub's ~18 million Python repositories, we capture how developers genuinely use packages in their projects. This approach offers package maintainers something download counts cannot—contextual understanding of their impact. Knowing your package appears in 2% of Python repositories, or has 70% of the adoption rate of an industry leader, provides actionable insights about market penetration and growth opportunities.
+
+For the open source community, these metrics democratize impact measurement. Smaller, specialized packages can demonstrate their value within their niche, funding conversations become data-driven, and developers can make more informed decisions about dependencies based on actual adoption patterns rather than inflated download statistics.
+
+### For Package Maintainers
+
+- **Track Real Adoption**: See how many projects actually import your package
+- **Benchmark Performance**: Compare your package's usage against similar tools
+- **Identify Ecosystems**: Discover which packages are commonly used alongside yours
+- **Measure Growth**: Monitor adoption trends over time as we continuously sample
+- **Support Funding Applications**: Provide concrete usage data for grant proposals
+- **Add Usage Badges**: Display your package's real usage statistics in your README with our badges
 
 ### Scripts
 
