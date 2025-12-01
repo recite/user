@@ -1,7 +1,10 @@
 // Global variables
 let libraryData = [];
-let repoData = [];
+let totalReposAnalyzed = 0;
 let chart = null;
+
+// Constants
+const TOTAL_PYTHON_REPOS = 18_000_000; // Estimated total Python repos on GitHub
 
 // Initialize the dashboard
 document.addEventListener('DOMContentLoaded', async () => {
@@ -25,34 +28,32 @@ function updateThemeToggle(theme) {
     toggle.textContent = theme === 'dark' ? '☀️' : '🌙';
 }
 
-// Load data from CSV and JSONL files
+// Load data from CSV and processed repos files
 async function loadData() {
     try {
-        // Try GitHub Pages path first, then fall back to raw GitHub URL
-        let csvText, repoText;
-        
-        // Use raw GitHub URLs directly (reliable on GitHub Pages)
+        // Load library counts CSV
         const csvResponse = await fetch('https://raw.githubusercontent.com/recite/user/refs/heads/main/data/library_counts.csv');
-        csvText = await csvResponse.text();
+        const csvText = await csvResponse.text();
         console.log('CSV loaded from raw GitHub, first line:', csvText.split('\n')[0]);
-
-        const repoResponse = await fetch('https://raw.githubusercontent.com/recite/user/refs/heads/main/data/repos.jsonl');
-        repoText = await repoResponse.text();
-        console.log('JSONL loaded from raw GitHub, lines:', repoText.split('\n').length);
-        
         libraryData = parseCSV(csvText);
-        repoData = parseJSONL(repoText);
+
+        // Load processed repos count for accurate sampling statistics
+        const processedResponse = await fetch('https://raw.githubusercontent.com/recite/user/refs/heads/main/data/processed_repos.txt');
+        const processedText = await processedResponse.text();
+        const processedRepos = processedText.trim().split('\n').filter(line => line.trim());
+        totalReposAnalyzed = processedRepos.length;
         
         console.log('Data loaded successfully:', {
             libraries: libraryData.length,
-            repos: repoData.length
+            totalImports: libraryData.reduce((sum, item) => sum + item.count, 0),
+            totalReposAnalyzed: totalReposAnalyzed
         });
         
     } catch (error) {
         console.error('Error loading data:', error);
         // Fallback to sample data if files not found
         libraryData = getSampleData();
-        repoData = [];
+        totalReposAnalyzed = 5000; // Fallback estimate
     }
 }
 
@@ -75,21 +76,7 @@ function parseCSV(csvText) {
     return data;
 }
 
-// Parse JSONL data
-function parseJSONL(jsonlText) {
-    const lines = jsonlText.trim().split('\n');
-    const data = [];
-    
-    for (const line of lines) {
-        try {
-            data.push(JSON.parse(line));
-        } catch (e) {
-            console.warn('Invalid JSON line:', line);
-        }
-    }
-    
-    return data;
-}
+// No longer needed - we don't parse repos.jsonl for dashboard statistics
 
 // Get sample data as fallback
 function getSampleData() {
@@ -109,21 +96,19 @@ function getSampleData() {
 
 // Update statistics cards
 function updateStatistics() {
-    // Repository count
-    document.getElementById('repo-count').textContent = repoData.length.toLocaleString();
+    // Repositories analyzed (actual sample size)
+    document.getElementById('repo-count').textContent = totalReposAnalyzed.toLocaleString();
     
-    // Total imports
+    // Total imports analyzed (the main metric)
     const totalImports = libraryData.reduce((sum, item) => sum + item.count, 0);
     document.getElementById('import-count').textContent = totalImports.toLocaleString();
     
-    // Unique packages
+    // Unique packages discovered
     document.getElementById('package-count').textContent = libraryData.length.toLocaleString();
     
-    // Last updated
-    const lastUpdated = repoData.length > 0 ? 
-        new Date(repoData[repoData.length - 1].last_updated).toLocaleDateString() : 
-        new Date().toLocaleDateString();
-    document.getElementById('last-updated').textContent = lastUpdated;
+    // Sample percentage
+    const samplePercent = ((totalReposAnalyzed / TOTAL_PYTHON_REPOS) * 100).toFixed(3);
+    document.getElementById('last-updated').textContent = `${samplePercent}% of all Python repos`;
 }
 
 // Create Chart.js bar chart
@@ -358,8 +343,8 @@ function setupPackageSearch() {
         
         if (packageData) {
             const rank = libraryData.indexOf(packageData) + 1;
-            const totalImports = libraryData.reduce((sum, item) => sum + item.count, 0);
-            const percentage = ((packageData.count / totalImports) * 100).toFixed(2);
+            const usagePercent = ((packageData.count / totalReposAnalyzed) * 100).toFixed(2);
+            const estimatedTotalRepos = Math.round((packageData.count / totalReposAnalyzed) * TOTAL_PYTHON_REPOS);
             const topPackage = libraryData[0];
             const relativeUsage = ((packageData.count / topPackage.count) * 100).toFixed(1);
             
@@ -368,21 +353,25 @@ function setupPackageSearch() {
                     <h3>📦 ${packageData.library}</h3>
                     <div class="result-stats">
                         <div class="result-stat">
-                            <div class="result-stat-label">Rank</div>
+                            <div class="result-stat-label">Popularity Rank</div>
                             <div class="result-stat-value">#${rank}</div>
                         </div>
                         <div class="result-stat">
-                            <div class="result-stat-label">Import Count</div>
-                            <div class="result-stat-value">${packageData.count.toLocaleString()}</div>
+                            <div class="result-stat-label">Usage Rate</div>
+                            <div class="result-stat-value">${usagePercent}%</div>
                         </div>
                         <div class="result-stat">
-                            <div class="result-stat-label">Percentage</div>
-                            <div class="result-stat-value">${percentage}%</div>
+                            <div class="result-stat-label">Estimated Total Usage</div>
+                            <div class="result-stat-value">~${estimatedTotalRepos.toLocaleString()}</div>
                         </div>
                         <div class="result-stat">
                             <div class="result-stat-label">vs ${topPackage.library}</div>
                             <div class="result-stat-value">${relativeUsage}%</div>
                         </div>
+                    </div>
+                    <div class="extrapolation-note">
+                        <small><strong>Based on random sample of ${totalReposAnalyzed.toLocaleString()} repositories</strong><br>
+                        Estimated ${estimatedTotalRepos.toLocaleString()} of ~18M Python repos (${usagePercent}%) use this package</small>
                     </div>
                     <div class="badge-section">
                         <h4>🏷️ Add Badges to Your README</h4>
