@@ -28,20 +28,42 @@ function updateThemeToggle(theme) {
 // Load data from CSV and JSONL files
 async function loadData() {
     try {
-        // Load library counts from parent data directory
-        const csvResponse = await fetch('../data/library_counts.csv');
-        const csvText = await csvResponse.text();
-        libraryData = parseCSV(csvText);
+        // Try GitHub Pages path first, then fall back to raw GitHub URL
+        let csvText, repoText;
         
-        // Load repository data
-        const repoResponse = await fetch('../data/repos.jsonl');
-        const repoText = await repoResponse.text();
+        try {
+            // Try the GitHub Pages relative path
+            const csvResponse = await fetch('/user/data/library_counts.csv');
+            csvText = await csvResponse.text();
+        } catch (e) {
+            // Fallback to raw GitHub URL
+            const csvResponse = await fetch('https://raw.githubusercontent.com/recite/user/main/data/library_counts.csv');
+            csvText = await csvResponse.text();
+        }
+        
+        try {
+            // Try the GitHub Pages relative path
+            const repoResponse = await fetch('/user/data/repos.jsonl');
+            repoText = await repoResponse.text();
+        } catch (e) {
+            // Fallback to raw GitHub URL
+            const repoResponse = await fetch('https://raw.githubusercontent.com/recite/user/main/data/repos.jsonl');
+            repoText = await repoResponse.text();
+        }
+        
+        libraryData = parseCSV(csvText);
         repoData = parseJSONL(repoText);
+        
+        console.log('Data loaded successfully:', {
+            libraries: libraryData.length,
+            repos: repoData.length
+        });
         
     } catch (error) {
         console.error('Error loading data:', error);
         // Fallback to sample data if files not found
         libraryData = getSampleData();
+        repoData = [];
     }
 }
 
@@ -126,10 +148,17 @@ function createChart() {
         chart.destroy();
     }
     
+    // Decode HTML entities in library names
+    function decodeHTMLEntities(text) {
+        const textArea = document.createElement('textarea');
+        textArea.innerHTML = text;
+        return textArea.value;
+    }
+    
     chart = new Chart(ctx, {
         type: 'bar',
         data: {
-            labels: topPackages.map(p => p.library),
+            labels: topPackages.map(p => decodeHTMLEntities(p.library)),
             datasets: [{
                 label: 'Import Count',
                 data: topPackages.map(p => p.count),

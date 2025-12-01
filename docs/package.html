@@ -146,8 +146,16 @@
             
             try {
                 // Load library data
-                const response = await fetch('../data/library_counts.csv');
-                const csvText = await response.text();
+                let csvText;
+                try {
+                    // Try GitHub Pages path
+                    const response = await fetch('/user/data/library_counts.csv');
+                    csvText = await response.text();
+                } catch (e) {
+                    // Fallback to raw GitHub URL
+                    const response = await fetch('https://raw.githubusercontent.com/recite/user/main/data/library_counts.csv');
+                    csvText = await response.text();
+                }
                 const libraryData = parseCSV(csvText);
                 
                 // Find package
