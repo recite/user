@@ -1,7 +1,7 @@
 // Global variables
 let dashboardData = null;
 let fullLibraryData = null;
-let searchIndex = null;
+let fuseSearch = null;
 let chart = null;
 
 // Constants
@@ -11,6 +11,7 @@ const TOTAL_PYTHON_REPOS = 18_000_000; // Estimated total Python repos on GitHub
 document.addEventListener('DOMContentLoaded', async () => {
     initTheme();
     await loadData();
+    initializeFuseSearch();
     updateStatistics();
     createChart();
     populateTable();
@@ -56,18 +57,79 @@ async function loadData() {
     }
 }
 
-// Load search index for autocomplete (lazy loaded)
-async function loadSearchIndex() {
-    if (searchIndex) return; // Already loaded
+// Initialize Fuse.js search with dashboard data (top packages only initially)
+function initializeFuseSearch() {
+    if (!dashboardData || !dashboardData.topPackages) return;
+    
+    // Initialize Fuse.js with the top packages from dashboard for immediate search
+    const searchData = dashboardData.topPackages.map(pkg => ({
+        name: pkg.name,
+        count: pkg.count
+    }));
+    
+    fuseSearch = new Fuse(searchData, {
+        keys: ['name'],
+        threshold: 0.3, // Allow some fuzzy matching
+        ignoreLocation: true,
+        includeScore: true,
+        includeMatches: true
+    });
+    
+    console.log('Fuse search initialized with', searchData.length, 'top packages');
+}
+
+// Load full search index (all packages) - called on first search
+async function loadFullSearchIndex() {
+    const CACHE_KEY = 'python_package_search_cache';
+    const CACHE_VERSION_KEY = 'python_package_search_version';
     
     try {
-        const response = await fetch('https://raw.githubusercontent.com/recite/user/refs/heads/main/data/search_index.json');
-        searchIndex = await response.json();
-        console.log('Search index loaded:', searchIndex.count, 'packages');
+        // Check if we have cached data
+        const cachedData = localStorage.getItem(CACHE_KEY);
+        const cachedVersion = localStorage.getItem(CACHE_VERSION_KEY);
+        
+        if (cachedData && cachedVersion) {
+            console.log('Using cached search data');
+            const searchData = JSON.parse(cachedData);
+            updateFuseSearch(searchData);
+            return;
+        }
+        
+        // Download fresh data
+        console.log('Downloading full search index...');
+        const response = await fetch('https://raw.githubusercontent.com/recite/user/refs/heads/main/data/search_optimized.json');
+        const searchIndex = await response.json();
+        
+        // Transform to search data format
+        const searchData = searchIndex.packages.map(name => ({
+            name: name,
+            count: 0 // We don't need counts for search, just names
+        }));
+        
+        // Cache the data
+        localStorage.setItem(CACHE_KEY, JSON.stringify(searchData));
+        localStorage.setItem(CACHE_VERSION_KEY, searchIndex.version);
+        
+        // Update Fuse.js with full data
+        updateFuseSearch(searchData);
+        
+        console.log('Full search index loaded:', searchIndex.packages.length, 'packages');
+        
     } catch (error) {
-        console.error('Error loading search index:', error);
-        searchIndex = { packages: dashboardData.topPackages.map(p => p.name) };
+        console.error('Error loading full search index:', error);
+        // Keep using the existing top packages search
     }
+}
+
+// Update Fuse.js with new search data
+function updateFuseSearch(searchData) {
+    fuseSearch = new Fuse(searchData, {
+        keys: ['name'],
+        threshold: 0.3,
+        ignoreLocation: true,
+        includeScore: true,
+        includeMatches: true
+    });
 }
 
 // Load full library data (lazy loaded when needed)
@@ -322,12 +384,13 @@ function setupPackageSearch() {
     });
     
     async function showSuggestions(query) {
-        // Load search index if not already loaded
-        await loadSearchIndex();
+        // Load full search index on first search (with caching)
+        if (!fuseSearch || fuseSearch.getIndex().size < 1000) {
+            await loadFullSearchIndex();
+        }
         
-        const matches = searchIndex.packages
-            .filter(name => name.toLowerCase().includes(query))
-            .slice(0, 10);
+        const fuseResults = fuseSearch.search(query);
+        const matches = fuseResults.slice(0, 10).map(result => result.item.name);
         
         if (matches.length > 0) {
             searchSuggestions.innerHTML = matches

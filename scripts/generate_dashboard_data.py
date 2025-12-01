@@ -12,8 +12,8 @@ from datetime import datetime
 def generate_dashboard_data(csv_file, processed_file, output_dir):
     """
     Generate optimized data files for the dashboard:
-    1. dashboard.json - Essential stats + top 100 packages
-    2. search_index.json - All package names for search autocomplete
+    1. dashboard.json - Essential stats + top 100 packages (~3.7KB)
+    2. search_optimized.json - Minimal package names for search (~200KB)
     """
     # Read library counts
     libraries = []
@@ -54,9 +54,10 @@ def generate_dashboard_data(csv_file, processed_file, output_dir):
         'topPackages': libraries[:100]  # Top 100 for charts
     }
     
-    # Generate search_index.json (all package names)
-    search_index = {
-        'packages': [lib['name'] for lib in libraries],
+    # Generate search_optimized.json (minimal structure for fast loading)
+    search_optimized = {
+        'packages': [lib['name'] for lib in libraries],  # Just package names array
+        'version': last_updated[:10],  # Just date part (2024-12-01)
         'count': unique_packages
     }
     
@@ -66,11 +67,11 @@ def generate_dashboard_data(csv_file, processed_file, output_dir):
     with open(os.path.join(output_dir, 'dashboard.json'), 'w') as f:
         json.dump(dashboard_data, f, separators=(',', ':'))  # Compact format
     
-    with open(os.path.join(output_dir, 'search_index.json'), 'w') as f:
-        json.dump(search_index, f, separators=(',', ':'))  # Compact format
+    with open(os.path.join(output_dir, 'search_optimized.json'), 'w') as f:
+        json.dump(search_optimized, f, separators=(',', ':'))  # Compact format
     
     print(f"Generated dashboard.json: {len(json.dumps(dashboard_data))} bytes")
-    print(f"Generated search_index.json: {len(json.dumps(search_index))} bytes")
+    print(f"Generated search_optimized.json: {len(json.dumps(search_optimized))} bytes")
     print(f"Total packages: {unique_packages}")
     print(f"Original CSV size: {os.path.getsize(csv_file)} bytes")
 
