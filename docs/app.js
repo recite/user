@@ -485,11 +485,11 @@ function setupPackageSearch() {
                         Estimated ${estimatedTotalRepos.toLocaleString()} of ~18M Python repos (${usagePercent}%) use this package</small>
                     </div>
                     <div class="badge-section">
-                        <h4>🏷️ Add Badges to Your README</h4>
+                        <h4>Add Badges to Your README</h4>
                         <div class="badge-examples">
-                            <img src="badges.html?package=${packageName}&type=rank" alt="Rank Badge">
-                            <img src="badges.html?package=${packageName}&type=count" alt="Count Badge">
-                            <img src="badges.html?package=${packageName}&type=relative" alt="Relative Badge">
+                            ${generateBadgeSVG('Python Usage', '#' + rank)}
+                            ${generateBadgeSVG('Imports', formatBadgeCount(packageData.count))}
+                            ${generateBadgeSVG('Usage', relativeUsage + '%')}
                         </div>
                         <div class="badge-code" onclick="copyToClipboard(this)">
 ![Python Usage](https://recite.github.io/user/badges.html?package=${packageName}&type=rank)
@@ -510,6 +510,44 @@ function setupPackageSearch() {
         
         searchResults.classList.add('active');
     }
+}
+
+// Generate badge SVG directly
+function generateBadgeSVG(label, value, color = '#007aff') {
+    const labelWidth = label.length * 6 + 12;
+    const valueWidth = value.toString().length * 6 + 12;
+    const totalWidth = labelWidth + valueWidth;
+    
+    return `<svg xmlns="http://www.w3.org/2000/svg" width="${totalWidth}" height="20">
+        <linearGradient id="b" x2="0" y2="100%">
+            <stop offset="0" stop-color="#bbb" stop-opacity=".1"/>
+            <stop offset="1" stop-opacity=".1"/>
+        </linearGradient>
+        <clipPath id="a">
+            <rect width="${totalWidth}" height="20" rx="3" fill="#fff"/>
+        </clipPath>
+        <g clip-path="url(#a)">
+            <path fill="#555" d="M0 0h${labelWidth}v20H0z"/>
+            <path fill="${color}" d="M${labelWidth} 0h${valueWidth}v20H${labelWidth}z"/>
+            <path fill="url(#b)" d="M0 0h${totalWidth}v20H0z"/>
+        </g>
+        <g fill="#fff" text-anchor="middle" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="11">
+            <text x="${labelWidth / 2}" y="15" fill="#010101" fill-opacity=".3">${label}</text>
+            <text x="${labelWidth / 2}" y="14">${label}</text>
+            <text x="${labelWidth + valueWidth / 2}" y="15" fill="#010101" fill-opacity=".3">${value}</text>
+            <text x="${labelWidth + valueWidth / 2}" y="14">${value}</text>
+        </g>
+    </svg>`;
+}
+
+// Format count for badge display
+function formatBadgeCount(count) {
+    if (count >= 1000000) {
+        return (count / 1000000).toFixed(1) + 'M';
+    } else if (count >= 1000) {
+        return (count / 1000).toFixed(1) + 'k';
+    }
+    return count.toString();
 }
 
 // Copy text to clipboard
