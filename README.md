@@ -11,7 +11,7 @@ We determine package popularity by:
 2. Analyzing Python import statements in these repositories
 3. Extrapolating findings based on the total Python repository count ([~18M repositories]((https://github.com/recite/user/blob/main/scripts/total_python_repos.ipynb))
 
-The system continually improves its accuracy by sampling additional repositories every 6 hours via [GitHub Actions](https://github.com/recite/user/blob/main/.github/workflows/count_imports.yml).
+The system continually improves its accuracy by sampling additional repositories monthly via [GitHub Actions](https://github.com/recite/user/blob/main/.github/workflows/count_imports.yml).
 
 **Note:** We have stopped considering standard Python libraries but have not yet removed all the data.
 
@@ -47,7 +47,7 @@ For the open source community, these metrics democratize impact measurement. Sma
 | File | Description | Format |
 |------|-------------|--------|
 | [repos.jsonl](https://github.com/recite/user/blob/main/data/repos.jsonl) | Details of processed repositories | JSONL |
-| [imports.jsonl](https://github.com/recite/user/blob/main/data/imports.jsonl) | Raw import statements extracted from repos | JSONL |
+| [imports.jsonl.tar.gz](https://github.com/recite/user/blob/main/data/imports.jsonl.tar.gz) | Raw import statements extracted from repos | Compressed JSONL |
 | [library_counts.csv](https://github.com/recite/user/blob/main/data/library_counts.csv) | Aggregated package usage statistics | CSV |
 
 ### Workflow

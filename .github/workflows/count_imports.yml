@@ -2,9 +2,9 @@
 name: Analyze Python Repositories
 
 on:
-  workflow_dispatch:  # Manual trigger
+  workflow_dispatch:
   schedule:
-    - cron: '0 */6 * * *'  # Run daily at midnight UTC
+    - cron: '0 0 1 * *'
 
 jobs:
   analyze:
@@ -16,9 +16,9 @@ jobs:
         uses: actions/checkout@v4
       
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
-          python-version: '3.10'
+          python-version: '3.12'
       
       - name: Install dependencies
         run: |
@@ -27,25 +27,26 @@ jobs:
       
       - name: Download previous data
         run: |
-          # Create data directory if it doesn't exist
           mkdir -p data
-          
-          # Download previous results if they exist in artifacts
+
           if curl -s -f -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
              "https://api.github.com/repos/${{ github.repository }}/actions/artifacts" | \
              grep -q "data-archive"; then
             echo "Downloading previous data archive"
-            # Get artifact ID
             ARTIFACT_ID=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
                          "https://api.github.com/repos/${{ github.repository }}/actions/artifacts" | \
                          jq -r '.artifacts[] | select(.name=="data-archive") | .id' | head -n 1)
-            
-            # Download and extract artifact
+
             curl -L -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
                  -o artifact.zip \
                  "https://api.github.com/repos/${{ github.repository }}/actions/artifacts/$ARTIFACT_ID/zip"
             unzip -o artifact.zip -d data/
             rm artifact.zip
+
+            if [ -f data/imports.jsonl.tar.gz ]; then
+              echo "Decompressing imports.jsonl.tar.gz"
+              tar -xzf data/imports.jsonl.tar.gz -C data/
+            fi
           else
             echo "No previous data archive found"
           fi
@@ -66,11 +67,15 @@ jobs:
       
       - name: Generate library statistics
         run: |
-          # Generate library usage statistics
           python scripts/count_libs.py data/imports.jsonl -o data/library_counts.csv
-          
-          # Generate optimized dashboard data files
           python scripts/generate_dashboard_data.py --csv data/library_counts.csv --processed data/processed_repos.txt --output data
+
+      - name: Compress imports.jsonl
+        run: |
+          if [ -f data/imports.jsonl ]; then
+            tar -czf data/imports.jsonl.tar.gz -C data imports.jsonl
+            rm data/imports.jsonl
+          fi
       
       - name: Update README with top libraries
         run: |

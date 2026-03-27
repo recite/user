@@ -4,6 +4,7 @@ import logging
 import time
 import random
 import json
+import tarfile
 import requests
 from typing import Dict, Any, Optional, Tuple, List
 from requests.exceptions import RequestException
@@ -122,11 +123,16 @@ def is_runtime_expired(start_time: float, max_runtime_seconds: int = 21000) -> b
     return elapsed_time > max_runtime_seconds
 
 def save_results(results: List[Tuple], output_file: str, format_json=True):
-    """Save results to a file."""
+    """Save results to a file, handling compressed archives."""
+    tar_file = output_file + ".tar.gz"
+
+    if os.path.exists(tar_file) and not os.path.exists(output_file):
+        with tarfile.open(tar_file, "r:gz") as tar:
+            tar.extractall(path=os.path.dirname(output_file) or ".")
+
     with open(output_file, 'a') as f:
         for result in results:
             if format_json:
-                # Convert tuple to dictionary
                 result_obj = {
                     "library": result[0],
                     "repo": result[1],
@@ -136,5 +142,4 @@ def save_results(results: List[Tuple], output_file: str, format_json=True):
                 }
                 f.write(json.dumps(result_obj) + '\n')
             else:
-                # Write as CSV-like format
                 f.write(','.join(str(item) for item in result) + '\n')

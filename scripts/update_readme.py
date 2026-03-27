@@ -119,7 +119,7 @@ For the open source community, these metrics democratize impact measurement. Sma
 | File | Description | Format |
 |------|-------------|--------|
 | [repos.jsonl](https://github.com/recite/user/blob/main/data/repos.jsonl) | Details of processed repositories | JSONL |
-| [imports.jsonl](https://github.com/recite/user/blob/main/data/imports.jsonl) | Raw import statements extracted from repos | JSONL |
+| [imports.jsonl.tar.gz](https://github.com/recite/user/blob/main/data/imports.jsonl.tar.gz) | Raw import statements extracted from repos | Compressed JSONL |
 | [library_counts.csv](https://github.com/recite/user/blob/main/data/library_counts.csv) | Aggregated package usage statistics | CSV |
 
 ### Workflow
